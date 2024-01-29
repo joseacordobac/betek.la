@@ -99,7 +99,7 @@ wp_enqueue_style('home');
                             'title'         => get_sub_field('title'),
                             'titles-type'   => 'a-titles--main',
                             'animations'    => 'a-titles--animation-typing',
-                            'custom-css'    => 'g-content-middle js-title-typing',
+                            'custom-css'    => 'js-title-typing',
                             )
                         ); 
                     ?>

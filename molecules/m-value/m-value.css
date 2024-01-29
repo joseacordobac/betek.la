@@ -12,12 +12,12 @@
 }
 
 .m-value__title-text{
-    font-size: var(--size-medium-large);
+    font-size: 1.2rem;
     font-family: var(--font-text);
 }
 
 .m-value__text-text {
-    font-size: var(--size-medium);
+    font-size: 1rem;
     color: #525151;
 }
 

@@ -4,8 +4,8 @@
 
 .hero-banner__slide-content {
     display: grid;
-    grid-template-columns: 47% 43%;
-    gap: 140px;
+    grid-template-columns: 50% 44%;
+    gap: 65px;
 }
 
 .hero-banner__left {
@@ -13,12 +13,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    gap: 34px;
+    gap: 12px;
 }
 
 .hero-banner__title {
-    font-size: var(--size-large);
+    font-size: var(--size-mlarge);
     color: var(--main-color);
+    line-height: var(--size-mlarge);
+    letter-spacing: -1px;
 }
 
 .hero-banner__title b {
@@ -41,6 +43,10 @@
     font-size: var(--size-medium-large);
     color: var(--black-color);
     opacity: 0.5;
+}
+
+.hero-banner__left .a-btn{
+    margin-top: 19px;
 }
 
 .hero-banner .swiper-slide{
@@ -81,7 +87,8 @@
 
 .trainning__content {
     text-align: center;
-    margin: 48px auto;
+    margin: 150px auto;
+    justify-content: center;
 }
 
 /* Nuestros programas */
