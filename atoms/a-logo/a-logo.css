@@ -7,6 +7,10 @@
     text-align: center;
 }
 
+.a-logo-white__logo {
+    height: 60px;
+}
+
 @media(max-width: 768px) {
     .a-logo .custom-logo {
         height: 40px;

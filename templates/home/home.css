@@ -120,27 +120,13 @@
 
 /* aliance brands */
 .alians-brands {
-    display: grid;
-    grid-template-columns: repeat(11, 1fr);
-    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 13px;
     max-width: 90%;
     margin: 65px auto;
 }
-
-.alians-brands>*{
-    grid-column: span 2;
-}
-
-.alians-brands>*:nth-child(6),
-.alians-brands>*:nth-child(16),
-.alians-brands>*:nth-child(26),
-.alians-brands>*:nth-child(36),
-.alians-brands>*:nth-child(46),
-.alians-brands>*:nth-child(56){
-    grid-column-start: 2;
-    grid-column-end: 4 !important;
-}
-
 @media(max-width: 768px){
 
     .hero-banner{

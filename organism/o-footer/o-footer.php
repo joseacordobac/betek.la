@@ -26,12 +26,8 @@ wp_enqueue_script('o-footer');
         ));
         ?>
     </div>
-
-    <div class="o-footer__bottom">
-        <div class="o-footer__bottom-text">
-            <p>© 2021 Betek. Todos los derechos reservados | Desarrollado por <a class="o-footer__bottom-link" href="https://movemosmarcas.com/" target="_blank">movemosmarcas.com</a></p>
-        </div>
-        <a href="https://makaia.org/politica-de-tratamiento-de-datos/" target="_blank" class="o-footer__policy">Política de privacidad</a>
+    
+    <div class="o-footer__info">
         <div class="o-footer__bottom-social">
             <p class="o-footer__bottom-social-text">Síguenos</p>
             <?php get_template_part('molecules/m-socials/m-socials', null, array(
@@ -39,6 +35,13 @@ wp_enqueue_script('o-footer');
                 'repeater' => 'redes_sociales',
             )); ?>
         </div>
+    </div>
+
+    <div class="o-footer__bottom">
+        <div class="o-footer__bottom-text">
+            <p>© <?php echo date("Y"); ?> Betek. Todos los derechos reservados | Desarrollado por <a class="o-footer__bottom-link" href="https://movemosmarcas.com/" target="_blank">movemosmarcas.com</a></p>
+        </div>
+        <a href="https://makaia.org/politica-de-tratamiento-de-datos/" target="_blank" class="o-footer__policy">Política de privacidad</a>
     </div>
 
 </div>
