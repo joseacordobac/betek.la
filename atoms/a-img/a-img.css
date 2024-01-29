@@ -1,0 +1,41 @@
+.a-img {
+    position: relative;
+    min-height: 100%;
+}
+
+.a-img__img {
+    width: 101%;
+    border-radius: var(--border-radius--regular);
+    object-fit: cover;
+    object-position: center;
+    height: 100%;
+}
+
+.a-img__video-icon {
+    position: absolute;
+    top: 38%;
+    right: 32%;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* video */
+dialog.a-img__dialog {
+    position: fixed;
+    top: 50%;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+}
+
+.a-img__dialog__close {
+    position: fixed;
+    z-index: 1;
+    right: 0px;
+    top: 0px;
+    background: white;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: var(--size-medium);
+    cursor: pointer;
+}

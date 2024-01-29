@@ -1,0 +1,18 @@
+.o-testimonials {
+    padding: 72px 0px;
+}
+
+.o-testimonials__slide{
+    opacity: 0.5;
+    transition: all 0.3s ease-in-out;
+}
+
+.o-testimonials__slide.swiper-slide-active{
+    opacity: 1;
+}
+
+@media(max-width: 768px){
+    .o-testimonials{
+        padding: 20px 0px;
+    }
+}

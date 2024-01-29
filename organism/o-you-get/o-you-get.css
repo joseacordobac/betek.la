@@ -1,0 +1,30 @@
+/* tranning */
+.o-you-get-list {
+    margin-top: 43px;
+}
+
+.incon-brand {
+    margin-bottom: 29px;
+    width: 86px;
+    height: 100px;
+}
+
+.o-you-get-info {
+    display: grid;
+    grid-template-columns: 45% 53%;
+    gap: 40px;
+}
+
+.o-you-get-info .a-btn__content{
+    margin-top: 27px;
+}
+
+.o-you-get-info  .a-img__video-icon {
+    top: 74%;
+}
+
+@media(max-width: 768px) {
+    .o-you-get-info {
+        grid-template-columns: 1fr;
+    }
+}

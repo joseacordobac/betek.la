@@ -1,0 +1,20 @@
+.m-logo-card {
+    border: 1px solid var(--grey-50, #A1AEBF);
+    padding: 16px 24px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.m-logo-card__img {
+    width: 100%;
+    max-height: 40px;
+    object-fit: contain;
+}
+
+@media(max-width: 768px) {
+    .m-logo-card {
+        padding: 4px 3px;
+    }
+}

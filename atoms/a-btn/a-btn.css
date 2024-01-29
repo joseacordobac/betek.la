@@ -1,0 +1,35 @@
+.a-btn{
+    display: inline-block;
+}
+
+.a-btn__content {
+    padding: 14px 28px;
+    background-color: var(--secondary-color);
+    color: var(--white-color);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: var(--border-radius--regular);
+    text-decoration: none;
+}
+
+.a-btn__icon {
+    width: 27px;
+    transform: translateX(0px);
+    transition: all 0.3s ease-in-out;
+}
+
+.a-btn__content:hover .a-btn__icon{
+    transform: translateX(5px);
+}
+
+.a-btn__text {
+    font-size: var(--size-medium);
+}
+
+
+@media(max-width: 768px) {
+    .a-btn__content {
+        padding: 10px 29px;
+    }
+}

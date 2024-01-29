@@ -1,0 +1,18 @@
+.a-logo .custom-logo {
+    height: 74px;
+    width: 100%;
+}
+
+.a-logo-white {
+    text-align: center;
+}
+
+@media(max-width: 768px) {
+    .a-logo .custom-logo {
+        height: 40px;
+    }
+
+    .a-logo-white__logo{
+        max-width: 70%;
+    }
+}
