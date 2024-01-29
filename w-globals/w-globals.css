@@ -52,8 +52,13 @@ h1, h3, h3, h4{
     text-wrap: balance;
 }
 
-p, h5, ul, li, span, a{
+p, h5, ul, li, span, a, pre{
     font-family: var(--font-text);
+    text-wrap: pretty;
+}
+
+pre {
+    max-width: 100%;
     text-wrap: pretty;
 }
 

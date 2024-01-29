@@ -14,6 +14,7 @@ function enque_custom_molecules() {
   u_register_styles('m-social', PATH_MOLECULES); //Logos cards
   u_register_styles('m-nav-footer', PATH_MOLECULES); //footer menu
   u_register_styles('m-whatsapp', PATH_MOLECULES); //footer menu
+  u_register_styles('m-card-iprogram', PATH_MOLECULES); //programs cards
 }
 
 add_action('wp_enqueue_scripts', 'enque_custom_molecules');

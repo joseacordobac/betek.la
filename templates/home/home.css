@@ -42,7 +42,8 @@
 .hero-banner__text {
     font-size: var(--size-medium-large);
     color: var(--black-color);
-    opacity: 0.5;
+    opacity: 0.7;
+    max-width: 100%;
 }
 
 .hero-banner__left .a-btn{
