@@ -103,21 +103,8 @@ wp_enqueue_style('home');
                             )
                         ); 
                     ?>
-                    <div class="our-programs-list">
-                        <?php get_template_part('/organism/o-programs/o-programs', null,
-                            array(
-                                'alt'           => 'programas',
-                                'src'           => get_sub_field('img_section'),
-                                'title'         => get_sub_field('description_title'),
-                                'repeater_name' => 'programs_list',
-                                'icon_mision'   => 'img_program',
-                                'title_mision'  => 'program_name',
-                                'b_color'       => 'b-color',
-                                'link_mision'   => '',
-                                'icon'          =>  PATH_STYLE.'assets/icons/arrow-purple.svg',
-                                'custom_class'  => 'g-content-regular'
-                            ));
-                        ?>
+                    <div class="programs-list">
+                        <?php get_template_part('/organism/o-iprogram/o-iprogram', null); ?>
                     </div>
                 <?php endwhile; ?>
             </section>

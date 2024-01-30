@@ -10,6 +10,7 @@ function enque_styles_organism() {
   u_register_styles('o-get-talent', PATH_ORGANISM); //get talent
   u_register_styles('o-impact', PATH_ORGANISM); //impacto 
   u_register_styles('o-testimonials', PATH_ORGANISM); //testimonios
+  u_register_styles('o-iprogram', PATH_ORGANISM); //iProgram
 }
 
 add_action('wp_enqueue_scripts', 'enque_styles_organism');

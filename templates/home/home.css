@@ -105,6 +105,12 @@
     margin-top: 90px;
 }
 
+.programs-list{
+    max-width: 85%;
+    margin: auto;
+    margin-top: 55px;
+}
+
 .need-talent {
     background: linear-gradient(0deg, transparent 14%, var(--secondary-color) 14%);
     margin-top: -2px;
@@ -141,6 +147,10 @@
     .hero-banner__slide-content{
         grid-template-columns: 1fr;
         gap: 40px;
+    }
+
+    .hero-banner__title{
+        font-size: 38px;
     }
     
     .swiper-wrapper.hero-banner{
