@@ -40,23 +40,25 @@
                 <?php endwhile; ?>
             </div>
             
-            <div class="o-impact-right__data">
-                <h4 class="o-impact-right__title"><?php the_sub_field('our_talent'); ?></h4>
-                <p class="o-impact-right__description"><?php the_sub_field('talent_description'); ?></p>
-            </div>
-
-            <div class="o-impact-right__grid o-impact-right__grid--talents">
-                <?php while( have_rows('datos_talent') ) : the_row(); ?>
-                    <div class="o-impact-item">
-                        <?php get_template_part('atoms/a-numbers/a-numbers', null, 
-                            array(
-                                'number' => get_sub_field($number),
-                                'custom_class' => 'o-impact-item__number'
-                            )); 
-                        ?>
-                        <p class="o-impact-item__description"><?php the_sub_field($description); ?></p>
-                    </div>
-                <?php endwhile; ?>
+            <div class="o-impact__content--talent">
+                <div class="o-impact-right__data">
+                    <h4 class="o-impact-right__title"><?php the_sub_field('our_talent'); ?></h4>
+                    <p class="o-impact-right__description"><?php the_sub_field('talent_description'); ?></p>
+                </div>
+    
+                <div class="o-impact-right__grid o-impact-right__grid--talents">
+                    <?php while( have_rows('datos_talent') ) : the_row(); ?>
+                        <div class="o-impact-item">
+                            <?php get_template_part('atoms/a-numbers/a-numbers', null, 
+                                array(
+                                    'number' => get_sub_field($number),
+                                    'custom_class' => 'o-impact-item__number'
+                                )); 
+                            ?>
+                            <p class="o-impact-item__description"><?php the_sub_field($description); ?></p>
+                        </div>
+                    <?php endwhile; ?>
+                </div>
             </div>
 
         </div>

@@ -11,6 +11,12 @@
     opacity: 1;
 }
 
+.swiper-pagination--testimonials {
+    text-align: center;
+    bottom: -17px !important;
+    position: relative;
+}
+
 @media(max-width: 768px){
     .o-testimonials{
         padding: 20px 0px;

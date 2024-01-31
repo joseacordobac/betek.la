@@ -19,7 +19,6 @@
 <div class="o-testimonials <?php echo $custom_class; ?>">
     <div class="o-testimonials__swiper">
         <div class="swiper-wrapper">
-
             <?php while (have_rows($repater_name)): the_row(); ?>
                 <div class="swiper-slide o-testimonials__slide">
                     <?php get_template_part('molecules/m-testimonial/m-testimonial', null, 
@@ -33,7 +32,7 @@
                     ); ?>
                 </div>
             <?php endwhile; ?>
-            <!-- <div class="swiper-pagination swiper-pagination--testimonials"></div> -->
         </div>
+        <div class="swiper-pagination--testimonials"></div>
     </div>
 </div>

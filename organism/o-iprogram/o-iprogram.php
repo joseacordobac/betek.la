@@ -12,7 +12,7 @@ $query = new WP_Query($args);
 ?>
 
 <div class="o-iprogram__wrapper o-iprogram">
-    <div class="swiper-wrapper">
+    <div class="swiper-wrapper o-iprogram__container">
         <?php if ($query->have_posts()) :
             while ($query->have_posts()) : $query->the_post(); ?>
 

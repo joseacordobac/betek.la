@@ -1,11 +1,20 @@
 .o-impact {
-    margin-top: 88px;
+    margin-top: 70px;
 }
 
 .o-impact__content {
     display: grid;
     grid-template-columns: 45% 45%;
     gap: 88px;
+}
+
+.o-impact__content--talent {
+    padding: 9px;
+    box-sizing: content-box;
+    background: #eaeaea87;
+    border-radius: 17px;
+    opacity: 0;
+    transform: translate(0px, 200px);
 }
 
 .o-impact-map {
@@ -22,14 +31,21 @@
     text-align: center;
 }
 
+.o-impact-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
 .o-impact-right__grid{
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
     text-align: center;
     gap: 23px;
-    margin: 50px auto;
+    margin: 5px auto 50px;
 }
+
 
 .o-impact-right__grid--talents{
     margin: 0px auto;

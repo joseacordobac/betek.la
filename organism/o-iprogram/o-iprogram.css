@@ -1,0 +1,19 @@
+
+@media(max-width: 768px){
+
+    .programs-list{
+        max-width: 95%;
+    }
+
+    .o-iprogram__container{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .m-card-iprogram__title-link{
+        gap: 9px;
+    }
+
+    
+}
