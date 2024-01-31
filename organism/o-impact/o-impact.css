@@ -68,4 +68,8 @@
     .o-impact-right__grid{
         margin: 10px auto;
     }
+
+    .o-impact__content--talent{
+        transform: translate(0px, 0px) !important;
+    }
 }
