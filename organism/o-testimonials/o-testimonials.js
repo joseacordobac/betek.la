@@ -12,7 +12,7 @@ const testimonialSwiper = () => {
             clickable: true,
         },
         autoplay: {
-            delay: 10000,
+            delay: 2000,
         },
         breakpoints: {
             0: {
