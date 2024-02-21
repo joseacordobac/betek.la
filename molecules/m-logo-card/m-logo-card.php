@@ -9,6 +9,6 @@
 
 <div class="m-logo-card">
     <?php if($src ){ ?>
-        <img class="m-logo-card__img" src="<?php echo $src; ?>" alt="logo brand" />
+        <img class="m-logo-card__img" src="<?php echo $src; ?>" alt="logo brand" width="200" height="60" />
     <?php } ?>
 </div>

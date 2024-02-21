@@ -29,7 +29,7 @@
             <div class="o-get-talent__left-description">
                 <?php echo $description; ?>
             </div>
-            <div class="o-get-talent__list">
+            <ul class="o-get-talent__list">
                 <?php while( have_rows($repeater_name) ): the_row(); ?>
                     <?php get_template_part('/atoms/a-list/a-list', null,
                         array(
@@ -37,7 +37,7 @@
                         ));
                     ?>
                 <?php endwhile; ?>               
-            </div>
+            </ul>
             <?php 
                 get_template_part('/atoms/a-btn/a-btn', null, 
                 array(
