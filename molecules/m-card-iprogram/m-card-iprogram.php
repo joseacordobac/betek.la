@@ -6,6 +6,7 @@
  **/
 
  wp_enqueue_style('m-card-iprogram');
+ wp_enqueue_script('m-card-iprogram');
 
 ?>
 

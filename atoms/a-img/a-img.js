@@ -6,7 +6,7 @@ const gsapImgAnimation = () =>{
     images.forEach((image) => {
         const tl = gsap.timeline({
             scrollTrigger: {
-                start: "top 90%", 
+                start: "top 80%", 
                 end: "bottom 60%", 
                 scrub: 1,
                 trigger: image, 
@@ -15,7 +15,7 @@ const gsapImgAnimation = () =>{
         });
     
         tl.from(image, {
-            height: 0,
+            opacity: 0,
             duration: 0.8,
         });
 
