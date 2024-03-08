@@ -11,10 +11,11 @@
     $icon = isset($args['icon']) ? $args['icon'] : '';
     $title = isset($args['title']) ? $args['title'] : '';
     $description = isset($args['description']) ? $args['description'] : '';
+    $custom_class = isset($args['custom_class']) ? $args['custom_class'] : '';
 
 ?>
 
-<div class="m-value">
+<div class="m-value <?php echo $custom_class; ?>">
     <div class="m-value__icon">
         <img class="m-value__icon-img" src="<?php echo $icon; ?>" alt="<?php echo $title; ?>" width="50" height="50">
     </div>

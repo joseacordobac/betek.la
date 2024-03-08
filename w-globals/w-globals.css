@@ -24,10 +24,15 @@ html {
     --gray-color: #525151;
     --white-color: #FFFFFF;
     --black-color: #000000;
+    --color-parragraph: #525151;
 
     --tone-color-main: #F1F7FF;
     --tone-color-secondary: #FFEDE3;
     --tone-color-tertiary: #F7F7F7;
+
+    --clear-color-one: #FEF6E2;
+    --clear-color-two: #F2F7FE;
+    --clear-colot-three: #F8F7FF;
     
     --size-xlarge: 3.75rem;
     --size-mlarge: 3.125rem;
@@ -69,6 +74,11 @@ pre {
 
 .g-content-middle{
     max-width: 42%;
+    margin: 0 auto;
+}
+
+.g-content-5X{
+    max-width: 54%;
     margin: 0 auto;
 }
 

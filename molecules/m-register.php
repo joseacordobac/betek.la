@@ -15,6 +15,9 @@ function enque_custom_molecules() {
   u_register_styles('m-nav-footer', PATH_MOLECULES); //footer menu
   u_register_styles('m-whatsapp', PATH_MOLECULES); //footer menu
   u_register_styles('m-card-iprogram', PATH_MOLECULES); //programs cards
+  u_register_styles('m-card-numbers', PATH_MOLECULES); //our changes theory
+  u_register_styles('m-card-move', PATH_MOLECULES); //move us card
+  u_register_styles('m-card-team', PATH_MOLECULES); //move us card
 }
 
 add_action('wp_enqueue_scripts', 'enque_custom_molecules');

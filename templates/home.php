@@ -26,7 +26,7 @@ wp_enqueue_style('home');
             <section class="hero-banner js-hero-banner g-content-regular">
                 <div class="swiper-wrapper hero-banner">
                     <?php while( have_rows('slider_baner') ) : the_row(); ?>
-                        <div class="swiper-slide">
+                        <div class="swiper-slide hero-banner-slide">
                             <div class="hero-banner__slide-content">
                                 <div class="hero-banner__left">
                                     <h3 class="hero-banner__title js-title"><?php the_sub_field('titulo'); ?></h3>
@@ -59,7 +59,6 @@ wp_enqueue_style('home');
                     <?php endwhile; ?>
                 </div>
                 <div class="swiper-pagination__main-banner"></div>
-
             </section>
 
             <section id="entrenate" class="trainning">

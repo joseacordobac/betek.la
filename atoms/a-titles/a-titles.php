@@ -1,5 +1,14 @@
 <?php 
-    /* Atom: Titles */
+    /* Atom: Titles 
+        get_template_part('/atoms/a-titles/a-titles', null, 
+        array(
+            'title'         => '',
+            'titles-type'   => '',
+            // 'animations'    => ''
+            )
+        ); 
+    */
+
 
     $title = isset($args['title']) ? $args['title'] : '';
     $type = isset($args['titles-type']) ? $args['titles-type'] : '';

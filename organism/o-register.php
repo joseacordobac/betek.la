@@ -11,6 +11,8 @@ function enque_styles_organism() {
   u_register_styles('o-impact', PATH_ORGANISM); //impacto 
   u_register_styles('o-testimonials', PATH_ORGANISM); //testimonios
   u_register_styles('o-iprogram', PATH_ORGANISM); //iProgram
+  u_register_styles('o-our-start', PATH_ORGANISM); //our start
+  u_register_styles('o-team', PATH_ORGANISM); //Equipo
 }
 
 add_action('wp_enqueue_scripts', 'enque_styles_organism');

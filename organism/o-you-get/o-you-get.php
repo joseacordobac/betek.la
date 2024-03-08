@@ -19,6 +19,8 @@
  $btn_text = isset($args['btn_text']) ? $args['btn_text'] : '';
  $btn_link = isset($args['btn_link']) ? $args['btn_link'] : '';
 
+ $custom_class = isset($args['custom_class']) ? $args['custom_class'] : '';
+
 ?>
 
 <div class="g-content-regular o-you-get-info">
@@ -48,6 +50,7 @@
                         'icon' => get_sub_field('advanteage_icon'),
                         'title' => get_sub_field('title_advantege'),
                         'description' => get_sub_field('description'),
+                        'custom_class' => $custom_class,
                     ))
                     ?>
                 </div>

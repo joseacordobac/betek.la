@@ -24,4 +24,12 @@ if( function_exists('acf_add_options_page') ) {
         	'post_id' => 'whatsapp'
 		)
 	);
+
+	acf_add_options_sub_page(
+		array(
+			'page_title' => 'Equipo',
+        	'menu_title' => 'equipo',
+        	'post_id' => 'team'
+		)
+	);
 }

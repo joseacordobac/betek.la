@@ -23,6 +23,18 @@
     top: 74%;
 }
 
+.o-you-get--main-color{
+    color: var(--main-color);
+}
+
+.o-you-get-list__content .o-you-get--flex-start{
+    align-items: self-start;    
+}
+
+.o-you-get--main-color .m-value__icon-img{
+    width: 40px;
+}
+
 @media(max-width: 768px) {
     .o-you-get-info {
         grid-template-columns: 1fr;
