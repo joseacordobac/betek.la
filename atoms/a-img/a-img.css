@@ -8,7 +8,7 @@
     width: 101%;
     border-radius: var(--border-radius--regular);
     object-fit: cover;
-    object-position: center;
+    object-position: top;
     height: 100%;
 }
 

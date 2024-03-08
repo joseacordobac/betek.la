@@ -46,7 +46,7 @@
                 </div>
             <?php endwhile; ?>
         </div>
-        <div class="swiper-pagination__main-banner"></div>
+        <div class="swiper-pagination__main-banner"></div>  
         
         <?php while( have_rows('our_add_values') ) : the_row(); ?>
             <div class="our-addvalues">

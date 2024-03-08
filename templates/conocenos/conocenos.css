@@ -43,6 +43,19 @@
     object-position: left;
 }
 
+.swiper-pagination__main-banner.swiper-pagination-bullets {
+    position: absolute;
+    top: 41%;
+    left: 7%;
+    width: 20px;
+    z-index: 1;
+}
+
+.swiper-pagination-bullet {
+    width: 15px;
+    height: 15px;
+}
+
 .our-addvalues {
     margin: 65px 0px;
 }
