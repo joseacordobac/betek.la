@@ -21,3 +21,9 @@
     font-family: var(--font-titles);
     cursor: pointer;
 }
+
+.o-dialog-form .o-banner-form__imagen-src{
+    max-width: 400px;
+    position: relative;
+    bottom: -17px;
+}

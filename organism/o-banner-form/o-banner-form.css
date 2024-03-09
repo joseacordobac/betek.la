@@ -28,3 +28,11 @@
     z-index: 1;
     position: relative;
 }
+
+.forminator-row-last .forminator-field{
+    text-align: center;
+}
+
+.forminator-ui#forminator-module-307.forminator-design--default .forminator-button-submit{
+    border-radius: 50px;
+}
