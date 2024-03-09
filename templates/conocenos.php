@@ -20,6 +20,7 @@
  
  ?>
 
+<link rel="stylesheet" href="/assets/css/conocenos.css">
 
 <main class="main">
     <section class="hero-conocenos js-conocenos-banner g-background--home">
@@ -243,7 +244,7 @@
         </div>
     </section>
     
-    <?php //get_template_part('organism/o-dialog-form/o-dialog-form', null, ''); ?>
+    <?php get_template_part('organism/o-dialog-form/o-dialog-form', null, ''); ?>
 
 </main>
   

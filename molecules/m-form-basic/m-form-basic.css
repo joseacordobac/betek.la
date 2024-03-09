@@ -12,3 +12,7 @@
 .m-form-basic label.forminator-consent{
     display: block !important;
 }
+
+.p-form__mision {
+    display: none;
+}

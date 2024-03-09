@@ -14,9 +14,27 @@ const dialogFormClose = (getDialog)=>{
 }
 
 const dialogFormOpen = (getDialog)=>{
-    setTimeout(()=>{
-        getDialog.showModal()
-    }, 3000)
+    const triggerModal = document.querySelectorAll('.js-dialog-open');
+    const getHiddenValue = document.querySelector('.p-form__mision input');
+
+    if(!triggerModal.length){
+        setTimeout(()=>{
+            getDialog.showModal()
+        }, 3000)
+    }else{
+        triggerModal.forEach((trigger)=>{
+
+            trigger.addEventListener('click', (event)=>{
+                const getBodyCard = event.target.closest('.m-card-iprogram__body');
+                const getTitleCard = getBodyCard.querySelector('.m-card-iprogram__title--title');
+                getHiddenValue.value = getTitleCard.textContent
+                console.log(getHiddenValue.value);
+
+                getDialog.showModal()
+            })
+        })
+    }
+
 }
 
 

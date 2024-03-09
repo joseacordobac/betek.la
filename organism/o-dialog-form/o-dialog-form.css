@@ -27,3 +27,15 @@
     position: relative;
     bottom: -17px;
 }
+
+@media(max-width: 768px){
+    .o-dialog-form{
+        max-width: 94%;
+        top: -19px;
+    }
+
+    .o-dialog-form__close-icon{
+        right: 17px;
+        top: 5px;
+    }
+}

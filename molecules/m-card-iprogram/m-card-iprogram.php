@@ -27,7 +27,8 @@
             <div class="m-card-iprogram__title-link" >
                 <img src="<?php the_field('mision_icon'); ?>" alt="icon misión" class="m-card-iprogram__icon">
                 <h3 class="m-card-iprogram__title-el">
-                    <span class="m-card-iprogram__title--name">Misión </span><?php the_title(); ?>
+                    <span class="m-card-iprogram__title--name">Misión </span>
+                    <span class="m-card-iprogram__title--title"><?php the_title(); ?></span>
                 </h3>
             </div>
 
@@ -48,9 +49,10 @@
             get_template_part('/atoms/a-btn/a-btn', null, 
             array(
                     'button_text' => 'Aplicar',
-                    'button_link' => get_the_permalink(),
+                    'button_link' => '#mision',
                     'btn_type' => 'a-btn--primary',
                     'icons_path' => get_template_directory_uri().'/assets/icons/arrow-to-right.svg',
+                    'custom_css' => 'js-dialog-open',
                 )
             );
         ?>

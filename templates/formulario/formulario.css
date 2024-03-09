@@ -91,3 +91,26 @@ label {
 label.forminator-consent{
     display: block !important;
 }
+
+@media (max-width: 768px) {
+    .form-hero-banner{
+        height: 60vh;
+    }
+
+    .formulario .forminator-ui{
+        max-width: 100%;
+        top: -60px;
+    }
+
+    .p-form__title{
+        max-width: 90%;
+    }
+
+    .forminator-all-group-copies{
+        padding: 16px 12px 9px 9px !important;
+    }
+
+    .forminator-field-consent{
+        padding: 0px 17px !important;
+    }
+}
