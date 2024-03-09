@@ -14,7 +14,7 @@ const gsapLogoAnimation = ()=>{
         })
     
         tl.to(getLogoImg, {
-            height : '50px',
+            height : '55px',
             duration: 2
         })
     
