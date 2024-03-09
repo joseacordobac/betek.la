@@ -11,3 +11,10 @@
 .m-card-numbers .a-numbers {
     margin: 0px;
 }
+
+@media(max-width: 768px){
+    .m-card-numbers {
+        flex-direction: column;
+        gap: 0px;
+    }
+}

@@ -13,10 +13,12 @@ const gsapLogoAnimation = ()=>{
             }
         })
     
-        tl.to(getLogoImg, {
-            height : '55px',
-            duration: 2
-        })
+        if (window.innerWidth > 750) {
+            tl.to(getLogoImg, {
+                height : '55px',
+                duration: 2
+            })
+        }
     
     }
 }

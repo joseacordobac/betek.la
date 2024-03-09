@@ -107,11 +107,13 @@ pre {
     
     }
 
-    .g-content-regular{
+    .g-content-regular,
+    .g-content-5X{
         max-width: 95%;
     }
 
     .g-content-middle{
         max-width: 95%;
     }
+
 }

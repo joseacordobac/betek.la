@@ -20,17 +20,6 @@
     font-size: var(--size-mlarge);
 }
 
-.move-us__content-list {
-    display: flex;
-    gap: 20px;
-    margin-top: 90px;
-    justify-content: center;
-}
-
-.move-us__content-list>:nth-child(odd) {
-    margin-top: 50px;
-}
-
 .m-card-move__number {
     position: absolute;
     width: 100%;
@@ -56,6 +45,12 @@
 .m-card-move:nth-last-child(2) .m-card-move--number, 
 .m-card-move:nth-last-child(1) .m-card-move--number{
     color: white;
+}
+
+@media(max-width: 768px){
+    .m-card-move {
+        padding: 24px 24px;   
+    }
 }
 
 
