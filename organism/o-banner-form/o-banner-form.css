@@ -1,0 +1,30 @@
+
+.o-banner-form{
+    background-color: var(--main-color);
+    position: relative;
+}
+
+.o-banner-form::after {
+    content: url(../../assets/img/circle-white.svg);
+    position: absolute;
+    transform: scale(0.9);
+    top: 14%;
+    right: 50%;
+}
+
+.o-banner-form__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80%;
+    margin: auto;
+    gap: 30px;
+    padding-top: 40px;
+}
+
+.o-banner-form__imagen-src {
+    width: 100%;
+    max-width: 500px;
+    z-index: 1;
+    position: relative;
+}

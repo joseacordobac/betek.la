@@ -1,0 +1,14 @@
+
+.p-form-basic__title {
+    color: white;
+    font-size: var(--size-medium-large);
+    font-weight: 500;
+}
+
+.m-form-basic label {
+    display: none !important;
+}
+
+.m-form-basic label.forminator-consent{
+    display: block !important;
+}

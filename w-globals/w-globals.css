@@ -32,7 +32,8 @@ html {
 
     --clear-color-one: #FEF6E2;
     --clear-color-two: #F2F7FE;
-    --clear-colot-three: #F8F7FF;
+    --clear-color-three: #F8F7FF;
+    --clear-color-four: #F8F8F8;
     
     --size-xlarge: 3.75rem;
     --size-mlarge: 3.125rem;
@@ -52,7 +53,7 @@ html {
     overflow: hidden;
 }
 
-h1, h3, h3, h4{
+h1, h2, h3, h4{
     font-family: var(--font-titles);
     text-wrap: balance;
 }
@@ -60,6 +61,10 @@ h1, h3, h3, h4{
 p, h5, ul, li, span, a, pre{
     font-family: var(--font-text);
     text-wrap: pretty;
+}
+
+input, textarea, button{
+    font-family: var(--font-text) !important;
 }
 
 pre {

@@ -3,16 +3,26 @@
 define("PATH_ORGANISM", trailingslashit( get_stylesheet_directory_uri() ).'organism/');
 
 function enque_styles_organism() {
-  u_register_styles('o-header', PATH_ORGANISM); //header
-  u_register_styles('o-footer', PATH_ORGANISM); //footer
-  u_register_styles('o-you-get', PATH_ORGANISM); //what do you get 
-  u_register_styles('o-programs', PATH_ORGANISM); //Programs
-  u_register_styles('o-get-talent', PATH_ORGANISM); //get talent
-  u_register_styles('o-impact', PATH_ORGANISM); //impacto 
-  u_register_styles('o-testimonials', PATH_ORGANISM); //testimonios
-  u_register_styles('o-iprogram', PATH_ORGANISM); //iProgram
-  u_register_styles('o-our-start', PATH_ORGANISM); //our start
-  u_register_styles('o-team', PATH_ORGANISM); //Equipo
+
+  $register_scrips_class = array(
+    'o-header',
+    'o-footer',
+    'o-you-get',
+    'o-programs',
+    'o-get-talent',
+    'o-impact',
+    'o-testimonials',
+    'o-iprogram',
+    'o-our-start',
+    'o-team',
+    'o-banner-form',
+    'o-dialog-form'
+  );
+
+  foreach($register_scrips_class as $key => $value) {
+    u_register_styles($value, PATH_ORGANISM);
+  }
+
 }
 
 add_action('wp_enqueue_scripts', 'enque_styles_organism');

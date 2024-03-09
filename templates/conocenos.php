@@ -242,10 +242,11 @@
             </div>
         </div>
     </section>
-
+    
+    <?php get_template_part('organism/o-dialog-form/o-dialog-form', null, ''); ?>
 
 </main>
-
+  
 <?php get_footer(); ?>
 
 

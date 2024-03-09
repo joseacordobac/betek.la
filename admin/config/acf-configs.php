@@ -32,4 +32,12 @@ if( function_exists('acf_add_options_page') ) {
         	'post_id' => 'team'
 		)
 	);
+
+	acf_add_options_sub_page(
+		array(
+			'page_title' => 'Banner Formulario',
+        	'menu_title' => 'Formulario',
+        	'post_id' => 'form'
+		)
+	);
 }
