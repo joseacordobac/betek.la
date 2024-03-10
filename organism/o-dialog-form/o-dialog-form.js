@@ -25,10 +25,10 @@ const dialogFormOpen = (getDialog)=>{
         triggerModal.forEach((trigger)=>{
 
             trigger.addEventListener('click', (event)=>{
+
                 const getBodyCard = event.target.closest('.m-card-iprogram__body');
                 const getTitleCard = getBodyCard.querySelector('.m-card-iprogram__title--title');
                 getHiddenValue.value = getTitleCard.textContent
-                console.log(getHiddenValue.value);
 
                 getDialog.showModal()
             })
