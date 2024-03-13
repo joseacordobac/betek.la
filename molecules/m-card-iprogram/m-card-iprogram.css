@@ -19,6 +19,10 @@
     gap: 10px;
 }
 
+.m-card-iprogram__head .a-img__img{
+    max-height: 260px;
+}
+
 .m-card-iprogram__tag {
     text-align: left;
     display: table;
