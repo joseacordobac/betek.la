@@ -44,7 +44,7 @@ wp_enqueue_style('home');
                                 <?php get_template_part('/atoms/a-img/a-img', null,
                                     array(
                                         'image_id' => get_sub_field('imagen'),
-                                        'image_size' => 'medium',
+                                        'image_size' => 'full',
                                         'alt' => 'betek',
                                         'class' => 'o-you-get-img',
                                         'aspect_ratio' => '1/1'
