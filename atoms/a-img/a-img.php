@@ -5,20 +5,28 @@
  * **/
 
  wp_enqueue_style('a-img');
- wp_enqueue_script('a-img');
- wp_enqueue_script('lighmodal');   
+//  wp_enqueue_script('a-img');
+//  wp_enqueue_script('lighmodal');   
    
- $img_path = isset($args['src']) ? $args['src'] : '';
+ $image_id = isset($args['image_id']) ? $args['image_id'] : '';
+ $image_size = isset($args['image_size']) ? $args['image_size'] : 'medium';
  $img_alt = isset($args['alt']) ? $args['alt'] : '';
  $internal_icon = isset($args['internal_icon']) ? $args['internal_icon'] : '';
  $custom_class = isset($args['class']) ? $args['class'] : '';
  $aspect_ratio = isset($args['aspect_ratio']) ? $args['aspect_ratio'] : '';
  $has_video = isset($args['has_video']) ? $args['has_video'] : false;
+
+ $img_path = wp_get_attachment_image($image_id, $image_size);
+ $image_html = wp_get_attachment_image( $image_id, $image_size, false, array(
+    'class' => 'a-img__img',
+    'alt' => $img_alt,
+) );
+
 ?>
 
 <div class="a-img <?php echo $custom_class; ?>">
-    <img class="a-img__img" src="<?php echo $img_path; ?>" alt="<?php echo $img_alt ?>" style="aspect-ratio:<?php echo $aspect_ratio; ?>" width="100" height="100" />
-    
+    <?php echo $image_html; ?>
+
     <?php if($internal_icon && $has_video === false): ?>
         <img class="a-img__video-icon" src="<?php echo $internal_icon; ?>" alt="Play Icon" width="100" height="100" />
     <?php endif; ?> 

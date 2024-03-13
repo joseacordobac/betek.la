@@ -42,7 +42,10 @@
                         ?>
                     </div>
                     <div class="hero-conocenos__img">
-                        <img class="hero-conocenos__image" src="<?php the_sub_field('main_img'); ?>" alt="conocenos-main">
+                        <?php $id_img = get_sub_field('main_img'); 
+                            $image = wp_get_attachment_image($id_img, 'full', false, array('class' => 'hero-conocenos__image'));
+                            echo $image;
+                        ?>
                     </div>    
                 </div>
             <?php endwhile; ?>
@@ -64,6 +67,7 @@
                     <?php get_template_part('/organism/o-you-get/o-you-get', null,
                     array(
                         'img_path'          => get_sub_field('description_img'),
+                        'image_size'        => 'medium',
                         'img_icon'          => get_sub_field('internal_icon'),
                         'title'             => get_sub_field('title_section'),
                         'title_type'        => 'a-titles--black',
@@ -122,7 +126,7 @@
                 <?php  while( have_rows('logo_objectives') ) : the_row();
                     get_template_part('/atoms/a-img/a-img', null, 
                         array(
-                            'src' => get_sub_field('add_logo'),
+                            'image_id' => get_sub_field('add_logo'),
                             'alt' => 'ods-logo',
                             'custom_class' => 'a-logos__logo',
                             'aspect_ratio' => '1/1',
@@ -219,7 +223,10 @@
             ?>
             <div class="alians-brands">
                 <?php while(have_rows('reconocimientos')) : the_row(); ?>
-                    <?php get_template_part('/molecules/m-logo-card/m-logo-card', null, ['src' => get_sub_field('acknowledgment')]); ?>
+                <?php get_template_part('/molecules/m-logo-card/m-logo-card', null, [
+                    'image_id' => get_sub_field('acknowledgment'),
+                    'image_size' => 'thumbnail'
+                    ]); ?>
                 <?php endwhile; ?>
             </div>
         </div>
@@ -238,7 +245,10 @@
             ?>
             <div class="alians-brands">
                 <?php while(have_rows('aliados')) : the_row(); ?>
-                    <?php get_template_part('/molecules/m-logo-card/m-logo-card', null, ['src' => get_sub_field('aliances')]); ?>
+                    <?php get_template_part('/molecules/m-logo-card/m-logo-card', null, [
+                    'image_id' => get_sub_field('aliances'),
+                    'image_size' => 'thumbnail'
+                    ]); ?>
                 <?php endwhile; ?>
             </div>
         </div>

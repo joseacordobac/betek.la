@@ -82,6 +82,6 @@ if (windowWidth > 780) {
 
 window.addEventListener('DOMContentLoaded', ()=>{
     starMainSwipper();
-    gsapStartHero();
-    gsapStartTranning();
+    // gsapStartHero();
+    // gsapStartTranning();
 })

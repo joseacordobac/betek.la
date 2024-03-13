@@ -9,11 +9,16 @@
 }
 
 .o-get-talent__left {
+    padding: 35px 0px;
     padding-left: 85px;
     display: flex;
     flex-direction: column;
     gap: 23px;
     align-items: flex-start;
+}
+
+.o-get-talent__right{
+    height: 100%;
 }
 
 .o-get-talent__list {

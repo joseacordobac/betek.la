@@ -16,7 +16,7 @@
     $custom_css = isset($args['custom-css']) ? $args['custom-css'] : '';
 
     wp_enqueue_style('a-titles');
-    wp_enqueue_script('a-titles');
+    // wp_enqueue_script('a-titles');
 ?>
 
 <div class="a-titles <?php echo $type . ' ' . $custom_css . ' ' . $animations; ?>">

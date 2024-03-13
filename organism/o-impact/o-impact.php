@@ -6,7 +6,7 @@
  */
 
  wp_enqueue_style('o-impact');
- wp_enqueue_script('o-impact');
+//  wp_enqueue_script('o-impact');
 
  $repater_name = isset($args['repeater_name']) ? $args['repeater_name'] : 'impact';
  $number = isset($args['number']) ? $args['number'] : '';

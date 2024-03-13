@@ -1,10 +1,11 @@
-<?php 
+<?php
  /* Organism: You get */
 
  wp_enqueue_style('o-you-get');
- wp_enqueue_script('o-you-get');
+ //wp_enqueue_script('o-you-get');
 
  $img_path = isset($args['img_path']) ? $args['img_path'] : '';
+ $img_size = isset($args['img_size']) ? $args['img_size'] : 'medium';
  $img_icon = isset($args['img_icon']) ? $args['img_icon'] : '';
 
  $title = isset($args['title']) ? $args['title'] : '';
@@ -25,29 +26,31 @@
 
 <div class="g-content-regular o-you-get-info">
     <div class="o-you-get-info-left">
-        <?php get_template_part('/atoms/a-img/a-img', null, 
+        <?php get_template_part('/atoms/a-img/a-img', null,
             array(
-                'src' => $img_path, 
+                'image_id' => $img_path,
+                'image_size' => $img_size,
                 'internal_icon' => $img_icon,
-                'alt' => $title, 
+                'alt' => $title,
                 'class' => 'o-you-get-img'
-            )); 
+            ));
         ?>
     </div>
     <div class="o-you-get-info-right">
-        <?php get_template_part('/atoms/a-titles/a-titles', null, 
+        <?php get_template_part('/atoms/a-titles/a-titles', null,
             array(
                 'title'         => $title,
                 'titles-type'   => $title_type,
-                'animations'  => $title_animetion,
+                'animations'    => $title_animetion,
                 )
-            ); 
+            );
         ?>
         <div class="o-you-get-list">
             <?php while( have_rows($content_name) ) : the_row(); ?>
                 <div class="o-you-get-list__content">
-                    <?php get_template_part('/molecules/m-value/m-value', null, array(
-                        'icon' => get_sub_field('advanteage_icon'),
+                    <?php
+                        get_template_part('/molecules/m-value/m-value', null, array(
+                        'icon' => wp_get_attachment_image_url(get_sub_field('advanteage_icon'), 'thumbnail'),
                         'title' => get_sub_field('title_advantege'),
                         'description' => get_sub_field('description'),
                         'custom_class' => $custom_class,
@@ -55,9 +58,9 @@
                     ?>
                 </div>
             <?php endwhile; ?>
-            <?php 
+            <?php
             if($btn_text){
-                get_template_part('/atoms/a-btn/a-btn', null, 
+                get_template_part('/atoms/a-btn/a-btn', null,
                 array(
                         'button_text' => $btn_text,
                         'button_link' => $btn_link,

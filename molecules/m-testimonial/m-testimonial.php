@@ -5,18 +5,24 @@ wp_enqueue_style('m-testimonial');
 wp_enqueue_script('m-testimonial');
 
 
-$src = isset($args['src']) ? $args['src'] : '';
+$img_id = isset($args['img_id']) ? $args['img_id'] : '';
 $alt = isset($args['alt']) ? $args['alt'] : '';
+$image_size = isset($args['image_size']) ? $args['image_size'] : 'medium';
 $name_testimonial = isset($args['name_testimonial']) ? $args['name_testimonial'] : '';
 $testimonial = isset($args['testimonial']) ? $args['testimonial'] : '';
 $custom_class = isset($args['custom_class']) ? $args['custom_class'] : '';
+
+$image_html = wp_get_attachment_image( $img_id, $image_size, false, array(
+   'class' => 'm-testimonial__image',
+   'alt' => $alt,
+) );
 
 ?>
 
 <div class="m-testimonial <?php echo $custom_class; ?>">
     <div class="m-testimonial__content">
         <div class="m-testimonial-left">
-            <img class="m-testimonial__image" src="<?php echo $src; ?>" alt="<?php echo $alt; ?>" width="180" height="200" />
+            <?php echo $image_html; ?>
         </div>
         <div class="m-testimonial-info">
             <h4 class="m-testimonial-info__name"><?php echo $name_testimonial; ?></h4>

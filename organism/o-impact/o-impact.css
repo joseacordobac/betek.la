@@ -13,8 +13,8 @@
     box-sizing: content-box;
     background: #eaeaea87;
     border-radius: 17px;
-    opacity: 0;
-    transform: translate(0px, 200px);
+    /* opacity: 0; */
+    /* transform: translate(0px, 200px); */
 }
 
 .o-impact-map {

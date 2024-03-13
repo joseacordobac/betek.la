@@ -15,7 +15,8 @@
 <div class="m-card-team <?php echo $styles; ?>">
     <div class="m-card-team__img">
         <?php get_template_part('atoms/a-img/a-img', null, array(
-            'src' => $imagen,
+            'image_id' => $imagen,
+            'image_size' => 'medium',
             'alt' => $title,
             'aspect_ratio' => '1/1',
         ) );

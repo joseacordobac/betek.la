@@ -8,7 +8,7 @@
     $description = isset($args['description']) ? $args['description'] : '';
     $btn_text = isset($args['btn_text']) ? $args['btn_text'] : '';
     $btn_link = isset($args['btn_link']) ? $args['btn_link'] : '';
-    $src = isset($args['src']) ? $args['src'] : '';
+    $image_id = isset($args['image_id']) ? $args['image_id'] : '';
     $video_embed = isset($args['video_embed']) ? $args['video_embed'] : '';
 
     $custom_class = isset($args['custom_class']) ? $args['custom_class'] : '';
@@ -50,16 +50,15 @@
             ?>
         </div>
         <div class="o-get-talent__right">
-            <?php 
-            get_template_part('/molecules/m-video/m-video', null, 
+            <?php get_template_part('/atoms/a-img/a-img', null,
                 array(
-                    'class'         => '',
-                    'src'           => $src,
-                    'alt'           => $title,
-                    'video_link'    => $video_embed,
+                    'image_id' => $image_id,
+                    'image_size' => 'medium',
+                    'alt' => $title,
+                    'class' => 'o-you-get-img',
                     'aspect_ratio' => '1/1'
-                )
-            ); ?>
+                ));
+            ?>
         </div>
     </div>
 </div>

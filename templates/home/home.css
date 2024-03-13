@@ -10,6 +10,8 @@
     display: grid;
     grid-template-columns: 50% 44%;
     gap: 65px;
+    padding: 42px 0px;
+    padding-top: 80px;
 }
 
 .hero-banner__left {
@@ -66,7 +68,7 @@
 }
 
 .swiper-wrapper.hero-banner {
-    height: 500px;
+    height: 100%;
     padding-top: 67px;
 }
 
@@ -92,7 +94,7 @@
 
 .trainning__content {
     text-align: center;
-    margin: 150px auto;
+    margin: 55px auto;
     justify-content: center;
 }
 

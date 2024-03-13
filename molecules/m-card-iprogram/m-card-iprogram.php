@@ -6,7 +6,7 @@
  **/
 
  wp_enqueue_style('m-card-iprogram');
- wp_enqueue_script('m-card-iprogram');
+//  wp_enqueue_script('m-card-iprogram');
 
 ?>
 
@@ -15,7 +15,8 @@
         <?php get_template_part('/atoms/a-img/a-img', null, 
             array(
                 'class' => 'm-card-iprogram__image-el',
-                'src' => get_the_post_thumbnail_url(get_the_ID(), 'full'),
+                'image_id' => get_post_thumbnail_id(),
+                'image_size' => 'medium',
                 'alt' => get_the_title(),
                 'video_link' => '',
                 'aspect_ratio' => '16/9',
@@ -25,7 +26,7 @@
     <div class="m-card-iprogram__body">
         <a class="m-card-iprogram__title" href="<?php get_the_permalink(); ?>">
             <div class="m-card-iprogram__title-link" >
-                <img src="<?php the_field('mision_icon'); ?>" alt="icon misión" class="m-card-iprogram__icon">
+                <img src="<?php the_field('mision_icon'); ?>" alt="icon misión" class="m-card-iprogram__icon" width="47" height="47">
                 <h3 class="m-card-iprogram__title-el">
                     <span class="m-card-iprogram__title--name">Misión </span>
                     <span class="m-card-iprogram__title--title"><?php the_title(); ?></span>

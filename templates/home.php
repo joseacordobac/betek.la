@@ -41,16 +41,15 @@ wp_enqueue_style('home');
                                 ?>
                             </div>
                             <div class="hero-banner__rigth">
-                                <?php 
-                                get_template_part('/molecules/m-video/m-video', null, 
+                                <?php get_template_part('/atoms/a-img/a-img', null,
                                     array(
-                                        'class'         => '',
-                                        'src'           => get_sub_field('imagen'),
-                                        'alt'           => 'main-img',
-                                        'video_link'    => get_sub_field('url_video'),
+                                        'image_id' => get_sub_field('imagen'),
+                                        'image_size' => 'medium',
+                                        'alt' => 'betek',
+                                        'class' => 'o-you-get-img',
                                         'aspect_ratio' => '1/1'
-                                    )
-                                ); ?>
+                                    ));
+                                ?>
                             </div>
                         </div>
                     </div>
@@ -113,7 +112,7 @@ wp_enqueue_style('home');
                     'description'   => get_sub_field('sub_titulo_de_seccion'),
                     'btn_text'      => get_sub_field('btn_text'),
                     'btn_link'      => get_sub_field('url_btn'),
-                    'src'           => get_sub_field('imagen_video'),
+                    'image_id'      => get_sub_field('imagen_video'),
                     'video_embed'   => get_sub_field('enlace_video'),
                     'repeater_name' => 'options_list',
                     'custom_class'  => 'g-content-regular'
@@ -160,7 +159,7 @@ wp_enqueue_style('home');
             <?php get_template_part('/organism/o-testimonials/o-testimonials', null,
                 array(
                     'repater_name'      => 'agregar_testimonsio',
-                    'src'               => 'img_testimonial',
+                    'img_id'            => 'img_testimonial',
                     'alt'               => 'name',
                     'name_testimonial'  => 'name',
                     'testimonial'       => 'testimonial',
@@ -186,7 +185,10 @@ wp_enqueue_style('home');
             ?>
             <div class="alians-brands">
             <?php while(have_rows('aliance_list')) : the_row(); ?>
-                <?php get_template_part('/molecules/m-logo-card/m-logo-card', null, ['src' => get_sub_field('logo')]); ?>
+                <?php get_template_part('/molecules/m-logo-card/m-logo-card', null, [
+                    'image_id' => get_sub_field('logo'),
+                    'image_size' => 'thumbnail'
+                    ]); ?>
             <?php endwhile; ?>
             </div>
         <?php endwhile; ?>

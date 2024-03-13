@@ -24,6 +24,7 @@
 
 .o-dialog-form .o-banner-form__imagen-src{
     max-width: 400px;
+    height: 100%;
     position: relative;
     bottom: -17px;
 }
