@@ -16,7 +16,7 @@
             array(
                 'class' => 'm-card-iprogram__image-el',
                 'image_id' => get_post_thumbnail_id(),
-                'image_size' => 'medium',
+                'image_size' => 'full',
                 'alt' => get_the_title(),
                 'video_link' => '',
                 'aspect_ratio' => '16/9',

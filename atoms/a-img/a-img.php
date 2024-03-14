@@ -22,13 +22,19 @@
     'alt' => $img_alt,
 ) );
 
+$img_icon = wp_get_attachment_image($internal_icon, 'medium');
+$icon_html = wp_get_attachment_image( $img_icon, $image_size, false, array(
+   'class' => 'a-img__video-icon',
+   'alt' => $img_alt,
+) );
+
 ?>
 
 <div class="a-img <?php echo $custom_class; ?>">
     <?php echo $image_html; ?>
 
     <?php if($internal_icon && $has_video === false): ?>
-        <img class="a-img__video-icon" src="<?php echo $internal_icon; ?>" alt="Play Icon" width="100" height="100" />
+        <?php echo $icon_html; ?>
     <?php endif; ?> 
 
     <?php if($has_video && strlen($has_video) > 0): ?>
