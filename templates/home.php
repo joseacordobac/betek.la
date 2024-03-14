@@ -185,13 +185,14 @@ wp_enqueue_style('home');
                     )
                 ); 
             ?>
-            <div class="alians-brands">
-            <?php while(have_rows('aliance_list')) : the_row(); ?>
-                <?php get_template_part('/molecules/m-logo-card/m-logo-card', null, [
-                    'image_id' => get_sub_field('logo'),
-                    'image_size' => 'thumbnail'
-                    ]); ?>
-            <?php endwhile; ?>
+            
+            <?php get_template_part('/molecules/m-logo-card/m-logo-card', null, 
+                    array(
+                        'image_size' => 'thumbnail',
+                        'repeater'   => 'aliance_list',
+                        'id_name'    => 'logo'
+                    )); 
+                ?> 
             </div>
         <?php endwhile; ?>
         </div>

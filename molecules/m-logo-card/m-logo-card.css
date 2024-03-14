@@ -1,3 +1,12 @@
+.m-alians-brands {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 13px;
+    max-width: 90%;
+    margin: 65px auto;
+}
+
 .m-logo-card {
     padding: 7px 18px;
     border-radius: 10px;
@@ -13,6 +22,21 @@
 }
 
 @media(max-width: 768px) {
+    .m-alians-brands{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 6px;
+        margin: 27px auto;
+    }
+
+    .m-alians-brands>*{
+        grid-column: span 1;
+    }
+
+    .m-alians-brands>*:nth-child(even){
+        grid-column-start: 2;
+        grid-column-end: 3 !important;
+    }
+
     .m-logo-card {
         padding: 4px 3px;
     }

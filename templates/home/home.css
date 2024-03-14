@@ -131,15 +131,6 @@
     overflow: hidden;
 }
 
-/* aliance brands */
-.alians-brands {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 13px;
-    max-width: 90%;
-    margin: 65px auto;
-}
 @media(max-width: 768px){
 
     .hero-banner{
@@ -180,21 +171,6 @@
 
     .our-impact {
         margin: 40px auto;
-    }
-
-    .alians-brands{
-        grid-template-columns: repeat(2, 1fr);
-        gap: 6px;
-        margin: 27px auto;
-    }
-
-    .alians-brands>*{
-        grid-column: span 1;
-    }
-
-    .alians-brands>*:nth-child(even){
-        grid-column-start: 2;
-        grid-column-end: 3 !important;
     }
 
 }

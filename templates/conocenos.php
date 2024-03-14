@@ -222,12 +222,13 @@
                 ); 
             ?>
             <div class="alians-brands">
-                <?php while(have_rows('reconocimientos')) : the_row(); ?>
-                <?php get_template_part('/molecules/m-logo-card/m-logo-card', null, [
-                    'image_id' => get_sub_field('acknowledgment'),
-                    'image_size' => 'thumbnail'
-                    ]); ?>
-                <?php endwhile; ?>
+                <?php get_template_part('/molecules/m-logo-card/m-logo-card', null, 
+                array(
+                    'image_size' => 'full',
+                    'repeater'   => 'reconocimientos',
+                    'id_name'    => 'acknowledgment'
+                )); 
+                ?> 
             </div>
         </div>
     </section>
@@ -244,12 +245,13 @@
                 ); 
             ?>
             <div class="alians-brands">
-                <?php while(have_rows('aliados')) : the_row(); ?>
-                    <?php get_template_part('/molecules/m-logo-card/m-logo-card', null, [
-                    'image_id' => get_sub_field('aliances'),
-                    'image_size' => 'thumbnail'
-                    ]); ?>
-                <?php endwhile; ?>
+                <?php get_template_part('/molecules/m-logo-card/m-logo-card', null, 
+                array(
+                    'image_size' => 'full',
+                    'repeater'   => 'aliados',
+                    'id_name'    => 'aliances'
+                )); 
+                ?> 
             </div>
         </div>
     </section>
