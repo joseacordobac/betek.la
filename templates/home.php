@@ -188,7 +188,7 @@ wp_enqueue_style('home');
             
             <?php get_template_part('/molecules/m-logo-card/m-logo-card', null, 
                     array(
-                        'image_size' => 'thumbnail',
+                        'image_size' => 'full',
                         'repeater'   => 'aliance_list',
                         'id_name'    => 'logo'
                     )); 
