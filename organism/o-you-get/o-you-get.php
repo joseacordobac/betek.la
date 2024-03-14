@@ -5,7 +5,7 @@
  //wp_enqueue_script('o-you-get');
 
  $img_path = isset($args['img_path']) ? $args['img_path'] : '';
- $img_size = isset($args['img_size']) ? $args['img_size'] : 'medium';
+ $img_size = isset($args['img_size']) ? $args['img_size'] : 'full';
  $img_icon = isset($args['img_icon']) ? $args['img_icon'] : '';
 
  $title = isset($args['title']) ? $args['title'] : '';
