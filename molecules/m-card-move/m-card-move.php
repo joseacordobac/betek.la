@@ -11,7 +11,7 @@
     $color = isset($args['color']) ? $args['color'] : '';
 ?>
 
-<div class="m-card-move">
+<div class="m-card-move <?php echo $styles; ?>" >
     <div class="m-card-move__number">
         <?php get_template_part('atoms/a-numbers/a-numbers', null, 
             array(

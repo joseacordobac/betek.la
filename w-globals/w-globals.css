@@ -34,6 +34,7 @@ html {
     --clear-color-two: #F2F7FE;
     --clear-color-three: #F8F7FF;
     --clear-color-four: #F8F8F8;
+    --clear-color-five: #F9E4BC;
     
     --size-xlarge: 3.75rem;
     --size-mlarge: 3.125rem;
@@ -58,7 +59,7 @@ h1, h2, h3, h4{
     text-wrap: balance;
 }
 
-p, h5, ul, li, span, a, pre{
+p, h5, ul, li, span, a, pre, summary{
     font-family: var(--font-text);
     text-wrap: pretty;
 }
