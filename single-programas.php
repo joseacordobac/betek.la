@@ -52,6 +52,7 @@
             </div>
         </section>
         <?php endwhile; ?>
+
         <section class="information">
             <?php while( have_rows('info') ) : the_row(); ?>
                 
@@ -95,7 +96,6 @@
                 </div>
 
             <?php endwhile; ?>
-
         </section>
 
         <section class="tools">
@@ -204,11 +204,67 @@
             <?php get_template_part('organism/o-banner-form/o-banner-form', null, ''); ?>
         </section>
 
-        <section class="intergral-proces"></section>
+        <section class="intergral-process">
+            <?php while( have_rows('integrated_process') ) : the_row(); ?>
+            
+                <?php get_template_part('/atoms/a-titles/a-titles', null, 
+                    array(
+                        'title'         => get_sub_field('texto'),
+                        'titles-type'   => 'a-titles--main integral',
+                        )
+                    ); 
+                ?>
+                
+                <?php get_template_part('/organism/o-you-get/o-you-get', null,
+                    array(
+                        'img_path'          => get_sub_field('description_img'),
+                        'title'             => get_sub_field('title_section'),
+                        'title_type'        => 'a-titles--black',
+                        'title_animetion'   => 'js-title-typing',
+                        'img_size'          => 'full',
+                        'content_name'      => 'list_description',
+                        'list_img_path'     => 'list_img_path',
+                        'list_title'        => 'list_title',
+                        'content_class'     => 'integral-process-cards'
+                        )); 
+                ?>
+            <?php endwhile; ?>
+        </section>
 
-        <section class="tek-community"></section>
+        <section class="tek-community">
+            <?php while( have_rows('community_tek') ) : the_row(); ?>             
+                <?php get_template_part('/organism/o-you-get/o-you-get', null,
+                    array(
+                        'img_path'          => get_sub_field('description_img'),
+                        'title'             => get_sub_field('title_section'),
+                        'title_type'        => 'a-titles--black',
+                        'img_size'          => 'full',
+                        'content_name'      => 'list_description',
+                        'list_img_path'     => 'list_img_path',
+                        'list_title'        => 'list_title',
+                        'content_class'     => 'tek-community-cards'
+                        )); 
+                ?>
+            <?php endwhile; ?>
+        </section>
 
-        <section class="our-team"></section>
+        <section class="our-team">
+            <?php while( have_rows('our_team_work') ) : the_row(); ?>             
+                <?php get_template_part('/organism/o-you-get/o-you-get', null,
+                    array(
+                        'img_path'          => get_sub_field('description_img'),
+                        'title'             => get_sub_field('title_section'),
+                        'title_type'        => 'a-titles--black',
+                        'title_animetion'   => 'js-title-typing',
+                        'img_size'          => 'full',
+                        'content_name'      => 'list_description',
+                        'list_img_path'     => 'list_img_path',
+                        'list_title'        => 'list_title',
+                        'content_class'     => 'our-team--cards'
+                        )); 
+                ?>
+            <?php endwhile; ?>
+        </section>
 
         <section class="brands">
         <div class="alians__content">
