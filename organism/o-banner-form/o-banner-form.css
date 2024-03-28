@@ -19,7 +19,7 @@
     max-width: 80%;
     margin: auto;
     gap: 30px;
-    padding-top: 40px;
+    padding-top: 30px;
 }
 
 .o-banner-form__imagen-src {
@@ -27,6 +27,9 @@
     max-width: 500px;
     z-index: 1;
     position: relative;
+    object-fit: contain;
+    object-position: bottom;
+    height: 100%;
 }
 
 .forminator-row-last .forminator-field{

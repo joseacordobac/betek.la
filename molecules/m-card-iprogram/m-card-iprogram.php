@@ -8,9 +8,12 @@
  wp_enqueue_style('m-card-iprogram');
 //  wp_enqueue_script('m-card-iprogram');
 
+$button_text = isset($args['btn-text']) ? $args['btn-text'] : 'Aplicar';
+$direction = isset($args['direction']) ? $args['direction'] : 'vertical';
+$modal_trigger = isset($args['modal_trigger']) ? $args['modal_trigger'] : '';
 ?>
 
-<div class="m-card-iprogram">
+<div class="m-card-iprogram <?php echo 'm-card-iprogram--' . $direction; ?>">
     <a href="<?php get_the_permalink(); ?>" class="m-card-iprogram__head">
         <?php get_template_part('/atoms/a-img/a-img', null, 
             array(
@@ -33,27 +36,19 @@
                 </h3>
             </div>
 
-            <div class="m-card-program-tags__content">
-                <div class="m-card-iprogram__tag">
-                    <spa class="m-card-iprogram__tag-el">100% virtual </spa>
-                    <spa class="m-card-iprogram__tag-el">y en vivo</spa>
-                </div>
-                <div class="m-card-iprogram__tag m-card-iprogram--secondary">
-                    <spa class="m-card-iprogram__tag-el">Tiempo completo </spa>
-                    <spa class="m-card-iprogram__tag-el">o parcial</spa>
-                </div>
-            </div>
+            <?php get_template_part('/atoms/a-tags/a-tags', null); ?>
             
             <p class="m-card-iprogram__description"><?php the_field('descripcion'); ?></p>
         </a>
         <?php 
+            $modal_trigger ? $btn_link = '#formulario' : $btn_link = get_permalink();
             get_template_part('/atoms/a-btn/a-btn', null, 
             array(
-                    'button_text' => 'Aplicar',
-                    'button_link' => '#mision',
+                    'button_text' => $button_text,
+                    'button_link' => $btn_link,
                     'btn_type' => 'a-btn--primary',
                     'icons_path' => get_template_directory_uri().'/assets/icons/arrow-to-right.svg',
-                    'custom_css' => 'js-dialog-open',
+                    'custom_css' => $modal_trigger,
                 )
             );
         ?>

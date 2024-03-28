@@ -1,0 +1,6 @@
+.o-calendar {
+  display: grid;
+  grid-template-columns: 20% 78%;
+  gap: 23px;
+  margin: 23px auto;
+}

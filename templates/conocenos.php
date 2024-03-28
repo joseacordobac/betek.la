@@ -235,29 +235,31 @@
     
     <section id="alidos" class="alians">
         <div class="alians__content">
-            <?php get_template_part('/atoms/a-titles/a-titles', null, 
-                array(
-                    'title'         => 'Aliado',
-                    'titles-type'   => 'a-titles--main',
-                    'animations'    => 'js-title-typing',
-                    'custom-css'    => 'g-content-middle'
-                    )
-                ); 
-            ?>
-            <div class="alians-brands">
+
+            <?php while( have_rows('alinced') ) : the_row(); ?>
+                <?php get_template_part('/atoms/a-titles/a-titles', null, 
+                    array(
+                        'title'         => get_sub_field('titulo_de_seccion'),
+                        'titles-type'   => 'a-titles--main',
+                        'animations'    => 'js-title-typing',
+                        'custom-css'    => 'g-content-middle'
+                        )
+                    ); 
+                ?>
+                
                 <?php get_template_part('/molecules/m-logo-card/m-logo-card', null, 
-                array(
-                    'image_size' => 'full',
-                    'repeater'   => 'aliados',
-                    'id_name'    => 'aliances'
-                )); 
-                ?> 
-            </div>
+                        array(
+                            'image_size' => 'full',
+                            'repeater'   => 'aliance_list',
+                            'id_name'    => 'logo'
+                        )); 
+                    ?> 
+                </div>
+            <?php endwhile; ?>
+            
         </div>
     </section>
     
-    <?php //get_template_part('organism/o-dialog-form/o-dialog-form', null, ''); ?>
-
 </main>
   
 <?php get_footer(); ?>

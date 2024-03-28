@@ -16,7 +16,12 @@ function enque_styles_organism() {
     'o-our-start',
     'o-team',
     'o-banner-form',
-    'o-dialog-form'
+    'o-dialog-form',
+    'o-tranning-model',
+    'o-faq',
+    'o-tabs',
+    'o-calendar',
+    
   );
 
   foreach($register_scrips_class as $key => $value) {

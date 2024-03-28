@@ -21,7 +21,10 @@ function enque_custom_molecules() {
     'm-card-numbers',
     'm-card-move',
     'm-card-team',
-    'm-form-basic'
+    'm-form-basic',
+    'm-faq',
+    'm-date-mision',
+    'm-date-info',
   );
 
   foreach ($molecules as $molecule) {

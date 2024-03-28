@@ -38,6 +38,7 @@ wp_enqueue_style('home');
                                     )
                                 );
                             ?>
+                            
                         </div>
                         <div class="hero-banner__rigth">
                             <?php get_template_part('/atoms/a-img/a-img', null,
@@ -98,7 +99,10 @@ wp_enqueue_style('home');
                 ); 
             ?>
             <div class="programs-list">
-                <?php get_template_part('/organism/o-iprogram/o-iprogram', null); ?>
+                <?php get_template_part('/organism/o-iprogram/o-iprogram', null, 
+                array(
+                    'modal_trigger' => 'js-dialog-open'
+                )); ?>
             </div>
         <?php endwhile; ?>
     </section>

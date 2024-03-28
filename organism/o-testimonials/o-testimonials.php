@@ -14,8 +14,8 @@
     $testimonial = isset($args['testimonial']) ? $args['testimonial'] : '';
     $custom_class = isset($args['custom_class']) ? $args['custom_class'] : '';
     $custom_class_card = isset($args['custom_class_card']) ? $args['custom_class_card'] : '';
+    $possition = isset($args['possition']) ? $args['possition'] : '';
 ?>
-
 <div class="o-testimonials <?php echo $custom_class; ?>">
     <div class="o-testimonials__swiper">
         <div class="swiper-wrapper">
@@ -26,6 +26,7 @@
                             'img_id'            => get_sub_field($img_id),
                             'alt'               => get_sub_field($alt),
                             'name_testimonial'  => get_sub_field($name_testimonial),
+                            'possition'         => get_sub_field($possition),
                             'testimonial'       => get_sub_field($testimonial),
                             'custom_class'      => $custom_class_card
                         )

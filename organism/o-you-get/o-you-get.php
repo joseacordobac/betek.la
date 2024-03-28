@@ -4,6 +4,8 @@
  wp_enqueue_style('o-you-get');
  //wp_enqueue_script('o-you-get');
 
+ $content_class = isset($args['content_class']) ? $args['content_class'] : ''; 
+
  $img_path = isset($args['img_path']) ? $args['img_path'] : '';
  $img_size = isset($args['img_size']) ? $args['img_size'] : 'full';
  $img_icon = isset($args['img_icon']) ? $args['img_icon'] : '';
@@ -20,13 +22,14 @@
  $btn_text = isset($args['btn_text']) ? $args['btn_text'] : '';
  $btn_link = isset($args['btn_link']) ? $args['btn_link'] : '';
 
- $custom_class = isset($args['custom_class']) ? $args['custom_class'] : '';
+ 
 
 ?>
 
-<div class="g-content-regular o-you-get-info">
+<div class="g-content-regular o-you-get-info <?php echo $content_class; ?>">
     <div class="o-you-get-info-left">
-        <?php get_template_part('/atoms/a-img/a-img', null,
+        <?php if($img_path){
+         get_template_part('/atoms/a-img/a-img', null,
             array(
                 'image_id' => $img_path,
                 'image_size' => $img_size,
@@ -34,7 +37,7 @@
                 'alt' => $title,
                 'class' => 'o-you-get-img'
             ));
-        ?>
+        } ?>
     </div>
     <div class="o-you-get-info-right">
         <?php get_template_part('/atoms/a-titles/a-titles', null,

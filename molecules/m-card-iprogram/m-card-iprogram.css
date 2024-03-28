@@ -14,29 +14,8 @@
     height: 300px
 }
 
-.m-card-program-tags__content {
-    display: flex;
-    gap: 10px;
-}
-
 .m-card-iprogram__head .a-img__img{
     max-height: 260px;
-}
-
-.m-card-iprogram__tag {
-    text-align: left;
-    display: table;
-    background: var(--tone-color-main);
-    border: solid 1px var(--main-color);
-    color: var(--main-color);
-    padding: 5px 13px;
-    border-radius: 50px;
-    font-size: 11px;
-}
-
-.m-card-iprogram--secondary {
-    background-color: #f9b32a5e;
-    border: solid 1px var(--quinary-color);
 }
 
 .m-card-iprogram__title{
@@ -81,6 +60,35 @@
     padding: 8px 28px;
 }
 
+
+/* variation */
+.m-card-iprogram--horizontal {
+    display: flex;
+    gap: 50px;
+    box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.05);
+    margin-bottom: 24px;
+}
+
+.o-iprogram__slide:nth-child(2) .m-card-iprogram--horizontal{
+    flex-direction: row-reverse;
+}
+
+.m-card-iprogram--horizontal .m-card-iprogram__head {
+    width: 100%;
+    height: 100%;
+}
+
+.m-card-iprogram--horizontal .m-card-iprogram__body {
+    width: 100%;
+    padding: 10px 32px;
+    align-items: flex-start;
+}
+
+.m-card-iprogram--horizontal .m-card-iprogram__head .a-img__img {
+    max-height: 100%;
+}
+
+
 @media(max-width: 768px){
     .m-card-iprogram__body{
         max-width: 90%;
@@ -88,14 +96,6 @@
 
     .m-card-program-tags__content{
         gap: 8px;
-    }
-
-    .m-card-iprogram__tag{
-        font-size: 10px;
-    }
-
-    .m-card-iprogram__tag{
-        padding: 5px 5px;
     }
 }
 
