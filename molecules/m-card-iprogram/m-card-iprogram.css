@@ -97,6 +97,16 @@
     .m-card-program-tags__content{
         gap: 8px;
     }
+
+    .m-card-iprogram--horizontal, 
+    .o-iprogram__slide:nth-child(2) .m-card-iprogram--horizontal{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .m-card-iprogram--horizontal .m-card-iprogram__body{
+        height: 100%;
+    }
 }
 
 

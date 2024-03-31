@@ -32,3 +32,18 @@
 .m-date-info__text {
   font-family: var(--font-text);
 }
+
+
+@media(max-width:780px){
+  .m-date-info{
+    flex-direction: column;
+  }
+
+  .m-date-info__item {
+    border-bottom: solid 1px var(--quinary-color);
+  }
+
+  .m-date-info__item::after{
+    display: none;
+  }
+}

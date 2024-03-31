@@ -48,3 +48,17 @@
 .testimonials {
     margin-top: 52px;
 }
+
+@media(max-width:780px){
+    .o-tranning-model{
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        padding: 21px;
+    }
+
+    .o-tranning-model__item{
+        display: flex;
+        flex-direction: column;
+    }
+}

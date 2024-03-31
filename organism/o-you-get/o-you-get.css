@@ -109,6 +109,14 @@
 
 @media(max-width: 768px) {
     .o-you-get-info {
+        display: block;
         grid-template-columns: 1fr;
     }
+
+    .tek-community-cards{
+        & .o-you-get-info-right, & .o-you-get-info-right{
+            padding: 28px 0px 9px 13px;
+        }
+    }
+
 }
