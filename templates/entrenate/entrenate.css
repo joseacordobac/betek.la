@@ -50,3 +50,13 @@
 .preguntas__content{
     margin-bottom: 100px;
 }
+
+@media(max-width:780px){
+    .entrenate-banner__content{
+        max-width:100%;
+    }
+
+    .tranning-model::after{
+        display: none;
+    }
+}

@@ -70,4 +70,21 @@
   text-align: center;
 }
 
+@media(max-width:780px){
+  .o-tabs__nav{
+    display: block;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .o-tabs__item{
+    display: flex;
+  }
+
+  .o-tabs__body.o-tabs__body--active {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}
 

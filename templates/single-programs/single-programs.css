@@ -73,3 +73,18 @@
   text-align: center;
 }
 
+
+@media(max-width:780px){
+  .hero-banner__content{
+    display: block;
+  }
+
+  .steps-contains {
+    flex-wrap: wrap;
+    gap: 58px;
+  }
+
+  .missions-dates-timer{
+    max-width: 90%;
+  }
+}
