@@ -74,6 +74,10 @@
 }
 
 
+.intergral-process{
+  margin-top: 40px;
+}
+
 @media(max-width:780px){
   .hero-banner__content{
     display: block;
