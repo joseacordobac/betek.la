@@ -22,8 +22,6 @@
  $btn_text = isset($args['btn_text']) ? $args['btn_text'] : '';
  $btn_link = isset($args['btn_link']) ? $args['btn_link'] : '';
 
- 
-
 ?>
 
 <div class="g-content-regular o-you-get-info <?php echo $content_class; ?>">

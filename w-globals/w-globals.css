@@ -35,6 +35,8 @@ html {
     --clear-color-three: #F8F7FF;
     --clear-color-four: #F8F8F8;
     --clear-color-five: #F9E4BC;
+    --clear-color-six: #DEFFEE;
+    
     
     --size-xlarge: 3.75rem;
     --size-mlarge: 3.125rem;
@@ -48,6 +50,9 @@ html {
 
     /* overwrite */
     --swiper-theme-color: #6C46EB !important;
+    
+    /* shadow-boxes */
+    --shadow-boxes: 0px 0px 10px 0px rgba(0,0,0,0.2);
 }
 
 .main {

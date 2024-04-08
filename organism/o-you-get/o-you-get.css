@@ -57,27 +57,40 @@
     box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.1);
     border-radius: 24px;
 
-    & .a-titles-title {
+        .a-titles-title {
         color: var(--main-color);
         font-family: var(--font-text);
         font-size: var(--size-medium);
     }
 
-    & .o-you-get-list{
+    .o-you-get-list{
         margin-top: 5px;
     }
 
-    & .o-you-get-info-right {
+    .o-you-get-info-right {
         padding: 40px 0px 20px 40px;
         grid-column: 1 / 2;
         grid-row: 1;
     }
 
-    & .o-you-get-info-left {
+    .o-you-get-info-left {
         grid-column: 2 / -1;
     }
-    & .m-value{
+    .m-value{
         padding-left: 0px;
+    }
+}
+
+.tek-community-cards.grid-52-42{
+    grid-template-columns: 52% 42%;
+
+    .m-value__title-text{
+        font-weight: 500;
+    }
+
+    .m-value__icon-img{
+        width: 43px;
+        height: 39px;
     }
 }
 
@@ -88,22 +101,63 @@
     box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.1);
     border-radius: 24px;
 
-    & .a-titles-title {
+    .a-titles-title {
         color: var(--main-color);
         font-family: var(--font-text);
         font-size: var(--size-medium);
     }
 
-    & .o-you-get-list{
+    .o-you-get-list{
         margin-top: 5px;
     }
 
-    & .o-you-get-info-right {
+    .o-you-get-info-right {
         padding: 40px 40px 20px 0px;
     }
 
-    & .m-value{
+    .m-value{
         padding-left: 0px;
+    }
+}
+
+/** v2 configuration */
+.o-you-get--v2{
+    grid-template-columns: 55% 41%;
+    margin: 50px auto;
+    box-shadow: transparent !important;
+    border-radius: 24px;
+    max-width: 100% !important;
+
+    .a-titles-title {
+        color: var(--main-color);
+        font-family: var(--font-text);
+        font-size: var(--size-medium);
+    }
+
+    .o-you-get-list{
+        margin-top: 5px;
+    }
+
+    .m-value__icon-img{
+        width: 48px;
+        height: 37px;
+    }
+
+    .o-you-get-info-right {
+        padding: 39px 2px 17px 85px;
+    }
+
+    .m-value{
+        padding-left: 0px;
+    }
+
+    .o-you-get-info-left {
+        grid-column: 2 / -1;
+    }
+
+    .o-you-get-info-right {
+        grid-column: 1 / 2;
+        grid-row: 1;
     }
 }
 
@@ -114,8 +168,14 @@
     }
 
     .tek-community-cards{
-        & .o-you-get-info-right, & .o-you-get-info-right{
+        .o-you-get-info-right, & .o-you-get-info-right{
             padding: 28px 0px 9px 13px;
+        }
+    }
+
+    .o-you-get--v2{
+        .o-you-get-info-right {
+            padding: 31px 1px 11px 14px;
         }
     }
 

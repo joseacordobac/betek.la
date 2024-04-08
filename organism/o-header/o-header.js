@@ -14,7 +14,13 @@ const gsapHeaderAnimation = (getHeader)=>{
     tl.to(getHeader, {
         duration: 3,
         backgroundColor: '#fff',
-        boxShadow: '0px 10px 50px 0px rgba(0, 0, 0, 0.05)'
+        boxShadow: '0px 10px 50px 0px rgba(0, 0, 0, 0.05)',
+        onStart : ()=>{
+            getHeader.classList.add('o-header--active');
+        },
+        onended : ()=>{
+            getHeader.classList.remove('o-header--active');
+        }
     }, 0);
 }
 

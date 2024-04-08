@@ -27,6 +27,10 @@
     font-size: var(--size-medium);
 }
 
+.a-btn__content.a-btn--quinary{
+    background-color: var(--quinary-color);
+}
+
 
 @media(max-width: 768px) {
     .a-btn__content {

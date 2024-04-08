@@ -33,15 +33,25 @@
 }
 
 .o-tabs__body {
-  grid-template-columns: repeat(5, 1fr);
-  gap: 25px;
-  margin: 54px auto;
-  max-width: 92%;
   display: none;
 }
 
 .o-tabs__body.o-tabs__body--active {
-  display: grid;
+  display: block;
+}
+
+.habilities-description h3 {
+  font-size: var(--size-medium);
+  color: var(--main-color);
+  margin: 12px;
+}
+
+.habilitites__title {
+  text-align: center;
+  margin-top: 28px;
+  margin-bottom: 0px;
+  color: var(--main-color);
+  font-size: var(--size-medium);
 }
 
 .tools-img img {
@@ -56,18 +66,19 @@
   align-items: center;
   justify-content: center;
   background: var(--clear-color-five);
-}
-
-.o-tabs__text {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: var(--clear-color-five);
-  padding: 3px 10px;
+  padding: 15px 11px;
   border: solid 1px var(--quinary-color);
   border-radius: 20px;
   color: var(--main-color);
   text-align: center;
+}
+
+.habilities-logos,
+.habilities-skills {
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  margin: 54px auto;
+  display: grid;
 }
 
 @media(max-width:780px){
@@ -85,6 +96,12 @@
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
+  }
+
+  .habilities-logos, 
+  .habilities-skills{
+    grid-template-columns: 1fr;
+    width: 100%;
   }
 }
 

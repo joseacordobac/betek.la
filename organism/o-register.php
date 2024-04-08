@@ -21,7 +21,7 @@ function enque_styles_organism() {
     'o-faq',
     'o-tabs',
     'o-calendar',
-    
+    'o-events'
   );
 
   foreach($register_scrips_class as $key => $value) {

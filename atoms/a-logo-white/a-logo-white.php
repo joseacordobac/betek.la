@@ -5,5 +5,7 @@
  ?>
 
 <div class="a-logo-white <?php echo $custom_class; ?>">
-    <img class="a-logo-white__logo" src="<?php echo get_template_directory_uri() . '/assets/icons/imagen-logo.svg'; ?>" alt="logo Betek" width="100" height="60" />
+    <a href="/" class="a-logo-white__link">
+        <img class="a-logo-white__logo" src="<?php echo get_template_directory_uri() . '/assets/icons/imagen-logo.svg'; ?>" alt="logo Betek" width="100" height="60" />
+    </a>
 </div>

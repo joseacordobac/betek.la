@@ -25,6 +25,8 @@ function enque_custom_molecules() {
     'm-faq',
     'm-date-mision',
     'm-date-info',
+    'm-card-empresa',
+    'm-card-event'
   );
 
   foreach ($molecules as $molecule) {

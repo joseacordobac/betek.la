@@ -23,7 +23,8 @@
 
 @media(max-width: 768px) {
     .m-alians-brands{
-        grid-template-columns: repeat(2, 1fr);
+        display: grid;
+        grid-template-columns: 50% 50%;
         gap: 6px;
         margin: 27px auto;
     }
@@ -39,5 +40,9 @@
 
     .m-logo-card {
         padding: 4px 3px;
+    }
+
+    .m-logo-card__img{
+        width: 107px;
     }
 }

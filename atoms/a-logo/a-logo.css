@@ -12,6 +12,10 @@
     height: 60px;
 }
 
+.a-logo-white {
+    text-align: center;
+}
+
 @media(max-width: 768px) {
     .a-logo .custom-logo {
         height: 40px;
@@ -19,5 +23,9 @@
 
     .a-logo-white__logo{
         max-width: 70%;
+    }
+
+    .a-logo-white {
+        text-align: left;
     }
 }

@@ -7,8 +7,13 @@
 
 <header class="o-header">
     <div class="g-content-regular o-header__content">
-        <div class="o-header__logo-content">
-            <?php get_template_part('/atoms/a-logo/a-logo'); ?>
+        <div class="o-header__logo-content"> 
+            <?php if(is_page_template('templates/empresas.php')){ ?>
+                <?php get_template_part('/atoms/a-logo-white/a-logo-white'); ?>
+            <?php }else{ ?>
+                <?php get_template_part('/atoms/a-logo/a-logo'); ?>
+            <?php } ?>
+
         </div>
         <div class="o-header__mobile-content">
             <div class="o-header__mobile">
