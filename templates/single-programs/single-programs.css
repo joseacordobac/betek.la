@@ -78,14 +78,18 @@
   margin-top: 40px;
 }
 
-@media(max-width:780px){
+@media(max-width:780px){  
+  .hero-banner {
+    padding-top: 50px;  
+  }
+
   .hero-banner__content{
     display: block;
   }
 
   .steps-contains {
     flex-wrap: wrap;
-    gap: 58px;
+    gap: 80px;
   }
 
   .missions-dates-timer{

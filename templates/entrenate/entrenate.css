@@ -59,4 +59,8 @@
     .tranning-model::after{
         display: none;
     }
+
+    .entrenate-banner__circle{
+        display: none;
+    }
 }

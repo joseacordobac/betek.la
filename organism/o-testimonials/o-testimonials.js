@@ -17,12 +17,21 @@ const testimonialSwiper = () => {
         breakpoints: {
             0: {
                 slidesPerView: 1,
+                autoplay: {
+                    delay: 100000,
+                },
             },
             768: {
                 slidesPerView: 2,
+                autoplay: {
+                    delay: 100000,
+                },
             },
             1024: {
                 slidesPerView: 3,
+                autoplay: {
+                    delay: 100000,
+                },
             },
         },
         initialSlide: 1,

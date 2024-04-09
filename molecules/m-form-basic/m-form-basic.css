@@ -25,3 +25,9 @@
 .p-form-basic__btn-send {
     border-radius: 50px !important;
 }
+
+@media(max-width: 768px){
+    .p-form-basic__title {
+        text-align: center;
+    }
+}

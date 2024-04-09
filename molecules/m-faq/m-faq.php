@@ -11,7 +11,7 @@
     wp_enqueue_script('m-faq');
 ?>
 
-<details class="m-faq <?php echo $custom_class; ?>" name="m-faq">
+<details class="m-faq <?php echo $custom_class; ?>">
   <summary class="m-faq__question"><span class="m-faq__question-icon">
     <?php echo $question; ?></span>
   </summary>

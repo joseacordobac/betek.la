@@ -14,6 +14,16 @@
     font-weight: 600;
     font-size: var(--size-medium);
     color: var(--color-parragraph);
+    position: relative;
+    width: 100%;
+    display: block;
+}
+
+.m-faq__question-icon::after{
+    content: url('../../assets/icons/arrow-single.svg');
+    position: absolute;
+    right: 0px;
+    transition: 0.35s;
 }
 
 .m-faq__answer{
@@ -31,6 +41,16 @@ details summary {
 details[open] summary {
     margin-bottom: 10px;
     padding-bottom: 0px;
+}
+
+details[open] summary .m-faq__question-icon::after{
+    transition: 0.35s;
+    transform: rotate(90deg);
+}
+
+details summary::marker {
+    content: '';
+    display: none;
 }
 
 
