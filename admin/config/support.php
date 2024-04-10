@@ -3,12 +3,23 @@
 // Theme support
 function theme_setup(){
     add_theme_support('post-thumbnails');
+
     add_theme_support('custom-logo', array(
       'height'      => 100,
       'width'       => 400,
       'flex-height' => true,
       'flex-width'  => true,
     ));
+
+    add_image_size( 'thumbnail', 150, 150, false ); // Thumbnail for posts (with cropping)
+    add_image_size( 'medium-regular', 300, 200, false ); // Medium size for posts (with cropping)
+    add_image_size( 'medium-large', 640, 480, false ); // Medium-large size for posts (with cropping)
+    add_image_size( 'large', 1024, 768, false ); // Large size for posts (with cropping)
+    add_image_size( 'extra-large', 1920, 1080, false ); // Extra-large size for posts (with cropping)
+    add_image_size( 'icon', 50, 50, false ); // Small icon size (with cropping)
+    add_image_size( 'avatar', 150, 150, false ); // Avatar size (with cropping)
+    add_image_size( 'header', 1920, 1080, false ); // Header image size (with cropping)
+
   }
   add_action('after_setup_theme', 'theme_setup');
   
@@ -23,15 +34,3 @@ function theme_setup(){
       add_action('after_setup_theme', 'register_new_menu');
     
   endif;
-  
-  /** add new img dimentions */
-
-  add_image_size( 'thumbnail', 150, 150, false ); // Thumbnail for posts (with cropping)
-  add_image_size( 'medium-regular', 300, 200, false ); // Medium size for posts (with cropping)
-  add_image_size( 'medium-large', 640, 480, false ); // Medium-large size for posts (with cropping)
-  add_image_size( 'large', 1024, 768, false ); // Large size for posts (with cropping)
-  add_image_size( 'extra-large', 1920, 1080, false ); // Extra-large size for posts (with cropping)
-  add_image_size( 'icon', 50, 50, false ); // Small icon size (with cropping)
-  add_image_size( 'avatar', 150, 150, false ); // Avatar size (with cropping)
-  add_image_size( 'header', 1920, 1080, false ); // Header image size (with cropping)
-  

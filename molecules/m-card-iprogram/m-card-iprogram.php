@@ -19,7 +19,7 @@ $modal_trigger = isset($args['modal_trigger']) ? $args['modal_trigger'] : '';
             array(
                 'class' => 'm-card-iprogram__image-el',
                 'image_id' => get_post_thumbnail_id(),
-                'image_size' => 'full',
+                'image_size' => 'large',
                 'alt' => get_the_title(),
                 'video_link' => '',
                 'aspect_ratio' => '16/9',

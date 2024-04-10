@@ -44,7 +44,7 @@ wp_enqueue_style('home');
                             <?php get_template_part('/atoms/a-img/a-img', null,
                                 array(
                                     'image_id' => get_sub_field('imagen'),
-                                    'image_size' => 'full',
+                                    'image_size' => 'large',
                                     'alt' => 'betek',
                                     'class' => 'o-you-get-img',
                                     'aspect_ratio' => '1/1'
@@ -76,7 +76,7 @@ wp_enqueue_style('home');
                     'title'             => get_sub_field('title_section'),
                     'title_type'        => 'a-titles--black',
                     'title_animetion'   => 'js-title-typing',
-                    'img_size'          => 'full',
+                    'img_size'          => 'large',
                     'content_name'      => 'list_description',
                     'list_img_path'     => 'list_img_path',
                     'list_title'        => 'list_title',
@@ -118,7 +118,7 @@ wp_enqueue_style('home');
                     'btn_link'      => get_sub_field('url_btn'),
                     'image_id'      => get_sub_field('imagen_video'),
                     'internal_icon' => get_sub_field('internal_icon'),
-                    'imagen_size'   => 'full',
+                    'imagen_size'   => 'large',
                     'video_embed'   => get_sub_field('enlace_video'),
                     'repeater_name' => 'options_list',
                     'custom_class'  => 'g-content-regular'
@@ -192,7 +192,6 @@ wp_enqueue_style('home');
             
             <?php get_template_part('/molecules/m-logo-card/m-logo-card', null, 
                     array(
-                        'image_size' => 'full',
                         'repeater'   => 'aliance_list',
                         'id_name'    => 'logo'
                     )); 

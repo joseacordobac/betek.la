@@ -82,10 +82,11 @@
 }
 
 .tek-community-cards.grid-52-42{
-    grid-template-columns: 52% 42%;
+    grid-template-columns: 54% 42%;
 
     .m-value__title-text{
         font-weight: 500;
+        font-size: var(--size-medium);
     }
 
     .m-value__icon-img{

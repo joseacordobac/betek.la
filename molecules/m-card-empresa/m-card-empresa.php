@@ -24,7 +24,7 @@
          <?php get_template_part('/atoms/a-img/a-img', null,
             array(
                   'image_id' => $imagen_id,
-                  'image_size' => 'full',
+                  'image_size' => 'large',
                   'alt' => 'betek',
                   'class' => 'o-you-get-img',
                   'aspect_ratio' => '1/1'

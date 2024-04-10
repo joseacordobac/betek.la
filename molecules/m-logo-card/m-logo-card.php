@@ -5,7 +5,7 @@
     wp_enqueue_style('m-logo-card');
     // wp_enqueue_script('m-logo-card');
     
-    $image_size = isset($args['image_size']) ? $args['image_size'] : 'thimbnail';
+    $image_size = isset($args['image_size']) ? $args['image_size'] : 'thumbnail';
     $repater = isset($args['repeater']) ? $args['repeater'] : '';
     $id_name = isset($args['id_name']) ? $args['id_name'] : '';
   

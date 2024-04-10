@@ -7,7 +7,7 @@
  $content_class = isset($args['content_class']) ? $args['content_class'] : ''; 
 
  $img_path = isset($args['img_path']) ? $args['img_path'] : '';
- $img_size = isset($args['img_size']) ? $args['img_size'] : 'full';
+ $img_size = isset($args['img_size']) ? $args['img_size'] : 'large';
  $img_icon = isset($args['img_icon']) ? $args['img_icon'] : '';
 
  $title = isset($args['title']) ? $args['title'] : '';

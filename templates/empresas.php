@@ -35,7 +35,7 @@
                                 <?php get_template_part('/atoms/a-img/a-img', null,
                                     array(
                                         'image_id' => get_sub_field('imagen'),
-                                        'image_size' => 'full',
+                                        'image_size' => 'large',
                                         'alt' => 'betek',
                                         'class' => 'o-you-get-img',
                                         'aspect_ratio' => '1/1'
@@ -96,7 +96,7 @@
                 'img_path'          => get_sub_field('section-img'),
                 'title'             => $title,
                 'title_type'        => 'a-titles--black',
-                'img_size'          => 'full',
+                'img_size'          => 'large',
                 'content_name'      => 'list',
                 'list_img_path'     => 'icon',
                 'list_title'        => 'information',
@@ -148,7 +148,7 @@
                     'img_path'          => get_sub_field('imagen_section'),
                     'title'             => $title,
                     'title_type'        => 'a-titles--black',
-                    'img_size'          => 'full',
+                    'img_size'          => 'large',
                     'content_name'      => 'list',
                     'list_img_path'     => 'icon',
                     'list_title'        => 'information',
@@ -170,7 +170,7 @@
                     'img_path'          => get_sub_field('imagen_section'),
                     'title'             => $title,
                     'title_type'        => 'a-titles--black',
-                    'img_size'          => 'full',
+                    'img_size'          => 'large',
                     'content_name'      => 'list',
                     'list_img_path'     => 'icon',
                     'list_title'        => 'information',
@@ -203,7 +203,6 @@
           
           <?php get_template_part('/molecules/m-logo-card/m-logo-card', null, 
                   array(
-                      'image_size' => 'full',
                       'repeater'   => 'aliance_list',
                       'id_name'    => 'logo'
                   )); 

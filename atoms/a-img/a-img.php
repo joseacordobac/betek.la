@@ -9,7 +9,7 @@
 //  wp_enqueue_script('lighmodal');   
    
  $image_id = isset($args['image_id']) ? $args['image_id'] : '';
- $image_size = isset($args['image_size']) ? $args['image_size'] : 'full';
+ $image_size = isset($args['image_size']) ? $args['image_size'] : 'large';
  $img_alt = isset($args['alt']) ? $args['alt'] : '';
  $internal_icon = isset($args['internal_icon']) ? $args['internal_icon'] : '';
  $custom_class = isset($args['class']) ? $args['class'] : '';

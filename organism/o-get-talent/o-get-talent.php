@@ -9,7 +9,7 @@
     $btn_text = isset($args['btn_text']) ? $args['btn_text'] : '';
     $btn_link = isset($args['btn_link']) ? $args['btn_link'] : '';
     $image_id = isset($args['image_id']) ? $args['image_id'] : '';
-    $imagen_size = isset($args['imagen_size']) ? $args['imagen_size'] : 'full';
+    $imagen_size = isset($args['imagen_size']) ? $args['imagen_size'] : 'large';
     $internal_icon = isset($args['internal_icon']) ? $args['internal_icon'] : '';
 
     $video_embed = isset($args['video_embed']) ? $args['video_embed'] : '';

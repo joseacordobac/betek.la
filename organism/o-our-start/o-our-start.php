@@ -19,7 +19,7 @@
     <div class="o-our-start__img">
         <?php get_template_part('/atoms/a-img/a-img', null, array(
                 'image_id' => $imagen,
-                'image_size' => 'full',
+                'image_size' => 'large',
                 'alt' => $title,
                 'class' => 'a-img--default',
                 'aspect_ratio' => '1/1',

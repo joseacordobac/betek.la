@@ -43,7 +43,7 @@
                     </div>
                     <div class="hero-conocenos__img">
                         <?php $id_img = get_sub_field('main_img'); 
-                            $image = wp_get_attachment_image($id_img, 'full', false, array('class' => 'hero-conocenos__image'));
+                            $image = wp_get_attachment_image($id_img, 'large', false, array('class' => 'hero-conocenos__image'));
                             echo $image;
                         ?>
                     </div>    
@@ -224,7 +224,6 @@
             <div class="alians-brands">
                 <?php get_template_part('/molecules/m-logo-card/m-logo-card', null, 
                 array(
-                    'image_size' => 'full',
                     'repeater'   => 'reconocimientos',
                     'id_name'    => 'acknowledgment'
                 )); 
@@ -249,7 +248,6 @@
                 
                 <?php get_template_part('/molecules/m-logo-card/m-logo-card', null, 
                         array(
-                            'image_size' => 'full',
                             'repeater'   => 'aliance_list',
                             'id_name'    => 'logo'
                         )); 

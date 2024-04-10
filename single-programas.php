@@ -15,7 +15,7 @@
                     <?php get_template_part('/atoms/a-img/a-img', null,
                         array(
                             'image_id' => get_sub_field('main_img'),
-                            'image_size' => 'full',
+                            'image_size' => 'large',
                             'alt' => 'betek',
                             'class' => 'banner-img',
                         ));
@@ -75,7 +75,7 @@
                     'title'             => get_sub_field('title_section'),
                     'title_type'        => 'a-titles--black',
                     'title_animetion'   => 'js-title-typing',
-                    'img_size'          => 'full',
+                    'img_size'          => 'large',
                     'content_name'      => 'list_description',
                     'list_img_path'     => 'list_img_path',
                     'list_title'        => 'list_title',
@@ -221,7 +221,7 @@
                         'title'             => get_sub_field('title_section'),
                         'title_type'        => 'a-titles--black',
                         'title_animetion'   => 'js-title-typing',
-                        'img_size'          => 'full',
+                        'img_size'          => 'large',
                         'content_name'      => 'list_description',
                         'list_img_path'     => 'list_img_path',
                         'list_title'        => 'list_title',
@@ -238,7 +238,7 @@
                         'img_path'          => get_sub_field('description_img'),
                         'title'             => get_sub_field('title_section'),
                         'title_type'        => 'a-titles--black',
-                        'img_size'          => 'full',
+                        'img_size'          => 'large',
                         'content_name'      => 'list_description',
                         'list_img_path'     => 'list_img_path',
                         'list_title'        => 'list_title',
@@ -256,7 +256,7 @@
                         'title'             => get_sub_field('title_section'),
                         'title_type'        => 'a-titles--black',
                         'title_animetion'   => 'js-title-typing',
-                        'img_size'          => 'full',
+                        'img_size'          => 'large',
                         'content_name'      => 'list_description',
                         'list_img_path'     => 'list_img_path',
                         'list_title'        => 'list_title',
@@ -281,7 +281,6 @@
                 
                 <?php get_template_part('/molecules/m-logo-card/m-logo-card', null, 
                         array(
-                            'image_size' => 'full',
                             'repeater'   => 'aliance_list',
                             'id_name'    => 'logo'
                         )); 
