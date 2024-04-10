@@ -1,7 +1,6 @@
 const starMainSwipper = () =>{
 
-  const swiper = new Swiper('.js-hero-banner', {
-  direction: 'horizontal', 
+  const swiper = new Swiper('.hero-banner-cotainer', {
   speed: 400,
   spaceBetween: 100,
   loop: true,

@@ -4,12 +4,11 @@ const starMainSwipperEvents = () =>{
     speed: 400,
     spaceBetween: 20,
     slidesPerView: 3,
-    loop: true,
     pagination: {
-        el: '.swiper-pagination',
+        el: '.events_resource-swiper__pagination',
         clickable: true,
     },
-    loop: true,
+    loopAddBlankSlides: true,
     autoplay: {
         delay: 10000,
     },

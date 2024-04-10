@@ -9,6 +9,11 @@
   padding-bottom: 14px;
 }
 
+.events_resource-swiper__pagination {
+  text-align: center;
+  margin-top: 30px;
+}
+
 @media(max-width: 768px){
   .events-resources{
     max-width: 98%;

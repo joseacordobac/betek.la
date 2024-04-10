@@ -98,7 +98,11 @@
     gap: 10px;
   }
 
-  .habilities-logos, 
+  .habilities-logos{
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+  }
+
   .habilities-skills{
     grid-template-columns: 1fr;
     width: 100%;

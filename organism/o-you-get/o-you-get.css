@@ -174,22 +174,17 @@
         }
     }
 
-    .o-you-get--v2{
-        .o-you-get-info-right {
-            padding: 31px 1px 11px 14px;
-        }
-    }
-
     .integral-process-cards{
         margin: 42px auto;
     }
 
     .o-you-get-list{
         margin-top: 0px;
+        text-align: center;
     }
 
     .o-you-get-info-right {
-        padding: 32px 40px 10px 22px !important;
+        padding: 13px 26px 10px 23px !important;
     }
 
 }

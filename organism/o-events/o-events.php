@@ -42,6 +42,7 @@
         ?>
             
       </div>
+      <div class="events_resource-swiper__pagination"></div>
     </div>
 
   </div>

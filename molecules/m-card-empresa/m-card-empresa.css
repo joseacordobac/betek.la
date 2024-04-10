@@ -21,6 +21,10 @@
   color: var(--main-color);
 }
 
+.m-card-empresas-body__title-text{
+  font-size: var(--size-medium-large);
+}
+
 .m-card-empresa__head{
   height: 200px;
 }

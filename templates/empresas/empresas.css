@@ -16,6 +16,31 @@
 /* template styles */
 .hero-banner {
   background: var(--main-color);
+  position: relative;
+}
+
+.hero-banner-cotainer{
+  overflow: hidden;
+  position: relative;
+}
+
+.swiper-pagination__main-banner {
+  position: absolute;
+  top: 0px !important;
+  bottom: 0px !important;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  left: 128px !important;
+  flex-direction: column;
+  gap: 10px;
+  width: inherit !important;
+}
+
+.swiper-pagination__main-banner .swiper-pagination-bullet {
+  background-color: white !important;
+  width: 12px;
+  height: 12px;
 }
 
 .hero-banner__slide-content {
@@ -125,6 +150,10 @@
     margin-top: 100px;
     grid-template-columns: 1fr;
     gap: 40px;
+  }
+
+  .swiper-pagination__main-banner .swiper-pagination-bullet {
+    display: none !important;
   }
 
   .navigation-card__list{

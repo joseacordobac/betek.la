@@ -17,6 +17,10 @@
     position: relative;
 }
 
+.o-testimonials__swiper{
+    overflow: hidden;
+}
+
 @media(max-width: 768px){
     .o-testimonials{
         padding: 20px 0px;

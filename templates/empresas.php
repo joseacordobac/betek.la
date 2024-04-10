@@ -47,8 +47,8 @@
                 <?php endwhile; ?>
             <?php endwhile; ?>
             </div>
-            <div class="swiper-pagination__main-banner"></div>
         </div>
+        <div class="swiper-pagination__main-banner"></div>
     </section>
 
   <section class="navigation-cards">
