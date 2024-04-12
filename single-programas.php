@@ -11,6 +11,34 @@
         <?php while( have_rows('hero_banner') ) : the_row(); ?>
         <section class="hero-banner" style="background-color: #<?php the_sub_field('background_color'); ?>;">
             <div class="hero-banner__content">
+            <div class="hero-banner__left">
+                <div class="hero-banner__left-contains">
+                    <?php get_template_part('/atoms/a-titles/a-titles', null, 
+                    array(
+                        'title'         => get_sub_field('main_title'),
+                        'titles-type'   => 'a-titles--main',
+                        'animations'    => 'a-titles--animation-typing',
+                        'custom-css'    => 'js-title-typing hero-banner__title',
+                        )
+                    ); 
+                    ?> 
+                    <?php get_template_part('/atoms/a-tags/a-tags', null); ?> 
+                    <div class="hero-banner__left-description">
+                        <?php the_sub_field('description'); ?>
+                    </div>
+                    <?php 
+                    get_template_part('/atoms/a-btn/a-btn', null, 
+                        array(
+                                'button_text' => get_sub_field('btn_text'),
+                                'button_link' => get_sub_field('url_btn'),
+                                'btn_type' => 'a-btn--primary',
+                                'icons_path' => get_template_directory_uri().'/assets/icons/arrow-to-right.svg',
+                            )
+                        );
+                    ?>
+                    
+                </div>
+                </div>
                 <div class="hero-banner__right">
                     <?php get_template_part('/atoms/a-img/a-img', null,
                         array(
@@ -20,34 +48,6 @@
                             'class' => 'banner-img',
                         ));
                     ?>
-                </div>
-                <div class="hero-banner__left">
-                    <div class="hero-banner__left-contains">
-                        <?php get_template_part('/atoms/a-titles/a-titles', null, 
-                        array(
-                            'title'         => get_sub_field('main_title'),
-                            'titles-type'   => 'a-titles--main',
-                            'animations'    => 'a-titles--animation-typing',
-                            'custom-css'    => 'js-title-typing hero-banner__title',
-                            )
-                        ); 
-                        ?> 
-                        <?php get_template_part('/atoms/a-tags/a-tags', null); ?> 
-                        <div class="hero-banner__left-description">
-                            <?php the_sub_field('description'); ?>
-                        </div>
-                        <?php 
-                        get_template_part('/atoms/a-btn/a-btn', null, 
-                            array(
-                                    'button_text' => get_sub_field('btn_text'),
-                                    'button_link' => get_sub_field('url_btn'),
-                                    'btn_type' => 'a-btn--primary',
-                                    'icons_path' => get_template_directory_uri().'/assets/icons/arrow-to-right.svg',
-                                )
-                            );
-                        ?>
-                        
-                    </div>
                 </div>
             </div>
         </section>

@@ -6,8 +6,9 @@ const gsapHeaderAnimation = (getHeader)=>{
             scrub: 1,
             trigger: getHeader,
             endTrigger: getHeader,
-            start: "+=200",
+            start: "+=100",
             end: "0",
+            markers: false,
         },
     })
 

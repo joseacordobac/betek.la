@@ -8,9 +8,10 @@ const startPrograToSwiper = () =>{
 
     const swiper = new Swiper(swiperProgram, {
         spaceBetween: 20,
-        loop: true,
-        navigation: {
-            nextEl: '.o-iprogram__pagination',
+        pagination: {
+            el: '.o-iprogram__pagination',
+            dynamicBullets: true,
+            clickable: true,
         },
         breakpoints: {
             0: {
