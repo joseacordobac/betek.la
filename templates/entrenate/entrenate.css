@@ -37,6 +37,7 @@
 .tranning-model {
     background-color: var(--main-color);
     position: relative;
+    padding-top: 20px;
 }
 
 .tranning-model::after {
