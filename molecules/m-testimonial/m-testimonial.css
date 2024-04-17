@@ -1,11 +1,13 @@
+.m-testimonial{
+    height: 100%;
+}
+
 .m-testimonial__content {
     display: grid;
     grid-template-columns: 40% 60%;
     gap: 13px;
-    background: var(--white-color);
-    box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.15);
-    border-radius: var(--border-radius--regular);
     align-items: center;
+    height: 100%;
 }
 
 

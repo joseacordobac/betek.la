@@ -3,6 +3,9 @@
 }
 
 .o-testimonials__slide{
+    background: var(--white-color);
+    box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.15);
+    border-radius: var(--border-radius--regular);
     opacity: 0.5;
     transition: all 0.3s ease-in-out;
 }
