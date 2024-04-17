@@ -2,11 +2,9 @@
 
 const testimonialSwiper = () => {
     const swiper = new Swiper('.o-testimonials__swiper', {
-        loop: true,
         spaceBetween: 20,
         slidesPerView: 2,
         centeredSlides: true,
-        loop: true,
         pagination: {
             el: '.swiper-pagination--testimonials',
             clickable: true,

@@ -19,6 +19,7 @@
 
 .o-testimonials__swiper{
     overflow: hidden;
+    padding-bottom: 25px;
 }
 
 @media(max-width: 768px){

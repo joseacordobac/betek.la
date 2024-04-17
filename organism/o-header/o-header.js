@@ -1,28 +1,15 @@
 
 const gsapHeaderAnimation = (getHeader)=>{
-
-    const tl = gsap.timeline({
-        scrollTrigger: {
-            scrub: 1,
-            trigger: getHeader,
-            endTrigger: getHeader,
-            start: "+=100",
-            end: "0",
-            markers: false,
-        },
-    })
-
-    tl.to(getHeader, {
-        duration: 3,
-        backgroundColor: '#fff',
-        boxShadow: '0px 10px 50px 0px rgba(0, 0, 0, 0.05)',
-        onStart : ()=>{
-            getHeader.classList.add('o-header--active');
-        },
-        onended : ()=>{
-            getHeader.classList.remove('o-header--active');
+    window.addEventListener('scroll', function() {
+        var scrollPosition = window.scrollY || window.pageYOffset || document.documentElement.scrollTop;
+        if (scrollPosition === 0) {
+            getHeader.classList.remove('o-header--js-active');
         }
-    }, 0);
+        if(scrollPosition > 100){
+            getHeader.classList.add('o-header--js-active');
+        }
+    });
+    
 }
 
 

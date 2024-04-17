@@ -8,6 +8,11 @@
     transition: 0.35s;
 }
 
+.o-header--js-active{
+    background-color: white;
+    box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.2);
+}
+
 .o-header__content{
     display: flex;
     justify-content: space-between;
