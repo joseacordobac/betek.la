@@ -1,6 +1,9 @@
 <?php
  /** @var string */
 
+ wp_enqueue_script('a-logo-white');
+ wp_enqueue_style('a-logo-white');
+
  $custom_class = isset($args['custom_class']) ? $args['custom_class'] : '';
  ?>
 

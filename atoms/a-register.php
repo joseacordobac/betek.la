@@ -6,6 +6,7 @@ function enqueue_custom_atoms() {
 
   $register_scripts_styles = array(
     'a-logo',
+    'a-logo-white',
     'a-btn',
     'a-img',
     'a-titles',

@@ -1,3 +1,13 @@
+.a-logo{
+    transform: scale(1);
+    transition: 0.3s ease-in-out;
+}
+
+.a-logo.a-logo--js-active{
+    transform: scale(0.7);
+    transition: all 0.3s ease-in-out;
+}
+
 .a-logo .custom-logo {
     height: 80px;
     width: 100%;
@@ -15,6 +25,8 @@
 .a-logo-white {
     text-align: center;
 }
+
+
 
 @media(max-width: 768px) {
     .a-logo .custom-logo {

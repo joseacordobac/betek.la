@@ -5,7 +5,7 @@ const gsapHeaderAnimation = (getHeader)=>{
         if (scrollPosition === 0) {
             getHeader.classList.remove('o-header--js-active');
         }
-        if(scrollPosition > 100){
+        if(scrollPosition > 50){
             getHeader.classList.add('o-header--js-active');
         }
     });

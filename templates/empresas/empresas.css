@@ -5,10 +5,6 @@
   transition: 0.35s;
 }
 
-.a-logo-white__logo {
-  width: 200px !important;
-}
-
 .m-nav a {
   color: white !important;
 }
