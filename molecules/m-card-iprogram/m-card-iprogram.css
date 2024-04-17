@@ -67,6 +67,7 @@
     gap: 50px;
     box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.05);
     margin-bottom: 24px;
+    padding-bottom: 0px;
 }
 
 .o-iprogram__slide{
@@ -97,9 +98,12 @@
     bottom: 27px;
 }
 
-
 .m-card-iprogram--horizontal .m-card-iprogram__head .a-img__img {
     max-height: 100%;
+}
+
+.m-card-iprogram--horizontal  .a-btn{
+    position: inherit;
 }
 
 @media(max-width: 768px){
