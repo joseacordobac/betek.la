@@ -1,5 +1,5 @@
 
-const gsapLogoAnimation = ()=>{
+const gsapLogoWhiteAnimation = ()=>{
     const getLogoImg = document.querySelector('.a-logo-white');
     window.addEventListener('scroll', () => {
         var scrollPosition = window.scrollY || window.pageYOffset || document.documentElement.scrollTop;
@@ -14,5 +14,5 @@ const gsapLogoAnimation = ()=>{
 
 
 window.addEventListener('load', ()=>{
-    gsapLogoAnimation();
+    gsapLogoWhiteAnimation();
 })

@@ -101,6 +101,10 @@ pre {
 } */
 
 
+.swiper-wrapper{
+    align-items: stretch !important;
+}
+
 @media(max-width: 768px){
     
     :root{    
