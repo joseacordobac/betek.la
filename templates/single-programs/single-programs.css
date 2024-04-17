@@ -1,7 +1,7 @@
 .hero-banner__content {
   display: grid;
-  grid-template-columns: 53% 45%;
-  gap: 20px;
+  grid-template-columns: 36% 43%;
+  gap: 8%;
   align-items: center;
   justify-content: center;
   max-width: 80%;
