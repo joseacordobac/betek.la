@@ -13,20 +13,21 @@
 }
 
 .o-banner-form__content {
-    display: flex;
+    display: grid;
+    grid-template-columns: 50% 50%;
     justify-content: center;
     align-items: center;
-    max-width: 80%;
+    max-width: 74%;
     margin: auto;
-    gap: 30px;
+    gap: 25px;
     padding-top: 30px;
 }
 
 .o-banner-form__imagen-src {
-    width: 100%;
-    max-width: 400px;
+    max-width: 450px;
     z-index: 1;
-    position: relative;
+    position: absolute;
+    bottom: 0px;
     object-fit: contain;
     object-position: bottom;
     height: 100%;
@@ -40,9 +41,14 @@
     border-radius: 50px;
 }
 
+.forminator-checkbox__wrapper p {
+    color: white !important;
+}
+
 @media (max-width: 768px) {
 
     .o-banner-form__content {
+        display: flex;
         flex-direction: column-reverse;
         max-width: 90%;
     }
