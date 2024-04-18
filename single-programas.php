@@ -122,6 +122,7 @@
                                 'button_link' => get_sub_field('url_btn'),
                                 'btn_type' => 'a-btn--primary',
                                 'icons_path' => get_template_directory_uri().'/assets/icons/arrow-to-right.svg',
+                                'target' => '_blank',
                             )
                         );
                     ?>
@@ -160,7 +161,7 @@
                             'button_text' => get_sub_field('texto_del_boton'),
                             'button_link' => get_sub_field('url_btn'),
                             'btn_type' => 'a-btn--primary',
-                            'icons_path' => get_template_directory_uri().'/assets/icons/arrow-to-right.svg',
+                            'icons_path' => get_template_directory_uri().'/assets/icons/arrow-to-right.svg'
                         )
                     );
                 ?>

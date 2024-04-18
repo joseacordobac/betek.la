@@ -25,10 +25,18 @@
 
 .o-footer__bottom-social {
     display: flex;
+    flex-wrap: wrap;
     gap: 10px;
     align-items: center;
     padding: 10px 0px;
+    justify-content: space-around;
+}
+
+.o-footer__bottom-nav-social{
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    gap: 10px;
 }
 
 .o-footer__bottom-social-text{

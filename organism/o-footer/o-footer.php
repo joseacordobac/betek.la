@@ -11,13 +11,29 @@ wp_enqueue_script('o-footer');
 ?>
 
 <div class="o-footer g-content-regular">
-    <?php get_template_part( 'atoms/a-logo-white/a-logo-white', null, array(
-        'custom_class' => 'footer--pading',
-    )); 
-     
-    get_template_part( 'molecules/m-nav-footer/m-nav-footer', null, array(
-        'custom_class' => 'footer--pading',
-    ) ); ?>
+
+    <div class="o-footer__info">
+        <div class="o-footer__bottom-social footer--pading">
+
+            <?php get_template_part( 'atoms/a-logo-white/a-logo-white', null, array(
+                'custom_class' => '',
+                )); 
+            ?>
+            
+            <div class="o-footer__bottom-nav-social">
+                
+                <?php  get_template_part( 'molecules/m-nav-footer/m-nav-footer', null, array(
+                    'custom_class' => '',
+                ) ); ?>
+
+                <?php get_template_part('molecules/m-socials/m-socials', null, array(
+                    'custom_class' => '',
+                    'repeater' => 'redes_sociales',
+                )); ?>
+            </div>
+            
+        </div>
+    </div>
 
     <div class="o-footer__info">
         <?php get_template_part('molecules/m-info-list/m-info-list', null, array(
@@ -27,15 +43,6 @@ wp_enqueue_script('o-footer');
         ?>
     </div>
     
-    <div class="o-footer__info">
-        <div class="o-footer__bottom-social">
-            <p class="o-footer__bottom-social-text">Síguenos</p>
-            <?php get_template_part('molecules/m-socials/m-socials', null, array(
-                'custom_class' => '',
-                'repeater' => 'redes_sociales',
-            )); ?>
-        </div>
-    </div>
 
     <div class="o-footer__bottom">
         <div class="o-footer__bottom-text">
