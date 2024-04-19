@@ -47,7 +47,7 @@
 
       <div class="o-tab-habilites__tech-hum">
 
-        <?php if(get_sub_field('titulo_tecnologias')): ?>
+        <?php if(get_sub_field('titulo_tecnologias') || have_rows('habilities_list')): ?>
           <div class="o-tab-habilites__column">
             <h4 class="habilitites__title"><?php the_sub_field('titulo_tecnologias'); ?></h4>
             <div class="habilities-logos">
@@ -73,7 +73,7 @@
           </div>
         <?php endif; ?>
           
-        <?php if(get_sub_field('title_perfil')): ?>
+        <?php if(get_sub_field('title_perfil') || have_rows('profile')): ?>
           <div class="o-tab-habilites__column">     
             <h4 class="habilitites__title"><?php the_sub_field('title_perfil'); ?></h4>
             <div class="habilities-skills">
