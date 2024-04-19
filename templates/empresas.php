@@ -152,7 +152,9 @@
                     'content_name'      => 'list',
                     'list_img_path'     => 'icon',
                     'list_title'        => 'information',
-                    'content_class'     => 'tek-community-cards grid-52-42'
+                    'content_class'     => 'tek-community-cards grid-52-42',
+                    'btn_text'          => get_sub_field('btn_text'),
+                    'btn_link'          => get_sub_field('btn_link')
                 )); 
             ?>
         <?php endwhile; ?>
@@ -174,7 +176,9 @@
                     'content_name'      => 'list',
                     'list_img_path'     => 'icon',
                     'list_title'        => 'information',
-                    'content_class'     => 'tek-community-cards grid-52-42'
+                    'content_class'     => 'tek-community-cards grid-52-42',
+                    'btn_text'          => get_sub_field('btn_text'),
+                    'btn_link'          => get_sub_field('btn_link')
                 )); 
             ?>
         <?php endwhile; ?>
