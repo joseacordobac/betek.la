@@ -27,7 +27,7 @@
        <h3 class="m-card-team__title"><?php echo $name; ?></h3>
        <p class="m-card-team__possition"><?php echo $possition; ?></p>
        <div class="m-card-team__btn">
-           <a href="<?php echo $linked_url; ?>" class="m-card-team__link">
+           <a href="<?php echo $linked_url; ?>" class="m-card-team__link" target="_blank">
                 <img class="m-card-team__link-img" src="<?php echo get_template_directory_uri(); ?>/molecules/m-card-team/linkedin.svg" alt="likedin-logo">
                 <?php echo $boton_name; ?>
            </a>

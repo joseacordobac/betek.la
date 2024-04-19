@@ -195,14 +195,15 @@
             ); 
             
             get_template_part('/organism/o-team/o-team', null, array(
-                'repeater' => 'equipo',
-                'img' => 'team_photo',
-                'name' => 'name',
-                'possition' => 'position',
-                'styles' => 'o-our-team',
-                'boton_name' => 'btn_text',
-                'linked_url' => 'btn_url',
-                'custom_class' => 'a-titles--main',
+                'repeater'      => 'equipo',
+                'img'           => 'team_photo',
+                'name'          => 'name',
+                'possition'     => 'position',
+                'styles'        => 'o-our-team',
+                'boton_name'    => 'btn_text',
+                'linked_url'    => 'btn_url',
+                'custom_class'  => 'a-titles--main',
+                'linkedUrl'     => 'btn_url'
             )); 
         ?>
     </section>
