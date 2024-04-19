@@ -49,10 +49,7 @@
 
         <?php if(have_rows('habilities_list')): ?>
           <div class="o-tab-habilites__column">
-            <?php if(get_sub_field('titulo_tecnologias')){?>
-              <h4 class="habilitites__title"><?php the_sub_field('titulo_tecnologias'); ?></h4>
-            <?php } ?>
-            
+            <h4 class="habilitites__title"><?php the_sub_field('titulo_tecnologias'); ?></h4>
             <div class="habilities-logos">
               <?php while( have_rows('habilities_list') ) : the_row(); ?>
                   <?php 
@@ -78,9 +75,7 @@
           
         <?php if(have_rows('profile')): ?>
           <div class="o-tab-habilites__column">     
-            <?php if(get_sub_field('title_perfil')){ ?>
-              <h4 class="habilitites__title"><?php the_sub_field('title_perfil'); ?></h4>
-            <?php } ?>
+            <h4 class="habilitites__title"><?php the_sub_field('title_perfil'); ?></h4>
             <div class="habilities-skills">
               <?php while(have_rows('profile')): the_row(); ?>
                 <p class="o-tabs__text"><?php the_sub_field('skill'); ?></p>
