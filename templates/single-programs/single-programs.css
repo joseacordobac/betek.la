@@ -95,6 +95,7 @@
   .steps-contains {
     flex-wrap: wrap;
     gap: 80px;
+    max-width: 90%;
   }
 
   .missions-dates-timer{

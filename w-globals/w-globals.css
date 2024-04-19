@@ -109,6 +109,11 @@ pre {
     height: auto !important;
 }
 
+.swiper-wrapper {
+    max-height: 100vh;
+    height: 100vw;
+  }
+
 @media(max-width: 768px){
     
     :root{    

@@ -28,45 +28,69 @@
     while( have_rows($repeater) ) : the_row(); ?>
     <div class="o-tabs__body <?php if($count == 0) echo 'o-tabs__body--active'; ?>" id="tab-<?php echo $count; ?>">
 
+      <h4 class="o-tabs_habilites"><?php the_sub_field('description_total'); ?></h4>
+
       <div class="habilities-description">
-        <?php if(get_sub_field('description')): ?>
-          <p class="o-tabs__description"><?php the_sub_field('description'); ?></p>
-        <?php endif; ?>
-      </div>
-
-      <?php if(get_sub_field('titulo_tecnologias')){?>
-        <h4 class="habilitites__title"><?php the_sub_field('titulo_tecnologias'); ?></h4>
-      <?php } ?>
-      
-      <div class="habilities-logos">
-        <?php while( have_rows('habilities_list') ) : the_row(); ?>
-            <?php 
-              if(get_sub_field('logo')):
-              get_template_part('/atoms/a-img/a-img', null,
-                  array(
-                      'image_id' => get_sub_field('logo'),
-                      'image_size' => 'medium',
-                      'alt' => 'betek',
-                      'class' => 'tools-img',
-                  ));
-              endif;
-            ?>
-
-            <?php if(get_sub_field('hability_name_tool')): ?>
-            <p class="o-tabs__text"><?php the_sub_field('hability_name_tool'); ?></p>
+        <div class="o-tab-habilites-description__colummn">
+          <?php if(get_sub_field('description')): ?>
+            <p class="o-tabs__description"><?php the_sub_field('description'); ?></p>
           <?php endif; ?>
-        <?php endwhile; ?>
+        </div>
+
+        <div class="o-tab-habilites-description__column">
+          <?php if(get_sub_field('description_right')): ?>
+            <p class="o-tabs__description"><?php the_sub_field('description_right'); ?></p>
+          <?php endif; ?>
+        </div>
+
+      </div>
+
+      <div class="o-tab-habilites__tech-hum">
+
+        <?php if(have_rows('habilities_list')): ?>
+          <div class="o-tab-habilites__column">
+            <?php if(get_sub_field('titulo_tecnologias')){?>
+              <h4 class="habilitites__title"><?php the_sub_field('titulo_tecnologias'); ?></h4>
+            <?php } ?>
+            
+            <div class="habilities-logos">
+              <?php while( have_rows('habilities_list') ) : the_row(); ?>
+                  <?php 
+                    if(get_sub_field('logo')):
+                    get_template_part('/atoms/a-img/a-img', null,
+                        array(
+                            'image_id' => get_sub_field('logo'),
+                            'image_size' => 'medium',
+                            'alt' => 'betek',
+                            'class' => 'tools-img',
+                        ));
+                    endif;
+                  ?>
+      
+                  <?php if(get_sub_field('hability_name_tool')): ?>
+                  <p class="o-tabs__text"><?php the_sub_field('hability_name_tool'); ?></p>
+                <?php endif; ?>
+              <?php endwhile; ?>
+      
+            </div>
+          </div>
+        <?php endif; ?>
+          
+        <?php if(have_rows('profile')): ?>
+          <div class="o-tab-habilites__column">     
+            <?php if(get_sub_field('title_perfil')){ ?>
+              <h4 class="habilitites__title"><?php the_sub_field('title_perfil'); ?></h4>
+            <?php } ?>
+            <div class="habilities-skills">
+              <?php while(have_rows('profile')): the_row(); ?>
+                <p class="o-tabs__text"><?php the_sub_field('skill'); ?></p>
+              <?php endwhile; ?>
+            </div>
+          </div>
+        <?php endif; ?>
+
       </div>
       
-      <?php if(get_sub_field('title_perfil')){ ?>
-        <h4 class="habilitites__title"><?php the_sub_field('title_perfil'); ?></h4>
-      <?php } ?>
-
-      <div class="habilities-skills">
-        <?php while(have_rows('profile')): the_row(); ?>
-          <p class="o-tabs__text"><?php the_sub_field('skill'); ?></p>
-        <?php endwhile; ?>
-      </div>
 
     </div>
     <?php $count++; endwhile; ?>

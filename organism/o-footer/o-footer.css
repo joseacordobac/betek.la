@@ -56,6 +56,14 @@
 
 
 @media(max-width: 768px) {
+    .o-footer__info .a-logo--js-active .a-logo-white__logo{
+        width: 250px !important;
+    }
+
+    .o-footer__info .a-logo-white{
+        text-align: center !important;
+    }
+
     .o-footer__bottom {
         flex-direction: column-reverse;
         gap: 18px;
@@ -68,6 +76,11 @@
 
     .footer{
         padding: 36px 0px;
+    }
+
+    .o-footer__bottom-nav-social{
+        flex-direction: column;
+        gap: 20px;
     }
 
     .footer--pading{
