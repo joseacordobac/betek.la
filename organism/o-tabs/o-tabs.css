@@ -118,20 +118,54 @@
 }
 
 @media(max-width:780px){
+  .o-tabs{
+    max-width: 94%;
+  }
+
   .o-tabs__nav{
     display: block;
     width: 100%;
     max-width: 100%;
+    border: none;
   }
 
   .o-tabs__item{
     display: flex;
+    border: solid 1px;
+    margin-bottom: 5px;
+    border-radius: 23px;
+    position: relative;
+  }
+
+  .o-tabs__item::after {
+    content: url(../../assets/icons/arrow-single.svg);
+    position: absolute;
+    top: 27%;
+    right: 21px;
+    text-align: right;
+    transform: rotate(0deg);
+    transition: 0.35s;
+    display: inline-table;
+    transition: 0.3s;
+  }
+
+  .o-tabs__text{
+    font-size: 14px;
+    padding: 6px 2px;
+  }
+
+  .o-tabs__item--active::after{
+    transform: rotate(90deg) translate(-9px, 1px);
+    transition: 0.35s;
   }
 
   .o-tabs__body.o-tabs__body--active {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
+    max-width: 90%;
+    margin: auto;
+  }
+
+  .habilities-description{
+    gap: 12px;  
   }
 
   .o-tab-habilites__column{
@@ -141,11 +175,29 @@
   .habilities-logos{
     grid-template-columns: 1fr 1fr;
     width: 100%;
+    gap: 5px;
   }
+
+  .o-tab-habilites-description__colummn ul {
+    text-align: left;
+  }
+
+  .o-tab-habilites-description__column ul {
+    text-align: left;
+}
+
 
   .habilities-skills{
     grid-template-columns: 1fr;
     width: 100%;
+  }
+
+  .habilities-description{
+    flex-direction: column;
+  }
+
+  .o-tab-habilites__tech-hum{
+    flex-direction: column;
   }
 }
 

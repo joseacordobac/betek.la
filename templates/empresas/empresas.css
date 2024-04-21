@@ -74,6 +74,10 @@
   margin: 40px auto;
 }
 
+.a-titles.a-titles--main {
+  margin-top: 24px;
+}
+
 .card-talento {
   margin: 100px auto;
   background-color: var(--clear-color-three);

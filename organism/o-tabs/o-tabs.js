@@ -31,12 +31,34 @@ const triggerTag = (getAllTabsElements) => {
   })
 }
 
+const triggerAccordeon = (getAllTabsElements) => {
+  
+  getAllTabsElements.forEach((tab) => {
+    tab.addEventListener('click', (event) => {
+      const element = event.currentTarget
+      const dataTab = element.getAttribute('data-tab')
+      const getIdDataBody = document.querySelector(`#${dataTab}`)
+
+      element.classList.toggle('o-tabs__item--active')
+      getIdDataBody.classList.toggle('o-tabs__body--active')
+      
+
+    })
+  })
+
+}
+
 
 window.addEventListener('DOMContentLoaded', () => {
 
   const getAllTabsElements = document.querySelectorAll('.o-tabs__item')
-  if(getAllTabsElements){
+
+  if(getAllTabsElements && !gIsMobile()){
     triggerTag(getAllTabsElements)
+  }
+
+  if(gIsMobile()){
+    triggerAccordeon(getAllTabsElements)
   }
 
 })

@@ -111,6 +111,7 @@
                         'titles-type'   => 'a-titles--main',                                )
                     ); 
                 ?>
+                
                 <div class="tools-tabs">
                     <?php get_template_part('/organism/o-tabs/o-tabs', null, 
                     array(
@@ -118,6 +119,7 @@
                         'custom_class' => 'o-tabs--tools',
                     )
                 ); ?>
+
                 </div>
                 <div class="tools_btn">
                     <?php 

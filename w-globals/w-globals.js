@@ -14,6 +14,8 @@ const leningStart = () => {
     requestAnimationFrame(raf)
 }
 
+const gIsMobile = () =>  window.innerWidth < 780;
+
 window.addEventListener('load', () => {
     // leningStart();
 })
