@@ -85,59 +85,62 @@
     </div>                                
   </section>
 
-  <section class="card-talento">
-      <div id="get-talent" class="card-talento__content">
-        <?php while( have_rows('get_talent') ) : the_row(); 
+    <section class="card-talento">
+        <div id="get-talent" class="card-talento__content">
+            <?php while( have_rows('get_talent') ) : the_row(); 
 
-            $title = '<div class="card-talento__title"><span class="card-talento__title-tag card-talento__title-tag--clear-six">01</span><h3 class="card-talento__title-text"> '. get_sub_field("title").'</h3></div>';   
+                $title = '<div class="card-talento__title"><span class="card-talento__title-tag card-talento__title-tag--clear-six">01</span><h3 class="card-talento__title-text"> '. get_sub_field("title").'</h3></div>';   
 
-            get_template_part('/organism/o-you-get/o-you-get', null,
-            array(
-                'img_path'          => get_sub_field('section-img'),
-                'title'             => $title,
-                'title_type'        => 'a-titles--black',
-                'img_size'          => 'large',
-                'content_name'      => 'list',
-                'list_img_path'     => 'icon',
-                'list_title'        => 'information',
-                'content_class'     => 'o-you-get--v2'
-                )); 
-            ?>
-            
-            <?php while( have_rows('tools_domain_copiar') ) : the_row(); ?>
-                <?php get_template_part('/atoms/a-titles/a-titles', null, 
-                    array(
-                        'title'         => get_sub_field('section_title'),
-                        'titles-type'   => 'a-titles--main',                                )
-                    ); 
+                get_template_part('/organism/o-you-get/o-you-get', null,
+                array(
+                    'img_path'          => get_sub_field('section-img'),
+                    'title'             => $title,
+                    'title_type'        => 'a-titles--black',
+                    'img_size'          => 'large',
+                    'content_name'      => 'list',
+                    'list_img_path'     => 'icon',
+                    'list_title'        => 'information',
+                    'content_class'     => 'o-you-get--v2'
+                    )); 
                 ?>
-                
-                <div class="tools-tabs">
-                    <?php get_template_part('/organism/o-tabs/o-tabs', null, 
-                    array(
-                        'repeater' => 'hability_type',
-                        'custom_class' => 'o-tabs--tools',
-                    )
-                ); ?>
-
-                </div>
-                <div class="tools_btn">
-                    <?php 
-                    get_template_part('/atoms/a-btn/a-btn', null, 
+            
+                <?php while( have_rows('tools_domain_copiar') ) : the_row(); ?>
+                    <?php get_template_part('/atoms/a-titles/a-titles', null, 
                         array(
-                                'button_text' => get_sub_field('btn_text'),
-                                'button_link' => get_sub_field('url_btn'),
-                                'btn_type' => 'a-btn--primary',
-                                'icons_path' => get_template_directory_uri().'/assets/icons/arrow-to-right.svg',
-                            )
-                        );
+                            'title'         => get_sub_field('section_title'),
+                            'titles-type'   => 'a-titles--main',                                )
+                        ); 
                     ?>
-                </div>
-            <?php endwhile; ?>
+                    
+                    <div class="tools-tabs">
+                        <?php get_template_part('/organism/o-tabs/o-tabs', null, 
+                            array(
+                                    'repeater' => 'hability_type',
+                                    'custom_class' => 'o-tabs--tools',
+                                )
+                            ); 
+                        ?>
 
-        <?php endwhile; ?>
-      </div>              
-  </section>
+                    <div class="tools_btn">
+                        <?php 
+                        get_template_part('/atoms/a-btn/a-btn', null, 
+                            array(
+                                    'button_text' => get_sub_field('btn_text'),
+                                    'button_link' => get_sub_field('url_btn'),
+                                    'btn_type' => 'a-btn--primary',
+                                    'icons_path' => get_template_directory_uri().'/assets/icons/arrow-to-right.svg',
+                                )
+                            );
+                        ?>
+                    </div>
+                
+                </div>
+                    
+                <?php endwhile; ?>
+
+            <?php endwhile; ?>
+        </div>              
+    </section>
 
   <section class="enhace-team" id="enhance-team">
     <div class="enhance-team__content">

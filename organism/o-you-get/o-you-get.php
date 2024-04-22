@@ -70,8 +70,8 @@
                             'icons_path' => get_template_directory_uri().'/assets/icons/arrow-to-right.svg',
                         )
                     );
-                } ?>
-            </div>
+            echo '</div>';
+            } ?>
         </div>
     </div>
 </div>
