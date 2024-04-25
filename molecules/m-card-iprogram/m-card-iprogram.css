@@ -124,6 +124,11 @@
 
     .m-card-iprogram--horizontal .m-card-iprogram__body{
         height: 100%;
+        padding: 10px 2px;
+    }
+
+    .o-iprogram__slide:nth-child(2n) .m-card-iprogram--horizontal{
+        flex-direction: column;
     }
 }
 
