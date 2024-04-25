@@ -1,12 +1,13 @@
 .hero-banner__content {
   display: grid;
-  grid-template-columns: 36% 43%;
+  grid-template-columns: 40% 42%;
   gap: 8%;
   align-items: center;
   justify-content: center;
   max-width: 80%;
   margin: auto;
   padding-top: 60px;
+  margin-top: 50px;
 }
 
 .hero-banner__content .a-img__img{
