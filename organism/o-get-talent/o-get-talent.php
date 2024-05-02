@@ -41,16 +41,18 @@
                     ?>
                 <?php endwhile; ?>               
             </ul>
-            <?php 
-                get_template_part('/atoms/a-btn/a-btn', null, 
-                array(
-                        'button_text' => $btn_text,
-                        'button_link' => $btn_link,
-                        'btn_type' => 'a-btn--primary',
-                        'icons_path' => get_template_directory_uri().'/assets/icons/arrow-to-right.svg',
-                    )
-                );
-            ?>
+            <div class="o-get-talent__left-btn">
+                <?php 
+                    get_template_part('/atoms/a-btn/a-btn', null, 
+                    array(
+                            'button_text' => $btn_text,
+                            'button_link' => $btn_link,
+                            'btn_type' => 'a-btn--primary',
+                            'icons_path' => get_template_directory_uri().'/assets/icons/arrow-to-right.svg',
+                        )
+                    );
+                ?>
+            </div>
         </div>
         <div class="o-get-talent__right">
             <?php get_template_part('/atoms/a-img/a-img', null,

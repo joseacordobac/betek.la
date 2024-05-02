@@ -23,6 +23,7 @@ const startPrograToSwiper = () =>{
         }
     });
 
+    swiperToSlide(swiperProgram, swiper);
 }
 
 window.addEventListener('DOMContentLoaded', () => {

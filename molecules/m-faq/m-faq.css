@@ -22,7 +22,7 @@
 .m-faq__question-icon::after{
     content: url(../../assets/icons/arrow-single.svg);
     position: absolute;
-    right: 0px;
+    right: -13px;
     transition: 0.35s;
     bottom: 0px;
     height: 100%;

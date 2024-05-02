@@ -12,11 +12,17 @@
   padding: 5px 13px;
   border-radius: 50px;
   font-size: 11px;
+  text-align: center;
 }
 
 .a-tags-iprogram--secondary {
   background-color: #f9b32a5e;
   border: solid 1px var(--quinary-color);
+}
+
+.a-tags-iprogram__tag-el{
+  font-size: 90%;
+  text-align: center;
 }
 
 @media(max-width: 768px){

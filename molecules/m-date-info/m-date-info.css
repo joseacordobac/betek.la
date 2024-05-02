@@ -31,6 +31,7 @@
 
 .m-date-info__text {
   font-family: var(--font-text);
+  font-weight: 400;
 }
 
 

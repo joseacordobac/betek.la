@@ -14,7 +14,7 @@ $modal_trigger = isset($args['modal_trigger']) ? $args['modal_trigger'] : '';
 ?>
 
 <div class="m-card-iprogram <?php echo 'm-card-iprogram--' . $direction; ?>">
-    <a href="<?php get_the_permalink(); ?>" class="m-card-iprogram__head">
+    <div class="m-card-iprogram__head">
         <?php get_template_part('/atoms/a-img/a-img', null, 
             array(
                 'class' => 'm-card-iprogram__image-el',
@@ -25,9 +25,9 @@ $modal_trigger = isset($args['modal_trigger']) ? $args['modal_trigger'] : '';
                 'aspect_ratio' => '16/9',
             )
         ); ?>
-    </a>
+    </div>
     <div class="m-card-iprogram__body">
-        <a class="m-card-iprogram__title" href="<?php get_the_permalink(); ?>">
+        <div class="m-card-iprogram__title">
             <div class="m-card-iprogram__title-link" >
                 <img src="<?php the_field('mision_icon'); ?>" alt="icon misión" class="m-card-iprogram__icon" width="47" height="47">
                 <h3 class="m-card-iprogram__title-el">
@@ -39,7 +39,7 @@ $modal_trigger = isset($args['modal_trigger']) ? $args['modal_trigger'] : '';
             <?php get_template_part('/atoms/a-tags/a-tags', null); ?>
             
             <p class="m-card-iprogram__description"><?php the_field('descripcion'); ?></p>
-        </a>
+        </div>
         <?php 
             $modal_trigger ? $btn_link = '#formulario' : $btn_link = get_permalink();
             get_template_part('/atoms/a-btn/a-btn', null, 

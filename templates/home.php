@@ -80,8 +80,9 @@ wp_enqueue_style('home');
                     'content_name'      => 'list_description',
                     'list_img_path'     => 'list_img_path',
                     'list_title'        => 'list_title',
-                    'url_btn'          => get_sub_field('url_btn'),
+                    'url_btn'           => get_sub_field('url_btn'),
                     'btn_text'          => get_sub_field('btn_text'),
+                    'content_class'     => 'entrenate-you-get'
                     )); 
                 ?>
         <?php endwhile; ?>

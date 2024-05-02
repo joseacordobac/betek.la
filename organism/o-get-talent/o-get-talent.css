@@ -10,7 +10,7 @@
 
 .o-get-talent__left {
     padding: 35px 0px;
-    padding-left: 85px;
+    padding-left: 55px;
     display: flex;
     flex-direction: column;
     gap: 23px;
@@ -23,6 +23,11 @@
 
 .o-get-talent__list {
     list-style: none;
+}
+
+.o-get-talent__left-btn{
+    text-align: center;
+    width: 100%;
 }
 
 @media(max-width: 768px) {
