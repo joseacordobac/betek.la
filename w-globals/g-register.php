@@ -30,6 +30,12 @@ if (!function_exists('register_custom_elements')) :
 
       //lenis
       wp_enqueue_script('lenis', 'https://unpkg.com/@studio-freight/lenis@1.0.29/bundled/lenis.min.js', array('gsap'), null, true);
+
+      //headers
+      wp_enqueue_style('o-header');
+      wp_enqueue_style('a-logo');
+      wp_enqueue_style('m-nav');
+
     }
   
 endif;
