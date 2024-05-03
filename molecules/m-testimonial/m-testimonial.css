@@ -53,6 +53,7 @@
     }
 
     .m-testimonial__content{
+        display: grid;
         grid-template-columns: 100%;
         gap: 0;
     }
