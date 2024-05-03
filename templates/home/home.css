@@ -51,6 +51,8 @@
     opacity: 0.7;
     max-width: 100%;
     gap: 18px;
+    display: flex;
+    flex-direction: column;
 }
 
 .hero-banner__left .a-btn{
@@ -100,6 +102,10 @@
 }
 
 .entrenate-you-get .o-you-get__btn {
+    text-align: center;
+}
+
+.trainning .a-titles-title{
     text-align: center;
 }
 

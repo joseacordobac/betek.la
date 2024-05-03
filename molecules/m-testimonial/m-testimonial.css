@@ -3,8 +3,7 @@
 }
 
 .m-testimonial__content {
-    display: grid;
-    grid-template-columns: 40% 60%;
+    display: flex;
     gap: 13px;
     align-items: center;
     height: 100%;
@@ -13,6 +12,7 @@
 
 .m-testimonial-left {
     height: 100%;
+    width: 40%;
 }
 
 .m-testimonial__image {
@@ -23,11 +23,17 @@
 }
 
 .m-testimonial-info {
+    width: 60%;
     padding: 18px 19px 18px 0px;
     text-align: center;
     display: flex;
     flex-direction: column;
     gap: 13px;
+}
+
+.m-testimonial-info--full {
+    width: 100%;
+    padding: 18px 19px 18px 21px;
 }
 
 .m-testimonial  .m-testimonial-info__text {

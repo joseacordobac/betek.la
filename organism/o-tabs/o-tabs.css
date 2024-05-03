@@ -70,7 +70,7 @@
 .tools-img img {
   object-fit: contain;
   width: 90%;
-  height: 100px;
+  height: 77px;
   object-position: center;
 }
 
@@ -106,11 +106,16 @@
 
 .habilities-logos,
 .habilities-skills {
-  grid-template-columns: repeat(auto-fit,minmax(160px,1fr));
-  gap: 10px;
   gap: 25px;
   margin: 40px auto;
-  display: grid;
+  margin-top: -30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.tools-img.a-img img {
+  border-radius: 0px;
 }
 
 .habilities-skills{
@@ -151,7 +156,7 @@
 
   .o-tabs__text{
     font-size: 14px;
-    padding: 6px 2px;
+    padding: 6px 12px;
   }
 
   .o-tabs__item--active::after{
@@ -173,9 +178,13 @@
   }
 
   .habilities-logos{
-    grid-template-columns: 1fr 1fr;
     width: 100%;
     gap: 5px;
+    margin-top: -44px;
+  }
+
+  .tools-img.a-img{
+    width: 47%;
   }
 
   .o-tab-habilites-description__colummn ul {

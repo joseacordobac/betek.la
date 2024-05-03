@@ -51,7 +51,7 @@
     grid-template-columns: 41% 55%;
     margin: 33px auto;
     box-shadow: var(--shadow-boxes);
-    border-radius: 24px;
+    border-radius: var(--border-radius--regular);
 
         .a-titles-title {
         color: var(--main-color);
@@ -96,7 +96,7 @@
     grid-template-columns: 55% 41%;
     margin: 50px auto;
     box-shadow: var(--shadow-boxes);
-    border-radius: 24px;
+    border-radius: var(--border-radius--regular);
 
     .a-titles-title {
         color: var(--main-color);

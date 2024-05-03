@@ -1,5 +1,6 @@
 .m-value {
     padding: 12px 21px;
+    padding-top: 0px;
     display: flex;
     align-items: center;
     gap: 15px;
@@ -7,8 +8,8 @@
 }
 
 .m-value__icon-img {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     object-fit: contain;
 }
 

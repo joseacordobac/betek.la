@@ -16,11 +16,11 @@
 ?>
 
 <div class="m-value <?php echo $custom_class; ?>">
+    <?php if($icon){ ?>
     <div class="m-value__icon">
-        <?php if($icon){ ?>
-            <img class="m-value__icon-img" src="<?php echo $icon; ?>" alt="<?php echo $title; ?>" width="50" height="50">
-        <?php } ?>
+        <img class="m-value__icon-img" src="<?php echo $icon; ?>" alt="<?php echo $title; ?>" width="50" height="50">
     </div>
+    <?php } ?>
     <div class="m-value__content">
         <div class="m-value__title">
             <h4 class="m-value__title-text"><?php echo $title; ?></h4>

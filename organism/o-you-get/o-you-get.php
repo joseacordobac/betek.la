@@ -38,6 +38,7 @@
         } ?>
     </div>
     <div class="o-you-get-info-right">
+        <?php if($title): ?>    
         <?php get_template_part('/atoms/a-titles/a-titles', null,
             array(
                 'title'         => $title,
@@ -45,7 +46,7 @@
                 'animations'    => $title_animetion,
                 )
             );
-        ?>
+        endif; ?>
         <div class="o-you-get-list">
             <?php while( have_rows($content_name) ) : the_row(); ?>
                 <div class="o-you-get-list__content">

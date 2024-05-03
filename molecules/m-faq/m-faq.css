@@ -32,6 +32,9 @@
 
 .m-faq__answer{
     padding: 0px 20px 28px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
 }
   
 details summary {

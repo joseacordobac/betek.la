@@ -74,6 +74,10 @@
   margin: 40px auto;
 }
 
+.navigation-cards .a-titles-title{
+  font-size: var(--size-large);
+}
+
 .a-titles.a-titles--main {
   margin-top: 24px;
 }
@@ -88,9 +92,13 @@
   max-width: 70%;
   margin: auto;
   background-color: white;
-  border-radius: 24px;
+  border-radius: var(--border-radius--regular);
   padding-bottom: 34px;
   box-shadow: var(--shadow-boxes);
+}
+
+.card-talento__content .o-tabs__nav{
+  max-width: 100%;
 }
 
 .card-talento__title {
@@ -123,16 +131,24 @@
   color: white;
 }
 
+.card-talento__content .habilities-skills,
+.card-talento__content .habilities-logos{
+  margin-top: 32px;
+}
+
 .events-resources {
   max-width: 88%;
   margin: 36px auto;
 }
 
-
 .faq {
   background-color: var(--clear-color-one);
   padding: 77px 0px;
   margin-bottom: 54px;
+}
+
+.testimonials .m-testimonial-info__name{
+  font-size: 20px;
 }
 
 @media(max-width: 768px) {
