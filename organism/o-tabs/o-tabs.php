@@ -115,7 +115,7 @@
             <?php if(get_sub_field('titulo_tecnologias') || have_rows('habilities_list')): ?>
               <div class="o-tab-habilites__column">
                 <h4 class="habilitites__title"><?php the_sub_field('titulo_tecnologias'); ?></h4>
-                <div class="habilities-logos">
+                <ul class="habilities-logos">
                   <?php while( have_rows('habilities_list') ) : the_row(); ?>
                       <?php 
                         if(get_sub_field('logo')):
@@ -130,22 +130,22 @@
                       ?>
           
                       <?php if(get_sub_field('hability_name_tool')): ?>
-                      <p class="o-tabs__text"><?php the_sub_field('hability_name_tool'); ?></p>
+                      <li class="o-tabs__text"><?php the_sub_field('hability_name_tool'); ?></li>
                     <?php endif; ?>
                   <?php endwhile; ?>
           
-                </div>
+                </ul>
               </div>
             <?php endif; ?>
               
             <?php if(get_sub_field('title_perfil') || have_rows('profile')): ?>
               <div class="o-tab-habilites__column">     
                 <h4 class="habilitites__title"><?php the_sub_field('title_perfil'); ?></h4>
-                <div class="habilities-skills">
+                <ul class="habilities-skills">
                   <?php while(have_rows('profile')): the_row(); ?>
-                    <p class="o-tabs__text"><?php the_sub_field('skill'); ?></p>
+                    <li class="o-tabs__text"><?php the_sub_field('skill'); ?></li>
                   <?php endwhile; ?>
-                </div>
+                </ul>
               </div>
             <?php endif; ?>
 

@@ -68,6 +68,7 @@
 }
 
 .tools-img img {
+
   object-fit: contain;
   width: 90%;
   height: 77px;
@@ -89,19 +90,23 @@
 .card-talento .o-tabs__text {
   background: transparent;
   border: none;
-  border-left: solid 3px var(--quinary-color);
+  border-left: none;
   border-radius: 0px;
   justify-content: flex-start;
+  color: inherit;
+  position: relative;
 }
 
-.o-tab-habilites__tech-hum {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
+.card-talento .o-tabs__text::after {
+  content: "•";
+  position: absolute;
+  top: 25%;
+  left: -2px;
 }
 
-.o-tab-habilites__column {
-  width: 85%;
+.card-talento__content .o-tab-habilites__column{
+  border-top: solid 1px var(--quaternary-color);
+  margin-top: 31px;
 }
 
 .habilities-logos,
@@ -199,6 +204,10 @@
   .habilities-skills{
     grid-template-columns: 1fr;
     width: 100%;
+  }
+
+  .card-talento__content .habilities-skills{
+    gap: 3px;
   }
 
   .habilities-description{

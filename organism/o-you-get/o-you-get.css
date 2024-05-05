@@ -24,7 +24,7 @@
 }
 
 .o-you-get-list__content .o-you-get--flex-start{
-    align-items: self-start;    
+    align-items: center;  
 }
 
 .o-you-get--main-color .m-value__icon-img{
