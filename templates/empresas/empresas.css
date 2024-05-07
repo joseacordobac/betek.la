@@ -68,6 +68,7 @@
 
 .hero-banner__slide-content .a-img__img{
   border-radius: 0px;
+  height: 768px;
 }
 
 .navigation-card__content {
@@ -167,6 +168,10 @@
   /* menu recolor */
   .o-header__mobile-line{
     background-color: white !important;
+  }
+
+  .hero-banner__slide-content .a-img__img{
+    height: 100%;
   }
 
   .has-show .m-nav{
