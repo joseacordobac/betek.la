@@ -60,6 +60,7 @@
 
     .m-testimonial__image{
         height: 258px;
+        object-position: top;   
     }
     
     .m-testimonial-left {

@@ -146,6 +146,7 @@
 
     .hero-banner{
         margin-top: 27px;
+        min-height: 780px;
     }
 
     .hero-banner__left{
@@ -154,13 +155,22 @@
 
     .hero-banner__slide-content{
         grid-template-columns: 1fr;
-        gap: 40px;
+        gap: 6px;
     }
 
     .hero-banner__title{
-        font-size: 38px;
+        font-size: 33px;
+        line-height: 33px;
     }
     
+    .trainning__content{
+        margin: 21px auto;
+    }
+
+    .hero-banner__text h3{
+        font-size: 20px;
+    }
+
     .swiper-wrapper.hero-banner{
         height: 700px;
         padding-top: 6px;
@@ -174,6 +184,7 @@
 
     .our-programs{
         margin: 40px auto 0px;
+        padding-bottom: 38px;
     }
 
     .our-programs-list{

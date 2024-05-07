@@ -22,6 +22,8 @@
 @media(max-width: 768px) {
     .m-info-list {
         flex-direction: column;
-        align-items: center;
+        align-items: stretch;
+        max-width: 87%;
+        margin: auto;
     }
 }

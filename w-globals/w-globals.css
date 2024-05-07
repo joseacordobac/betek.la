@@ -116,8 +116,14 @@ pre {
 .swiper-wrapper {
     max-height: 100vh;
     height: 100vw;
-  }
+}
 
+@media(max-width: 768px){
+    .swiper-wrapper {
+        height: inherit;
+        max-height: inherit;
+    }
+}
 
 /* FORMINATOR */
 

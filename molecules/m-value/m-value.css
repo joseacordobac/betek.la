@@ -26,5 +26,6 @@
 @media(max-width: 768px){
     .m-value {
         flex-direction: column;
+        padding: 12px 0px;
     }
 }

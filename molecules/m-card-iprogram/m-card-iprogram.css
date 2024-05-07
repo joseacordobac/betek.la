@@ -116,6 +116,26 @@
         gap: 8px;
     }
 
+    .m-card-iprogram__title{
+        align-items: center;
+    }
+
+    .m-card-iprogram__description{
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .m-card-iprogram__title-el{
+        font-size: 20px;
+        line-height: 21px;
+        display: flex;
+        gap: 10px;
+    }
+
+    .m-card-iprogram__icon{
+        width: 35px;
+    }
+
     .m-card-iprogram--horizontal, 
     .o-iprogram__slide:nth-child(2) .m-card-iprogram--horizontal{
         display: flex;
@@ -129,6 +149,10 @@
 
     .o-iprogram__slide:nth-child(2n) .m-card-iprogram--horizontal{
         flex-direction: column;
+    }
+
+    .m-card-iprogram--horizontal{
+        gap:0px
     }
 }
 

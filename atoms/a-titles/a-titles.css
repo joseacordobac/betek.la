@@ -14,3 +14,10 @@
 .a-titles--black .a-titles-title{
     color: var(--black-color);
 }
+
+@media(max-width: 768px){
+    .a-titles-title{
+        margin-bottom: 0px;
+    }
+
+}

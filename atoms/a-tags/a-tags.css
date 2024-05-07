@@ -28,6 +28,7 @@
 @media(max-width: 768px){
     .a-tags-program-tags__content{
         flex-wrap: wrap;
+        justify-content: center;
     }
 
     .m-card-iprogram__tag{
@@ -36,5 +37,9 @@
 
     .m-card-iprogram__tag{
         padding: 5px 5px;
+    }
+
+    .a-tags-iprogram__tag{
+      padding: 5px 6px;
     }
 }

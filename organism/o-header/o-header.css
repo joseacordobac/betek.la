@@ -8,6 +8,10 @@
     transition: 0.35s;
 }
 
+.o-header:has(.has-show){
+    background-color: white;
+}
+
 .o-header--js-active{
     background-color: white;
     box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.2);
@@ -38,6 +42,18 @@
 }
 
 @media(max-width: 768px){
+    .o-header--js-active{
+        height: 48px;
+    }
+
+    .o-header--js-active .o-header__content {
+        max-height: 50px;
+    }
+
+    .o-header--js-active .o-header__logo-content{
+        padding-top: 0px;
+    }
+
     .o-header__nav-content {
         position: absolute;
         bottom: 2px;

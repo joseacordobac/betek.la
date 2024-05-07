@@ -164,6 +164,11 @@
         grid-template-columns: 1fr;
     }
 
+    .incon-brand{
+        width: 50px;
+        height: 58px;
+    }
+
     .tek-community-cards{
         .o-you-get-info-right, & .o-you-get-info-right{
             padding: 28px 0px 9px 13px;
@@ -180,7 +185,7 @@
     }
 
     .o-you-get-info-right {
-        padding: 13px 26px 10px 23px !important;
+        padding: 11px 10px 10px 10px !important;
     }
 
 }

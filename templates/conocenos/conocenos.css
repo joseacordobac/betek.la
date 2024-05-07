@@ -1,6 +1,6 @@
 .hero-conocenos__content {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 48% 48%;
     gap: 54px;
     align-items: center;
     background: var(--clear-color-one);
@@ -35,6 +35,7 @@
     height: 100%;
     object-fit: cover;
     object-position: left;
+    max-height: 600px;
 }
 
 .swiper-wrapper{
@@ -151,7 +152,7 @@
 @media(max-width: 768px){
     .hero-conocenos__content {
         grid-template-columns: 1fr;
-        gap: 38px;
+        gap: 15px;
         padding-bottom: 38px;
     }
 
@@ -166,13 +167,20 @@
     }
 
     .hero-conocenos__image{
-        height: 36vh
+        height: 50vh
     }
 
     .hero-conocenos__img {
         grid-row-start: 1;
     }
 
+    .hero-conocenos__title{
+        margin-bottom: 0px;
+    }
+
+    .our-ods{
+        margin: 42px 0px;
+    }
 
     .our-ods__content{
         display: flex;
