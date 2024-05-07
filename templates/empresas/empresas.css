@@ -43,7 +43,7 @@
 
 .hero-banner__slide-content {
   display: grid;
-  grid-template-columns: 48% 48%;
+  grid-template-columns: 39% 57%;
   align-items: center;
   gap: 54px;
 }
