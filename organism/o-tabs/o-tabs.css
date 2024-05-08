@@ -114,6 +114,10 @@
   margin-top: 31px;
 }
 
+.card-talento__content .a-titles-title{
+  font-size: var(--size-medium-large);
+}
+
 .habilities-logos,
 .habilities-skills {
   gap: 25px;
