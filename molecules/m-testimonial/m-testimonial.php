@@ -7,7 +7,7 @@ wp_enqueue_script('m-testimonial');
 
 $img_id = isset($args['img_id']) ? $args['img_id'] : '';
 $alt = isset($args['alt']) ? $args['alt'] : '';
-$image_size = isset($args['image_size']) ? $args['image_size'] : 'medium';
+$image_size = isset($args['image_size']) ? $args['image_size'] : 'full';
 $name_testimonial = isset($args['name_testimonial']) ? $args['name_testimonial'] : '';
 $testimonial = isset($args['testimonial']) ? $args['testimonial'] : '';
 $custom_class = isset($args['custom_class']) ? $args['custom_class'] : '';
