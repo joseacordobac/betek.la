@@ -69,6 +69,10 @@
         grid-row: 1;
     }
 
+    .o-you-get-info-right .a-titles-title{
+        font-size: var(--size-medium-large);
+    }
+
     .o-you-get-info-left {
         grid-column: 2 / -1;
     }
