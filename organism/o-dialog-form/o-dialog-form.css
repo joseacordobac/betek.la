@@ -12,7 +12,7 @@
     border: none;
     position: fixed;
     display: none;
-    top: 27%;
+    top: 16%;
     width: 100%;
     z-index: 2;
     max-width: 80%;
@@ -47,7 +47,7 @@
 @media(max-width: 768px){
     .o-dialog-form{
         max-width: 94%;
-        top: -19px;
+        top: 10%;
     }
 
     .o-dialog-form__close-icon{
