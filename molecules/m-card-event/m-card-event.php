@@ -25,7 +25,7 @@
   <div class="m-card-event__head">
     <?php get_template_part('atoms/a-img/a-img', null, array(
       'image_id' => $img_id,
-      'image_size' => 'medium',
+      'image_size' => 'full',
       'alt' => $title,
       'aspect_ratio' => '1/1',
       'class' => 'm-card-event__img',
