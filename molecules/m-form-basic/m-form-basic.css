@@ -1,13 +1,14 @@
 
+.m-form-basic {
+    position: relative;
+    /* z-index: 1; */
+    margin-bottom: 34px !important;
+}
+
 .p-form-basic__title {
     color: white;
     font-size: var(--size-medium-large);
     font-weight: 500;
-}
-
-.m-form-basic{
-    position: relative;
-    z-index: 1;
 }
 
 .m-form-basic label {
@@ -24,6 +25,13 @@
 
 .p-form-basic__btn-send {
     border-radius: 50px !important;
+}
+
+.forminator-ui#forminator-module-967.forminator-design--default .forminator-button-submit{
+    background-color: var(--secondary-color) !important;
+    padding: 9px 30px !important;
+    font-size: 19px !important;
+    text-transform: uppercase;
 }
 
 @media(max-width: 768px){

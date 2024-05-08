@@ -26,6 +26,10 @@
   align-items: baseline;
 }
 
+.hero-banner .a-tags-iprogram__tag{
+  font-size: 18px;
+}
+
 .information {
   padding: 61px 0px;
 }
@@ -41,6 +45,10 @@
 
 .tools_btn{
   text-align: center;
+}
+
+.steps {
+  margin-top: 100px;
 }
 
 .steps-contains {
@@ -81,7 +89,7 @@
 
 
 .intergral-process{
-  margin-top: 40px;
+  margin-top: 80px;
 }
 
 @media(max-width:780px){  

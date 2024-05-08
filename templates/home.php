@@ -102,7 +102,7 @@ wp_enqueue_style('home');
             <div class="programs-list">
                 <?php get_template_part('/organism/o-iprogram/o-iprogram', null, 
                 array(
-                    'modal_trigger' => ''
+                    'modal_trigger' => 'js-dialog-open',
                 )); ?>
             </div>
         <?php endwhile; ?>
@@ -201,7 +201,7 @@ wp_enqueue_style('home');
         <?php endwhile; ?>
         </div>
     </section>
-    <?php //get_template_part('organism/o-dialog-form/o-dialog-form', null, ''); ?>
+    <?php get_template_part('organism/o-dialog-form/o-dialog-form', null, ''); ?>
 </main>
 
 <?php get_footer(); ?>

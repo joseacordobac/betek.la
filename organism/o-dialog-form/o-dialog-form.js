@@ -2,12 +2,12 @@ const dialogFormClose = (getDialog)=>{
     const closeIcon = getDialog.querySelector('.o-dialog-form__close-icon');
 
     closeIcon.addEventListener('click', ()=>{
-        getDialog.close()
+        getDialog.classList.remove('o-dialog-form--show')
     })
 
     document.addEventListener("keydown", (event) => {
         if (event.key === "Escape") {
-           getDialog.close();
+           getDialog.classList.remove('o-dialog-form--show');
         }
     });
 
@@ -29,8 +29,8 @@ const dialogFormOpen = (getDialog)=>{
                 const getBodyCard = event.target.closest('.m-card-iprogram__body');
                 const getTitleCard = getBodyCard.querySelector('.m-card-iprogram__title--title');
                 getHiddenValue.value = getTitleCard.textContent
-
-                getDialog.showModal()
+                console.log(getDialog)
+                getDialog.classList.add('o-dialog-form--show')
             })
         })
     }

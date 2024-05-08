@@ -148,6 +148,10 @@
     margin-top: 34px;
 }
 
+.alians .m-logo-card__img{
+    max-height: 200px;
+    height: 70px;
+}
 
 @media(max-width: 768px){
     .hero-conocenos__content {

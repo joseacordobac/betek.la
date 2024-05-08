@@ -62,6 +62,14 @@
         height: 258px;
         object-position: top;   
     }
+
+    .m-testimonial-info__name{
+        font-size: 19px;
+    }
+
+    .m-testimonial .m-testimonial-info__text {
+        font-size: 19px;
+    }
     
     .m-testimonial-left {
         width: 100%;
