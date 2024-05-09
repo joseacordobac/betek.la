@@ -60,6 +60,7 @@
         'button_text' => $btn_text,
         'button_link' => $btn_link,
         'btn_type' => 'a-btn--primary',
+        'target' => '_blank',
         'icons_path' => get_template_directory_uri().'/assets/icons/arrow-to-right.svg',
       )); ?>
     </div>
