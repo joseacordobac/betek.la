@@ -32,7 +32,7 @@
                       'medio'       => get_field('medio'),
                       'plataforma'  => get_field('plaforma'),
                       'btn_text'    => get_field('btn_text'),
-                      'btn_link'    => get_field('btn_link'),
+                      'btn_link'    => get_field('btn_url'),
                       'custom_class' => 'swiper-slide',
                     ));
 
