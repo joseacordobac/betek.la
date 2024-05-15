@@ -202,7 +202,7 @@
         </section>
         
         <section class="banner-form">
-            <?php get_template_part('organism/o-banner-form/o-banner-form', null, ''); ?>
+            <?php //get_template_part('organism/o-banner-form/o-banner-form', null, ''); ?>
         </section>
 
         <section class="intergral-process">
