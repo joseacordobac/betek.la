@@ -75,7 +75,7 @@
                         'content_name'      => 'list_description',
                         'list_img_path'     => 'list_img_path',
                         'list_title'        => 'list_title',
-                        'url_btn'           => get_sub_field('url_btn'),
+                        'btn_link'           => get_sub_field('url_btn'),
                         'btn_text'          => get_sub_field('btn_text'),
                         'custom_class'      => 'o-you-get--main-color o-you-get--flex-start'
                         )); 
