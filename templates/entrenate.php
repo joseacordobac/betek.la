@@ -33,7 +33,25 @@
     </section>
 
     <section class="products">
-        
+        <?php 
+            $args = array(
+                'post_type' => 'product',
+                'posts_per_page' => 3,
+                'order' => 'ASC',
+                'orderby' => 'date',
+                'post_status' => 'publish'
+            );
+
+            $query = new WP_Query($args);
+            
+            if ($query->have_posts()) :
+                while ($query->have_posts()) : $query->the_post();
+                    get_template_part('/molecules/m-card-product/m-card-product');
+                endwhile;
+            endif;
+            wp_reset_postdata();
+
+        ?>
     </section>
 
     <section class="testimonials">

@@ -23,3 +23,17 @@ function enqueue_custom_atoms() {
 }
 
 add_action('wp_enqueue_scripts', 'enqueue_custom_atoms');
+
+  function add_product_to_cart_and_redirect() {
+    if (isset($_POST['add-to-cart'])) {
+      $product_id = intval($_POST['add-to-cart']);
+      $quantity = 1;
+      $cart_item_key = WC()->cart->add_to_cart($product_id, $quantity);
+
+      if ($cart_item_key) {
+        wp_safe_redirect(wc_get_checkout_url());
+        exit;
+      }
+    }
+  }
+  add_action('template_redirect', 'add_product_to_cart_and_redirect');
