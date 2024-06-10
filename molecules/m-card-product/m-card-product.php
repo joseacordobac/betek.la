@@ -5,7 +5,7 @@
 
    ?>
 
-   <archive class="m-card-product">
+   <archive class="m-card-product swiper-slide">
       <header class="m-card-product__img">
           <?php 
             get_template_part('/atoms/a-img/a-img', null, array(

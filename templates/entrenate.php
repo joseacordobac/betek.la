@@ -32,26 +32,28 @@
         <?php get_template_part('/organism/o-tranning-model/o-tranning-model'); ?>
     </section>
 
-    <section class="products">
-        <?php 
-            $args = array(
-                'post_type' => 'product',
-                'posts_per_page' => 3,
-                'order' => 'ASC',
-                'orderby' => 'date',
-                'post_status' => 'publish'
-            );
+    <section class="products products-swipper">
+        <div class="swiper-wrapper">
+            <?php 
+                $args = array(
+                    'post_type' => 'product',
+                    'posts_per_page' => 3,
+                    'order' => 'ASC',
+                    'orderby' => 'date',
+                    'post_status' => 'publish'
+                );
 
-            $query = new WP_Query($args);
-            
-            if ($query->have_posts()) :
-                while ($query->have_posts()) : $query->the_post();
-                    get_template_part('/molecules/m-card-product/m-card-product');
-                endwhile;
-            endif;
-            wp_reset_postdata();
+                $query = new WP_Query($args);
+                
+                if ($query->have_posts()) :
+                    while ($query->have_posts()) : $query->the_post();
+                        get_template_part('/molecules/m-card-product/m-card-product');
+                    endwhile;
+                endif;
+                wp_reset_postdata();
 
-        ?>
+            ?>
+        </div>
     </section>
 
     <section class="testimonials">
