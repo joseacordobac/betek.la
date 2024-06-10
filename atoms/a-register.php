@@ -13,7 +13,8 @@ function enqueue_custom_atoms() {
     'a-list',
     'a-numbers',
     'a-social',
-    'a-tags'
+    'a-tags',
+    'a-btn-buy'
   );
 
   foreach($register_scripts_styles as $key => $value) {

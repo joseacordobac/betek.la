@@ -52,6 +52,15 @@
     margin-bottom: 100px;
 }
 
+.products{
+    padding: 50px 0px;
+}
+
+.products-swiper-wrapper{
+    max-width: 80%;
+    margin: auto;
+}
+
 @media(max-width:780px){
     .entrenate-banner__content{
         max-width:100%;

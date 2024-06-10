@@ -1,4 +1,5 @@
 <?php 
+  wp_enqueue_style('a-btn-buy');
   $product = wc_get_product();
   $regular_price = $product->get_price();
 ?>

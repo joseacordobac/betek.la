@@ -3,8 +3,9 @@
    * Template Name: Product Card
    */
 
+   wp_enqueue_script('m-card-product');
+   wp_enqueue_style('m-card-product');
    ?>
-
    <archive class="m-card-product swiper-slide">
       <header class="m-card-product__img">
           <?php 
@@ -17,7 +18,7 @@
             ))
           ?>
       </header>
-      <body class="m-card-product__body">
+      <section class="m-card-product__body">
         <?php 
             get_template_part('/atoms/a-titles/a-titles', null, 
             array(
@@ -37,10 +38,10 @@
         <div class="m-card-product__desc">
           <?php the_content(); ?>
         </div>
-      </body>
-      <footer class="m-card-product__footer">
-          <?php get_template_part('/atoms/a-btn-buy/a-btn-buy', null, array(
-              'btn_text' => 'Comprar',
-          )); ?>
-      </footer>
+        <footer class="m-card-product__footer">
+            <?php get_template_part('/atoms/a-btn-buy/a-btn-buy', null, array(
+                'btn_text' => 'Comprar',
+            )); ?>
+        </footer>
+      </section>
    </archive>

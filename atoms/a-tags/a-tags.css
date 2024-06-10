@@ -20,6 +20,11 @@
   border: solid 1px var(--quinary-color);
 }
 
+.a-tags-iprogram__tag:nth-child(2n){
+  background-color: #f9b32a5e;
+  border: solid 1px var(--quinary-color);
+}
+
 .a-tags-iprogram__tag-el{
   font-size: 90%;
   text-align: center;

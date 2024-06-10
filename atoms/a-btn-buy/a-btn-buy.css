@@ -1,0 +1,20 @@
+.a-btn-buy__form {
+  text-align: center;
+}
+
+.a-btn-buy__btn {
+  background: var(--secondary-color);
+  border: none;
+  padding: 5px 10px;
+  width: 100%;
+  border-radius: 8px;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.35s;
+}
+
+.a-btn-buy__btn:hover {
+  background: var(--quinary-color);
+  transition: 0.35s;
+}

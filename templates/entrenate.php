@@ -31,9 +31,20 @@
     <section class="tranning-model">
         <?php get_template_part('/organism/o-tranning-model/o-tranning-model'); ?>
     </section>
-
+    <?php 
+    $role = wp_get_current_user()->roles[0];
+    if($role==='administrator') : ?>
     <section class="products products-swipper">
-        <div class="swiper-wrapper">
+        <?php get_template_part('/atoms/a-titles/a-titles', null, 
+            array(
+                'title'         => "Sigue conquistando nuevos horizontes<br> con los cursos cortos",
+                'titles-type'   => 'a-titles--main',
+                'animations'    => 'js-title-typing',
+                'custom-css'    => 'products-title'
+                )
+            ); 
+        ?>
+        <div class="swiper-wrapper products-swiper-wrapper">
             <?php 
                 $args = array(
                     'post_type' => 'product',
@@ -55,6 +66,7 @@
             ?>
         </div>
     </section>
+    <?php endif; ?>
 
     <section class="testimonials">
         <div class="testimonials__content">
