@@ -1,0 +1,30 @@
+.product {
+  max-width: 80%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  align-items: center;
+  gap: 30px;
+  padding: 100px 0px;
+}
+
+.woocommerce img, .woocommerce-page img {
+  max-height: 450px;
+}
+
+.product__tags{
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap
+}
+
+.product-description {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  
+  & .a-titles-title {
+    color: var(--main-color);
+    margin: 0;
+  }
+}
