@@ -35,6 +35,7 @@ if (!function_exists('register_custom_elements')) :
       wp_enqueue_style('o-header');
       wp_enqueue_style('a-logo');
       wp_enqueue_style('m-nav');
+      wp_enqueue_style('woo-card');
 
     }
   
