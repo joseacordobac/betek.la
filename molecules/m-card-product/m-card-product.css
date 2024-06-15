@@ -7,7 +7,7 @@
 }
 
 .m-card-product__img {
-  height: 220px;
+  height: 250px;
 }
 
 .m-card-product__body {
@@ -31,6 +31,14 @@
 .m-card-product__tags {
   display: flex;
   gap: 10px;
+}
+
+.m-card-product__short-desc{
+  text-overflow: ellipsis;
+  max-height: 100px;
+  overflow: hidden;
+  margin-bottom: 46px;
+  white-space: pre-wrap;
 }
 
 .m-card-product__desc strong {

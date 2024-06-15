@@ -5,6 +5,9 @@
 
    wp_enqueue_script('m-card-product');
    wp_enqueue_style('m-card-product');
+   $product = wc_get_product(get_the_ID());
+   $short_description = $product->get_short_description();
+
    ?>
    <archive class="m-card-product swiper-slide">
       <header class="m-card-product__img">
@@ -36,7 +39,7 @@
           endwhile; ?>
         </div>
         <div class="m-card-product__desc">
-          <?php the_content(); ?>
+          <?php echo "<p class='m-card-product__short-desc'>$short_description</p>" ?>
         </div>
         <footer class="m-card-product__footer">
             <?php get_template_part('/atoms/a-btn-buy/a-btn-buy', null, array(

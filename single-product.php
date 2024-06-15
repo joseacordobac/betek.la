@@ -40,12 +40,20 @@
                     endwhile; ?>
                 </div>
                 <?php the_content(); ?>
+                
                 <div class="product-add-to-cart">
                     <?php get_template_part('atoms/a-btn-buy/a-btn-buy', null); ?>
                 </div>
             </div>
         </div>
-
+        <div class="product-caracteristics">
+            <?php while(have_rows('caracteristicas')): the_row(); ?>
+                <div class="product-characteristics__content">
+                    <h4 class="product-characteristics__title"><?php the_sub_field('character_title'); ?></h4>
+                    <p class="product-characteristics__text"><?php the_sub_field('description_characteristic'); ?></p>
+                </div>
+            <?php endwhile; ?>
+        </div>
     </main>
 
     <?php get_footer(); ?>
