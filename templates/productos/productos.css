@@ -1,0 +1,11 @@
+.o-header--js-active{
+  background-color: var(--secondary-color) !important;
+}
+
+@media(max-width: 768px){
+  .m-nav,
+  .o-header__content,
+  .o-header{
+    background-color:var(--secondary-color) !important;
+  }
+} 

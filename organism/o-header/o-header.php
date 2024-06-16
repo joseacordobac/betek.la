@@ -8,7 +8,7 @@
 <header class="o-header">
     <div class="g-content-regular o-header__content">
         <div class="o-header__logo-content"> 
-            <?php if(is_page_template('templates/empresas.php')){ ?>
+            <?php if(is_page_template('templates/empresas.php') || is_page_template('templates/productos.php')){ ?>
                 <?php get_template_part('/atoms/a-logo-white/a-logo-white'); ?>
             <?php }else{ ?>
                 <?php get_template_part('/atoms/a-logo/a-logo'); ?>

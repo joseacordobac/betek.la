@@ -12,7 +12,8 @@ function register_templates_custom() {
     'single-programs',
     'empresas',
     'single-product',
-    'woo-card'
+    'woo-card',
+    'productos',
   );
 
   foreach($list_nameSpaces_register as $key => $value) {
