@@ -157,7 +157,6 @@ pre {
 
 /* checkgout  */
 .checkout.woocommerce-checkout {
-    max-width: 80%;
     margin: auto;
     padding: 40px 0px;
     display: grid;
