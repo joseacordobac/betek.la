@@ -43,7 +43,7 @@
         </div>
         <footer class="m-card-product__footer">
             <?php get_template_part('/atoms/a-btn-buy/a-btn-buy', null, array(
-                'btn_text' => 'Comprar',
+                'btn_text' => 'Ver más',
             )); ?>
         </footer>
       </section>

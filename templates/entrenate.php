@@ -49,7 +49,7 @@
             <?php 
                 $args = array(
                     'post_type' => 'product',
-                    'posts_per_page' => 3,
+                    'posts_per_page' => 10,
                     'order' => 'ASC',
                     'orderby' => 'date',
                     'post_status' => 'publish'
@@ -63,8 +63,22 @@
                     endwhile;
                 endif;
                 wp_reset_postdata();
-
             ?>
+        </div>
+        <div class="entrenate-btn">
+            <?php
+                get_template_part('/atoms/a-btn/a-btn', null, 
+                array(
+                    'button_text' => 'Ver todos',
+                    'button_link' => get_home_url().'/productos',
+                    'btn_type' => 'a-btn--primary',
+                    'custom_css' => 'g-with-100',
+                    'target' => '_blank',
+                    'icons_path' => get_template_directory_uri().'/assets/icons/arrow-to-right.svg'
+                    )
+                );
+
+                ?>
         </div>
     </section>
     <?php endif; ?>

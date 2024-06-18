@@ -61,6 +61,15 @@
     margin: auto;
 }
 
+.entrenate-btn {
+    text-align: center;
+    margin-top: 32px;
+}
+
+.product-add-to-cart {
+    max-width: 80%;
+}
+
 @media(max-width:780px){
     .entrenate-banner__content{
         max-width:100%;
@@ -72,5 +81,9 @@
 
     .entrenate-banner__circle{
         display: none;
+    }
+
+    .product-add-to-cart{
+        max-width: 100%;
     }
 }
