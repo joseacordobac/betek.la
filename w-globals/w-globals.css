@@ -213,3 +213,28 @@ pre {
         width: 84vw;
     }
 }
+
+
+/* finalizar oden */
+
+.woocommerce.wp-block-group.alignwide {
+    max-width: 65%;
+    margin: auto;
+    padding: 131px 0px 85px;
+}
+
+#submit_payu_latam {
+    border: none;
+    color: white;
+    background-color: var(--main-color);
+    padding: 5px 28px;
+    font-size: 20px;
+    border-radius: 10px;
+    margin-top: 16px;
+}
+
+@media(max-width: 768px){
+    .woocommerce.wp-block-group.alignwide{
+        max-width: 95%;
+    }
+}
