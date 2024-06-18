@@ -163,7 +163,6 @@ pre {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 15px;
-    padding-top: 120px;
     h3{
         color: var(--main-color);
         font-size: var(--size-medium-large);
@@ -220,7 +219,7 @@ pre {
 .woocommerce.wp-block-group.alignwide {
     max-width: 86%;
     margin: auto;
-    padding: 6px 0px 85px;
+    padding-top: 120px;
 }
 
 #submit_payu_latam {
