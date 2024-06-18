@@ -10,7 +10,7 @@
 <div class="a-btn-buy">
   <?php 
       if(!$btn_text){
-        echo "<a href='$link/?add-to-cart=$product_id&quantity=1' class='a-btn-buy__btn'>$ $regular_price</a>"; 
+        echo "<a href='".get_site_url()."/carrito/?add-to-cart=$product_id&quantity=1' class='a-btn-buy__btn'>$ $regular_price</a>"; 
       }
       if($btn_text){
         echo "<a href='$link' class='a-btn-buy__btn'>$btn_text</a>";
