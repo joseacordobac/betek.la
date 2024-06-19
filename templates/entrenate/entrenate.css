@@ -1,3 +1,7 @@
+.page-entrenate {
+    overflow: hidden;
+}
+
 .entrenate-banner {
     height: 80vh;
     max-height: 450px;
