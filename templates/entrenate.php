@@ -31,10 +31,7 @@
     <section class="tranning-model">
         <?php get_template_part('/organism/o-tranning-model/o-tranning-model'); ?>
     </section>
-    <!-- <?php 
-    $role = wp_get_current_user();
-    isset($role->roles[0]) ? $role = $role->roles[0] : $role = '';
-    if($role==='administrator') : ?> -->
+
     <section class="products products-swipper">
         <?php get_template_part('/atoms/a-titles/a-titles', null, 
             array(
@@ -81,7 +78,6 @@
                 ?>
         </div>
     </section>
-    <!-- <?php endif; ?> -->
 
     <section class="testimonials">
         <div class="testimonials__content">
