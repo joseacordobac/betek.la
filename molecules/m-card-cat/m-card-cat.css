@@ -1,0 +1,45 @@
+
+.m-card-cat {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: var(--border-radius--regular);
+  box-shadow: var(--shadow-boxes);
+  padding-bottom: 15px;
+}
+
+
+.m-card-cat__body {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+  padding: 10px;
+
+  .a-titles-title {
+    margin: 0px;
+    color: var(--main-color);
+    font-size: 24px;
+  }
+
+  
+}
+
+.m-card-cat__item {
+  margin: 7px 0px;
+}
+
+.m-card-cat__footer {
+  text-align: center;
+  margin: 16px 0px;
+}
+
+.m-card-cat__link {
+  padding: 10px 20px;
+  background-color: var(--secondary-color);
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+

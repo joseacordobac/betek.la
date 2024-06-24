@@ -10,7 +10,7 @@
   <main class="product">
     <section class="banner-product">
       <div class="banner-product__content">
-        <h1 class="banner-product__title">Sigue conquistando nuevos horizontes con los cursos cortos</h1>
+        <h1 class="banner-product__title">Sigue conquistando nuevos horizontes con nuestro cursos</h1>
       </div>
     </section>
     <section class="product-list">

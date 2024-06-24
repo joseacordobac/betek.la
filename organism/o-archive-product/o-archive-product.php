@@ -11,7 +11,8 @@ if (class_exists('WooCommerce')):
   $product_categories = get_terms( 'product_cat', array(
     'orderby'    => 'name',
     'order'      => 'ASC',
-    'hide_empty' => false,
+    'hide_empty' => true,
+    'parent'     => 0
   ) );
 ?>
 

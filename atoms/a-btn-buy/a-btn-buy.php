@@ -13,7 +13,8 @@
         echo "<a href='".get_site_url()."/finalizar-compra/?add-to-cart=$product_id&quantity=1' class='a-btn-buy__btn'>$ $regular_price</a>"; 
       }
       if($btn_text){
-        echo "<a href='$link' class='a-btn-buy__btn'>$btn_text</a>";
+        echo "<a href='$link' class='a-btn-buy__btn a-btn-buy__btn--secondary'>Ver más</a>";
+        echo "<a href='$link' class='a-btn-buy__btn '>Comprar</a>";
       }
   ?>
 </div>

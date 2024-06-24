@@ -27,7 +27,10 @@ function enque_custom_molecules() {
     'm-date-info',
     'm-card-empresa',
     'm-card-event',
-    'm-card-product'
+    'm-card-product',
+    'm-card',
+    'm-card-cat',
+    'm-product-filter'
   );
 
   foreach ($molecules as $molecule) {

@@ -7,9 +7,10 @@
    wp_enqueue_style('m-card-product');
    $product = wc_get_product(get_the_ID());
    $short_description = $product->get_short_description();
+   $regular_price = $product->get_regular_price();
 
    ?>
-   <archive class="m-card-product swiper-slide">
+   <archive class="m-card-product">
       <header class="m-card-product__img">
           <?php 
             get_template_part('/atoms/a-img/a-img', null, array(
@@ -41,6 +42,9 @@
         <div class="m-card-product__desc">
           <?php echo "<p class='m-card-product__short-desc'>$short_description</p>" ?>
         </div>
+        <h4 class="regular-price">
+          $ <?php echo number_format($regular_price, 0, ',', '.'); ?>
+        </h4>
         <footer class="m-card-product__footer">
             <?php get_template_part('/atoms/a-btn-buy/a-btn-buy', null, array(
                 'btn_text' => 'Ver más',

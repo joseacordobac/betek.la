@@ -1,0 +1,24 @@
+
+.o-cat-products {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3%;
+  max-width: 90%;
+  margin: auto;
+  margin-top: -82px;
+}
+
+@media(max-width: 768px) {
+  .o-cat-products {
+    grid-template-columns: 1fr;
+
+    .m-card-cat__short-desc{
+      font-size: 14px;
+    }
+
+    .a-titles-title{
+      font-size: 18px;
+    }
+  }
+
+}

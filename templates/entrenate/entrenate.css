@@ -25,6 +25,36 @@
     line-height: var(--size-large);
 }
 
+
+.entrenate-banner__secondary{
+    height: 80vh;
+    max-height: 320px;
+    background-color: var(--clear-color-two);
+
+    .entrenate-banner__title {
+        text-transform: uppercase;
+    }
+
+    .entrenate-banner__content{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .entrenate-banner__sub_title{
+        color: var(--main-color);
+        font-size: var(--size-large);
+        line-height: var(--size-large);
+        font-weight: bold;
+        margin-top: 13px;
+        font-family: var(--font-titles);
+    }
+
+    .entrenate-banner__description {
+        margin-top: 12px;
+        max-width: 80%;
+    }
+}
+
 .entrenate-banner__circle {
     position: absolute;
     left: 0px;
