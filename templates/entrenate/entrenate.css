@@ -104,6 +104,20 @@
     max-width: 80%;
 }
 
+.page-entrenate--specialized{
+    .entrenate-banner__secondary{
+        max-height: 380px;
+    }
+
+    .entrenate-banner__circle{
+        display: none;
+    }
+
+    .entrenate-banner__secondary{
+        background-color: var(--clear-color-one);
+    }
+}
+
 @media(max-width:780px){
     .entrenate-banner__content{
         max-width:100%;
