@@ -31,7 +31,7 @@
     <section class="tranning-model">
         <?php get_template_part('/organism/o-tranning-model/o-tranning-model'); ?>
     </section>
-
+<!-- 
     <section class="products products-swipper">
         <?php get_template_part('/atoms/a-titles/a-titles', null, 
             array(
@@ -77,7 +77,7 @@
 
                 ?>
         </div>
-    </section>
+    </section> -->
 
     <section class="testimonials">
         <div class="testimonials__content">
