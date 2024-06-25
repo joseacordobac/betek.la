@@ -68,3 +68,28 @@
   text-align: center;
   margin-top: 10px;
 }
+
+.product-footer {
+  max-width: 68%;
+  margin: auto;
+  padding-bottom: 50px;
+}
+
+.product-footer__faq .m-faq__question-icon {
+  text-align: center;
+  font-size: 25px;
+  color: var(--main-color);
+  font-family: var(--font-titles);
+}
+
+@media(max-width: 768px){
+  .product {
+    grid-template-columns: 100%;
+    max-width: 95%;
+    gap: 10px;
+  }
+
+  .product-head{
+    height: 25vh;
+  }
+}

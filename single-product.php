@@ -61,6 +61,18 @@
                 </div>
             </div>
         </div>
+        <div class="product-footer">
+            <?php get_template_part('molecules/m-faq/m-faq', null, array(
+                'question' => 'Detalles de entrenamiento',
+                'answer' => get_field('trainnig_details', $product_id),
+                'custom_class' => 'product-footer__faq',
+            )); ?>
+            <?php get_template_part('molecules/m-faq/m-faq', null, array(
+                'question' => 'Prerequisitos',
+                'answer' => get_field('prerequisites', $product_id),
+                'custom_class' => 'product-footer__faq',
+            )); ?>
+        </div>
     </main>
 
     <?php get_footer(); ?>

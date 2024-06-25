@@ -4,8 +4,8 @@
   $regular_price = number_format($product->get_price(), 0, ',', '.');
   $product_id = get_the_ID();
   $btn_text = isset($args['btn_text']) ? $args['btn_text'] : false;
+  $link = get_field('go_to_landing', $product_id) ? get_field('go_to_landing', $product_id) : get_the_permalink();
 
-  $link = get_the_permalink();
 ?>
 <div class="a-btn-buy">
   <?php 
