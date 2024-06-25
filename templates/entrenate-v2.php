@@ -20,7 +20,7 @@
 ?>
 
 <?php get_header(); ?>
-<main class="page-entrenate <?php echo $type_entrenamiento === 'entrenamientos-especializados' ? 'page-entrenate--specialized' : ''; ?>">
+<main class="page-entrenate <?php echo $type_entrenamiento === 'entrenamiento-especializado' ? 'page-entrenate--specialized' : ''; ?>">
     <section class="<?php echo $type_entrenamiento === '' ? 'entrenate-banner' : 'entrenate-banner__secondary'; ?>">
         <div class="entrenate-banner__content">
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/circle-detail.png" alt="entrenate-banner" class="entrenate-banner__circle" with="195" height="200" />
