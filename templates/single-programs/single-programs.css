@@ -37,6 +37,7 @@
 .information_btn {
   text-align: center;
   margin-top: 40px;
+  justify-content: center;
 }
 
 .tools {
@@ -72,6 +73,7 @@
 .steps_btn {
   text-align: center;
   margin: 38px auto;
+  justify-content: center;
 }
 
 .misions-dates {
@@ -85,6 +87,7 @@
 
 .missions-dates__btn{
   text-align: center;
+  justify-content: center;
 }
 
 

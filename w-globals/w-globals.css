@@ -239,6 +239,12 @@ ul.order_details {
     margin-top: 16px;
 }
 
+.btn-group {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
 @media(max-width: 768px){
     .woocommerce.wp-block-group.alignwide{
         max-width: 95%;

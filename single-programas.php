@@ -26,8 +26,9 @@
                     <div class="hero-banner__left-description">
                         <?php the_sub_field('description'); ?>
                     </div>
-                    <?php 
-                    get_template_part('/atoms/a-btn/a-btn', null, 
+                    <div class="btn-group">
+                        <?php 
+                        get_template_part('/atoms/a-btn/a-btn', null, 
                         array(
                                 'button_text' => get_sub_field('btn_text'),
                                 'button_link' => get_sub_field('url_btn'),
@@ -35,7 +36,18 @@
                                 'icons_path' => get_template_directory_uri().'/assets/icons/arrow-to-right.svg',
                             )
                         );
+                        if(get_sub_field('btn_text2')):
+                        get_template_part('/atoms/a-btn/a-btn', null, 
+                        array(
+                                'button_text' => get_sub_field('btn_text2'),
+                                'button_link' => get_sub_field('url_btn2'),
+                                'btn_type' => 'a-btn--primary',
+                                'icons_path' => get_template_directory_uri().'/assets/icons/arrow-to-right.svg',
+                            )
+                        );
+                        endif;
                     ?>
+                    </div>
                     
                 </div>
                 </div>
@@ -82,7 +94,7 @@
                     )); 
                 ?>
                 
-                <div class="information_btn">
+                <div class="information_btn btn-group ">
                     <?php 
                         get_template_part('/atoms/a-btn/a-btn', null, 
                         array(
@@ -92,6 +104,16 @@
                                 'icons_path' => get_template_directory_uri().'/assets/icons/arrow-to-right.svg',
                             )
                         );
+                        if(get_sub_field('btn_text_2')):
+                        get_template_part('/atoms/a-btn/a-btn', null, 
+                        array(
+                                'button_text' => get_sub_field('btn_text_2'),
+                                'button_link' => get_sub_field('url_btn_2'),
+                                'btn_type' => 'a-btn--primary',
+                                'icons_path' => get_template_directory_uri().'/assets/icons/arrow-to-right.svg',
+                            )
+                        );
+                        endif;
                     ?>
                 </div>
 
@@ -154,7 +176,7 @@
                 <?php endwhile; ?>
             </div>
 
-            <div class="steps_btn">
+            <div class="steps_btn btn-group">
                 <?php 
                 get_template_part('/atoms/a-btn/a-btn', null, 
                     array(
@@ -164,6 +186,16 @@
                             'icons_path' => get_template_directory_uri().'/assets/icons/arrow-to-right.svg'
                         )
                     );
+                if(get_sub_field('texto_del_boton_2')):
+                get_template_part('/atoms/a-btn/a-btn', null, 
+                    array(
+                            'button_text' => get_sub_field('texto_del_boton_2'),
+                            'button_link' => get_sub_field('url_btn_2'),
+                            'btn_type' => 'a-btn--primary',
+                            'icons_path' => get_template_directory_uri().'/assets/icons/arrow-to-right.svg'
+                        )
+                    );
+                endif;
                 ?>
             </div>
 
@@ -185,7 +217,7 @@
                 endwhile; ?>
             </div> 
 
-            <div class="missions-dates__btn">
+            <div class="missions-dates__btn btn-group">
                 <?php 
                 get_template_part('/atoms/a-btn/a-btn', null, 
                     array(
@@ -195,6 +227,16 @@
                             'icons_path' => get_template_directory_uri().'/assets/icons/arrow-to-right.svg',
                         )
                     );
+                if(get_sub_field('btn_text_2')):
+                get_template_part('/atoms/a-btn/a-btn', null, 
+                    array(
+                            'button_text' => get_sub_field('btn_text_2'),
+                            'button_link' => get_sub_field('url_btn_2'),
+                            'btn_type' => 'a-btn--primary',
+                            'icons_path' => get_template_directory_uri().'/assets/icons/arrow-to-right.svg',
+                        )
+                    );
+                endif;
                 ?>
             </div>
 
