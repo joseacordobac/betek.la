@@ -160,9 +160,9 @@ pre {
     margin: auto;
     padding: 40px 0px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 70% 28%;
     gap: 15px;
-    max-width: 75%;
+    max-width: 90%;
     h3{
         color: var(--main-color);
         font-size: var(--size-medium-large);
@@ -199,7 +199,7 @@ pre {
 }
 
 .woocommerce .col2-set .col-1, .woocommerce-page .col2-set .col-1{
-    width: 50vw;
+    width: 45vw;
 }
 
 @media(max-width: 768px){
@@ -221,6 +221,12 @@ pre {
     margin: auto;
     padding-top: 120px;
     padding-bottom: 21px;
+    text-align: center;
+}
+
+ul.order_details {
+    display: flex;
+    justify-content: center;
 }
 
 #submit_payu_latam {
