@@ -1,7 +1,7 @@
 <?php 
   wp_enqueue_style('a-btn-buy');
   $product = wc_get_product();
-  $regular_price = number_format($product->get_price(), 0, ',', '.');
+  $regular_price = $product->get_price() !=="" ? number_format($product->get_price(), 0, ',', '.') : '';
   $product_id = get_the_ID();
   $btn_text = isset($args['btn_text']) ? $args['btn_text'] : false;
   $link = get_field('go_to_landing', $product_id) ? get_field('go_to_landing', $product_id) : get_the_permalink();

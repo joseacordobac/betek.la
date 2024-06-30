@@ -1,13 +1,12 @@
 <?php 
   /**
-   * Template Name: Product Card
    */
 
    wp_enqueue_script('m-card-product');
    wp_enqueue_style('m-card-product');
    $product = wc_get_product(get_the_ID());
    $short_description = $product->get_short_description();
-   $regular_price = $product->get_regular_price();
+   $regular_price = $product->get_price() !=="" ? number_format($product->get_price(), 0, ',', '.') : '';
 
    ?>
    <archive class="m-card-product">
@@ -43,7 +42,7 @@
           <?php echo "<p class='m-card-product__short-desc'>$short_description</p>" ?>
         </div>
         <h4 class="regular-price">
-          $ <?php echo number_format($regular_price, 0, ',', '.'); ?>
+          $ <?php echo $regular_price; ?>
         </h4>
         <footer class="m-card-product__footer">
             <?php get_template_part('/atoms/a-btn-buy/a-btn-buy', null, array(

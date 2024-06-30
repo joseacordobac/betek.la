@@ -16,7 +16,6 @@
   $page_title = $type_entrenamiento === '' ? get_field('main_text') :  $term->name;
   $id_cat = isset($term->term_id) ? $term->term_id : 0;
   $child_terms = get_term_children($id_cat, 'product_cat');  
-
 ?>
 
 <?php get_header(); ?>
