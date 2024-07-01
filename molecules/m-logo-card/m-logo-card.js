@@ -1,5 +1,6 @@
 const sliderLogoCard = () => {
   const getLogoCard = document.querySelector('.js-alians-brands');
+  console.log(getLogoCard)
   if(!getLogoCard) return;
 
   const swiper = new Swiper(getLogoCard, {
