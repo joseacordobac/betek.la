@@ -43,7 +43,7 @@ wp_enqueue_script('o-footer');
         ?>
         <div class="o-footer__form">
             <div class="o-footer__form-content">
-                <?php echo do_shortcode('[forminator_form id="1834"]'); ?>
+                <?php echo do_shortcode('[forminator_form id="2118"]'); ?>
                 <div class="o-footer-form__text">
                     <span class="o-footer-form__p">
                         Suscríbete y recibe todas las noticias y oportunidades de entrenamiento de BeTek.
