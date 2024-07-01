@@ -8,7 +8,7 @@
 
     $product_id = get_the_ID();
     $product = wc_get_product($product_id);
-    $thumbnail_id = $product->get_image_id();
+    $thumbnail_id = get_field('internal_img_product') ? get_field('internal_img_product') : $product->get_image_id();
     ?>
     
     <main class="main">

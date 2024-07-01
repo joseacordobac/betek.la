@@ -10,7 +10,8 @@ wp_enqueue_style('m-card-cat');
 
 $custom_class = isset($args['custom_class']) ? $args['custom_class'] : '';
 $category = isset($args['category']) ? $args['category'] : '';
- 
+$term_id = $category ? $category->term_id : get_queried_object_id();
+
 $category_id = $category->term_id;
 $category_name = $category->name;
 $category_slug = $category->slug;
@@ -27,7 +28,7 @@ $category_image_id = get_term_meta($category_id, 'thumbnail_id', true);
               'image_size' => 'full',
               'alt' => $category_name,
               'custom_class' => 'border-radius',
-          ))
+          ));
         ?>
     </header>
     <section class="m-card-cat__body">
@@ -43,9 +44,23 @@ $category_image_id = get_term_meta($category_id, 'thumbnail_id', true);
         <div class="m-card-cat__desc">
             <?php echo "<p class='m-card-cat__short-desc'>$category_description</p>" ?>
         </div>
-        <p class="m-card-cat__item">Item / Item 2 / item 3</p>
-        </section>
+        <p class="m-card-cat__items">
+            <?php
+            echo '<!-- Term ID: ' . esc_html($term_id) . ' -->';
+            
+            if (have_rows('items_card_products', 'term_' . $term_id)) : 
+                while (have_rows('items_card_products', 'term_' . $term_id)) : the_row(); 
+            ?>
+                <span class="m-card-cat__item"><?php the_sub_field('textos'); ?> /</span>
+            <?php 
+                endwhile;
+            else :
+                echo '<!-- No hay filas disponibles en items_card_products -->';
+            endif; 
+            ?>
+        </p>
+    </section>
     <footer class="m-card-cat__footer">
-        <a href="<?php echo "./?entrenamiento=$category_slug" ; ?>" class="m-card-cat__link" href="">Ver todos</a>    
+        <a href="<?php echo "./?entrenamiento=$category_slug"; ?>" class="m-card-cat__link">Ver todos</a>    
     </footer>
 </archive>
