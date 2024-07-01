@@ -7,3 +7,7 @@
 .a-logo--js-active .a-logo-white__logo {
   width: 141px !important;
 }
+
+.o-footer .a-logo--js-active .a-logo-white__logo{
+  width: 230px !important;
+}

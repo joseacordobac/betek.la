@@ -8,7 +8,7 @@ $title = isset($args['title']) ? $args['title'] : '';
 $description = isset($args['description']) ? $args['description'] : '';
 
 ?>
-<div class="m-info">
+<div class="m-info <?php echo $title ?>">
     <div class="m-info__img">
         <img src="<?php echo $src ?>" alt="info icono" class="m-info__img-icon" width="40" height="40">
     </div>

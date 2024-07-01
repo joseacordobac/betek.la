@@ -1,6 +1,6 @@
 .m-info-list {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     gap: 20px;
     align-items: center;
     color: white;
@@ -10,6 +10,14 @@
 .m-info {
     display: flex;
     gap: 14px;
+}
+
+.Visítanos {
+    width: 40%;
+}
+
+.m-info__text-description{
+    font-size: 14px;
 }
 
 .m-info__img-icon {
