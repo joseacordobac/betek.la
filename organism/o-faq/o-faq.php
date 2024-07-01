@@ -13,6 +13,7 @@
  $repeater = isset($args['repeater']) ? $args['repeater'] : '';
  $question = isset($args['question']) ? $args['question'] : '';
  $answer = isset($args['answer']) ? $args['answer'] : '';
+ $has_habilities = isset($args['has_habilities']) ? $args['has_habilities'] : false;
 
  $custom_class = isset($args['custom_class']) ? $args['custom_class'] : '';
 
@@ -35,8 +36,9 @@
                 <?php get_template_part('/molecules/m-faq/m-faq', null, 
                     array(
                         'question'      => get_sub_field($question),
-                        'answer'         => get_sub_field($answer),
+                        'answer'        => get_sub_field($answer),
                         'custom_class'  => 'o-faq-card',
+                        'has_habilities' => $has_habilities
                     )
                 ); ?>
             <?php endwhile; ?>

@@ -50,19 +50,19 @@
                       <?php while( have_rows('habilities_list') ) : the_row(); ?>
                           <?php 
                             if(get_sub_field('logo')):
-                            get_template_part('/atoms/a-img/a-img', null,
-                                array(
-                                    'image_id' => get_sub_field('logo'),
-                                    'image_size' => 'medium',
-                                    'alt' => 'betek',
-                                    'class' => 'tools-img',
-                                ));
+                              get_template_part('/atoms/a-img/a-img', null,
+                                  array(
+                                      'image_id' => get_sub_field('logo'),
+                                      'image_size' => 'medium',
+                                      'alt' => 'betek',
+                                      'class' => 'tools-img',
+                                  ));
                             endif;
                           ?>
               
                           <?php if(get_sub_field('hability_name_tool')): ?>
-                          <p class="o-tabs__text"><?php the_sub_field('hability_name_tool'); ?></p>
-                        <?php endif; ?>
+                            <p class="o-tabs__text"><?php the_sub_field('hability_name_tool'); ?></p>
+                          <?php endif; ?>
                       <?php endwhile; ?>
                     </div>
                   </div>

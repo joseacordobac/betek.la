@@ -30,7 +30,8 @@ function enque_custom_molecules() {
     'm-card-product',
     'm-card',
     'm-card-cat',
-    'm-product-filter'
+    'm-product-filter',
+    'm-habilities-list'
   );
 
   foreach ($molecules as $molecule) {

@@ -121,21 +121,19 @@
         </section>
 
         <section class="tools">
-            <?php while( have_rows('tools_domain') ) : the_row(); ?>
-                <?php get_template_part('/atoms/a-titles/a-titles', null, 
+            <div class="preguntas__content g-content-5X">
+                <?php get_template_part('/organism/o-faq/o-faq', null, 
                     array(
-                        'title'         => get_sub_field('section_title'),
-                        'titles-type'   => 'a-titles--main',                                )
-                    ); 
-                ?>
-                <div class="tools-tabs">
-                    <?php get_template_part('/organism/o-tabs/o-tabs', null, 
-                    array(
+                        'group' => 'tools_domain',
+                        'title' => 'section_title',
                         'repeater' => 'hability_type',
-                        'custom_class' => 'o-tabs--tools',
-                    )
+                        'question' => 'hability_title',
+                        'answer' => 'Answer',
+                        'has_habilities' => true
+                        )
                 ); ?>
-                </div>
+            </div>
+            <?php while( have_rows('tools_domain') ) : the_row(); ?>
                 <div class="tools_btn">
                     <?php 
                     get_template_part('/atoms/a-btn/a-btn', null, 

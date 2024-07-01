@@ -48,7 +48,7 @@ details summary {
 
 details[open] summary {
     margin-bottom: 10px;
-    padding-bottom: 0px;
+    padding-bottom: 17px;
 }
 
 details[open] summary .m-faq__question-icon::after{
