@@ -2,7 +2,9 @@
     display: flex;
     justify-content: center;
     gap: 20px;
+    align-items: center;
     color: white;
+    align-items: center;
 }
 
 .m-info {
@@ -20,10 +22,12 @@
 }
 
 @media(max-width: 768px) {
+    
     .m-info-list {
         flex-direction: column;
         align-items: stretch;
         max-width: 87%;
         margin: auto;
+        margin-bottom: 20px;
     }
 }
