@@ -1,4 +1,9 @@
 
+.o-iprogram__wrapper {
+    overflow: hidden;
+    padding-bottom: 16px;
+}
+
 .o-iprogram__pagination {
     position: relative;
     top: 15px !important;
@@ -6,6 +11,34 @@
 
 .o-iprogram__pagination .swiper-pagination-bullet {
     background-color: white;
+}
+
+.o-iprogram__wrapper span.swiper-pagination-bullet {
+    width: 20px !important;
+    height: 20px !important;
+    position: relative;
+}
+
+.o-iprogram__swiper-button-prev {
+    position: absolute;
+    transform: rotate(180deg);
+    top: 50%;
+    z-index: 1;
+    padding: 14px;
+    border-radius: 50px;
+    left: -65px;
+}
+
+.o-iprogram__swiper-button-next {
+    position: absolute;
+    right: -46px;
+    top: 50%;
+    z-index: 1;
+}
+
+.o-iprogram__swiper-button-next.swiper-button-disabled, 
+.o-iprogram__swiper-button-prev.swiper-button-disabled {
+    opacity: 0.2;
 }
 
 @media(max-width: 768px){

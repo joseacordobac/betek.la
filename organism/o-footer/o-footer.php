@@ -52,7 +52,7 @@ wp_enqueue_script('o-footer');
             </div>
             <div class="o-footer__bottom">
                 <div class="o-footer__bottom-text">
-                    <p>© <?php echo date("Y"); ?> Betek. Todos los derechos reservados | <a href="https://makaia.org/politica-de-tratamiento-de-datos/" target="_blank" class="o-footer__policy">Política de privacidad</a> |Desarrollado por <a class="o-footer__bottom-link" href="https://movemosmarcas.com/" target="_blank">movemosmarcas.com</a></p>
+                    <p>© <?php echo date("Y"); ?> Betek. Todos los derechos reservados | <a href="https://makaia.org/politica-de-tratamiento-de-datos/" target="_blank" class="o-footer__policy">Política de privacidad</a> | Desarrollado por <a class="o-footer__bottom-link" href="https://movemosmarcas.com/" target="_blank">movemosmarcas.com</a></p>
                 </div>
             </div>
         </div>

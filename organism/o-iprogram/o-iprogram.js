@@ -13,6 +13,10 @@ const startPrograToSwiper = () =>{
             dynamicBullets: true,
             clickable: true,
         },
+        navigation: {
+            nextEl: '.o-iprogram__swiper-button-next',
+            prevEl: '.o-iprogram__swiper-button-prev',
+          },
         breakpoints: {
             0: {
                 slidesPerView: 1,

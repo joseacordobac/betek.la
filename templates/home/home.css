@@ -126,6 +126,7 @@
     max-width: 85%;
     margin: auto;
     margin-top: 55px;
+    position: relative;
 }
 
 .need-talent {
