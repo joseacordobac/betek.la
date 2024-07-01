@@ -32,6 +32,11 @@
     height: 40px;
 }
 
+.o-you-get-info-right .a-titles-title{
+    text-align: left;
+    max-width: 87%;
+    margin-left: auto;
+}
 
 /** Modification **/
 /*integral-process-cards*/
