@@ -83,6 +83,10 @@
 }
 
 @media(max-width: 768px){
+  .product-footer{
+    max-width: 95%;
+  }
+  
   .product {
     grid-template-columns: 100%;
     max-width: 95%;

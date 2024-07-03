@@ -119,8 +119,14 @@
 }
 
 @media(max-width:780px){
+    .entrenate-banner__secondary{
+        max-height: 329px;
+    }
+
     .entrenate-banner__content{
         max-width:100%;
+        justify-content: flex-end;
+        padding-bottom: 29px;
     }
 
     .tranning-model::after{

@@ -10,7 +10,7 @@
 
 @media(max-width: 768px) {
   .o-cat-products {
-    grid-template-columns: 1fr;
+    display: block;
 
     .m-card-cat__short-desc{
       font-size: 14px;
