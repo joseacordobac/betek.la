@@ -173,6 +173,7 @@
 
     .o-footer__bottom-social {
         justify-content: center;
+        flex-direction: column;
         gap: 17px;
     }
 

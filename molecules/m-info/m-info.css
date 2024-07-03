@@ -12,6 +12,10 @@
     gap: 14px;
 }
 
+.m-info__img {
+    width: 21%;
+}
+
 .Visítanos {
     width: 40%;
 }
@@ -38,7 +42,7 @@
     .m-info-list {
         flex-direction: column;
         align-items: stretch;
-        max-width: 87%;
+        max-width: 98%;
         margin: auto;
         margin-bottom: 20px;
     }
