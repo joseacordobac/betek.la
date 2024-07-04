@@ -1,6 +1,6 @@
 .o-get-talent__content {
     display: grid;
-    grid-template-columns: 47% 49%;
+    grid-template-columns: 48% 49%;
     align-items: center;
     gap: 45px;
     background-color: var(--white-color);
