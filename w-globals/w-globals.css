@@ -270,6 +270,11 @@ ul.order_details {
     .a-social__icon{
         width: 32px;
     }
+
+    .forminator-field {
+        background: white;
+        border: solid white 1px !important;
+    }
 }
 
 @media(max-width: 768px){
