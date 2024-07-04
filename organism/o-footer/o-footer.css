@@ -78,6 +78,11 @@
     margin: 0px !important;
 }
 
+.forminator-input.forminator-email--field{
+    width: 100% !important;
+    border: none;
+}
+
 .o-footer__form-content form {
     display: flex;
     align-items: center;
