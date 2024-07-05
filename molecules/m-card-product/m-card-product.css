@@ -21,6 +21,7 @@
   margin: auto;
   box-shadow: var(--shadow-boxes);
   border-radius: var(--border-radius--regular);
+  height: 100%;
 }
 
 .m-card-product__img {
@@ -40,6 +41,8 @@
   gap: 12px;
   position: relative;
   min-height: 290px;
+  height: 60%;
+  justify-content: space-between;
 
   & .a-titles-title {
     font-size: 22px;

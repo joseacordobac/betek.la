@@ -266,6 +266,14 @@ ul.order_details {
     padding-top: 135px;
 }
 
+a.wc-block-components-button.wp-element-button.wc-block-cart__submit-button {
+    background: var(--main-color);
+    color: white;
+    border-radius: 25px;
+    text-decoration: none;
+    margin-top: 12px;
+}
+
 .footer{
     .a-social__icon{
         width: 32px;

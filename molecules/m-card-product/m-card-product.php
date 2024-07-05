@@ -8,6 +8,7 @@
    $short_description = $product->get_short_description();
    $regular_price = $product->get_price() !=="" ? number_format($product->get_price(), 0, ',', '.') : '';
 
+
    ?>
    <archive class="m-card-product">
       <header class="m-card-product__img">
@@ -30,6 +31,10 @@
                 )
             ); 
         ?>
+        <?php if(get_field('product_sub_title', $product->id)) { ?>
+          <h4 class="m-card-product__subtitle"><?php the_field('product_sub_title', $product->id) ?></h4>
+        <?php } ?>
+        
         <div class="m-card-product__tags">
           <?php while(have_rows('chips')): the_row();
               get_template_part('/atoms/a-tags/a-tags', null, array(
