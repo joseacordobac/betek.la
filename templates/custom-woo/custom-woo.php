@@ -52,8 +52,7 @@ function custom_reorder_billing_fields($fields) {
             $priority += 10; 
         }
     }
-    
-    var_dump($fields);
+
     return $fields;
 }
 
