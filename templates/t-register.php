@@ -1,5 +1,6 @@
 <?php 
 define("PATH_TEMPLATES", trailingslashit( get_stylesheet_directory_uri() ).'templates/');
+include_once 'custom-woo/custom-woo.php';
 
 function register_templates_custom() {
 

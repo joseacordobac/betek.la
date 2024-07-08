@@ -215,6 +215,30 @@ pre {
     width: 45vw;
 }
 
+.woocommerce-billing-fields__field-wrapper {
+    display: grid;
+}
+
+.woocommerce form .form-row {
+    padding: 3px;
+    margin: 0 0 6px;
+    width: 100%;
+}
+
+#billing_state_field {
+    grid-row-start: 5;
+}
+
+#billing_city_field {
+    grid-row-start: 6;
+}
+
+@media(max-width: 1380px){
+    .checkout.woocommerce-checkout{
+        max-width: 1200px;
+    }
+}
+
 @media(max-width: 768px){
     .checkout.woocommerce-checkout {
         display: block;
@@ -272,6 +296,10 @@ a.wc-block-components-button.wp-element-button.wc-block-cart__submit-button {
     border-radius: 25px;
     text-decoration: none;
     margin-top: 12px;
+}
+
+.woocommerce-billing-fields__field-wrapper {
+    text-align: left;
 }
 
 .footer{
