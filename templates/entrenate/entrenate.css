@@ -119,8 +119,14 @@
 }
 
 @media(max-width:780px){
+
+    .entrenate-banner__description{
+        padding-top: 0px;
+    }
+
     .entrenate-banner__secondary{
-        max-height: 329px;
+        max-height: auto;
+        height: 50vh;
     }
 
     .entrenate-banner__content{

@@ -197,4 +197,8 @@
         padding: 11px 10px 10px 10px !important;
     }
 
+    .o-you-get-info-right .a-titles-title{
+        max-width: 100%;
+    }
+
 }

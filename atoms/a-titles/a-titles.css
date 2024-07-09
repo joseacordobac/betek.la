@@ -17,7 +17,9 @@
 
 @media(max-width: 768px){
     .a-titles-title{
+        margin: auto;
         margin-bottom: 0px;
+        max-width: 92%;
     }
 
 }
