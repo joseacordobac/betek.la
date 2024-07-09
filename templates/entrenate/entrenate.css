@@ -125,7 +125,7 @@
     }
 
     .entrenate-banner__secondary{
-        max-height: auto;
+        max-height: 100%;
         height: 50vh;
     }
 
