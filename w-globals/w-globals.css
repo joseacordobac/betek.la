@@ -64,7 +64,7 @@ h1, h2, h3, h4{
     text-wrap: balance;
 }
 
-p, h5, ul, li, span, a, pre, summary{
+p, h5, ul, li, span, a, pre, summary, td, th, address{
     font-family: var(--font-text);
     text-wrap: pretty;
 }
@@ -300,6 +300,80 @@ a.wc-block-components-button.wp-element-button.wc-block-cart__submit-button {
 
 .woocommerce-billing-fields__field-wrapper {
     text-align: left;
+}
+
+
+
+/** Woocommerce get order **/
+.woocommerce-order-received {
+    
+    .woocommerce-thankyou-order-received {
+        font-size: 25px;
+        color: var(--main-color);
+        margin-bottom: 16px;
+        font-weight: bold;
+        margin-top: 10px;
+    }
+
+    .woocommerce-thankyou-order-details.order_details {
+        justify-content: space-around;
+    }
+
+    .woocommerce-order-details__title {
+        margin-bottom: 17px;
+        color: var(--main-color);
+    }
+
+    .woocommerce-order {
+        max-width: 80%;
+        margin: auto;
+        padding: 100px 0px;
+    }
+    
+    table.woocommerce-table.woocommerce-table--order-details.shop_table.order_details {
+        box-shadow: var(--shadow-boxes);
+        padding: 18px;
+        border-radius: 16px;
+    }
+
+    section.woocommerce-columns.woocommerce-columns--2.woocommerce-columns--addresses.col2-set.addresses {
+        display: flex;
+        gap: 19px;
+    }
+}
+
+
+@media(min-width: 1380px){
+    .woocommerce-order-received{
+        .woocommerce-order {
+            max-width: 1200px;
+            padding: 100px 0px;
+        }
+    }
+}
+
+@media(max-width: 768px){
+    .woocommerce-order-received{
+
+        .woocommerce-order {
+            max-width: 95%;
+            padding: 80px 0px;
+        }
+
+        .woocommerce-order-overview.woocommerce-thankyou-order-details.order_details {
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .woocommerce-columns.woocommerce-columns--2.woocommerce-columns--addresses.col2-set.addresses {
+            flex-direction: column;
+        }
+
+        table.woocommerce-table.woocommerce-table--order-details.shop_table.order_details{
+            padding: 8px;
+        }
+
+    }
 }
 
 .footer{

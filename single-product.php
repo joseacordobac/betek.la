@@ -47,7 +47,8 @@
                     </div>
                     <?php endwhile; ?>
                     <div class="product-info__btn">
-                        <?php 
+                        <?php echo do_shortcode('[forminator_form id="2200"]'); ?>
+                        <!-- <?php 
                         get_template_part('/atoms/a-btn/a-btn', null, 
                             array(
                                     'button_text' => 'Comprar',
@@ -56,7 +57,7 @@
                                     'icons_path' => get_template_directory_uri().'/assets/icons/arrow-to-right.svg',
                                 )
                             );
-                        ?>
+                        ?> -->
                     </div>
                 </div>
             </div>
