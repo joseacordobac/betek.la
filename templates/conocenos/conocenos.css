@@ -149,6 +149,11 @@
     height: 70px;
 }
 
+.m-alians-brands>div {
+    justify-content: center;
+    max-width: 83%;
+}
+
 @media(max-width: 768px){
     .hero-conocenos__content {
         grid-template-columns: 1fr;
@@ -216,6 +221,11 @@
 
     .our-team{
         max-width: 94%;
+    }
+
+    .m-alians-brands>div {
+        justify-content: center;
+        max-width: 100%;
     }
 }
 

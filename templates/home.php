@@ -28,16 +28,32 @@ wp_enqueue_style('home');
                         <div class="hero-banner__left">
                             <h3 class="hero-banner__title js-title"><?php the_sub_field('titulo'); ?></h3>
                             <div class="hero-banner__text"><?php the_sub_field('description'); ?></div>
-                            <?php 
-                                get_template_part('/atoms/a-btn/a-btn', null, 
-                                array(
-                                        'button_text' => get_sub_field('btn_text'),
-                                        'button_link' => get_sub_field('url_btn'),
-                                        'btn_type' => 'a-btn--primary',
-                                        'icons_path' => get_template_directory_uri().'/assets/icons/arrow-to-right.svg',
-                                    )
-                                );
-                            ?>
+                            <div class="hero-banner__btns">
+
+                                <?php 
+                                    if(get_sub_field('btn_text')):
+                                        get_template_part('/atoms/a-btn/a-btn', null, 
+                                        array(
+                                                'button_text' => get_sub_field('btn_text'),
+                                                'button_link' => get_sub_field('url_btn'),
+                                                'btn_type' => 'a-btn--primary',
+                                                'icons_path' => get_template_directory_uri().'/assets/icons/arrow-to-right.svg',
+                                            )
+                                        );
+                                    endif;
+                                    
+                                    if(get_sub_field('btn_text_secondary')):
+                                        get_template_part('/atoms/a-btn/a-btn', null, 
+                                        array(
+                                                'button_text' => get_sub_field('btn_text_secondary'),
+                                                'button_link' => get_sub_field('url_btn_secondary'),
+                                                'btn_type' => 'a-btn--primary',
+                                                'icons_path' => get_template_directory_uri().'/assets/icons/arrow-to-right.svg',
+                                            )
+                                        );
+                                    endif;
+                                ?>
+                            </div>
                             
                         </div>
                         <div class="hero-banner__rigth">

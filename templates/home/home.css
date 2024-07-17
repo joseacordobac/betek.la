@@ -55,6 +55,14 @@
     flex-direction: column;
 }
 
+
+.hero-banner__btns{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
 .hero-banner__left .a-btn{
     margin-top: 19px;
 }

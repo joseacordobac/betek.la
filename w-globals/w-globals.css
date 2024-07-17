@@ -254,6 +254,10 @@ pre {
     .woocommerce-notices-wrapper{
         width: 100%;
     }
+
+    .checkout_coupon.woocommerce-form-coupon {
+        width: 100%;
+    }
 }
 
 
@@ -356,6 +360,7 @@ a.wc-block-components-button.wp-element-button.wc-block-cart__submit-button {
 .woocommerce #payment #place_order, .woocommerce-page #payment #place_order {
     margin-top: 1rem;
     float: left;
+    width: 100%;
 }
 
 .wp-block-woocommerce-cart-order-summary-heading-block.wc-block-cart__totals-title, 
