@@ -60,9 +60,6 @@
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-}
-
-.hero-banner__left .a-btn{
     margin-top: 19px;
 }
 
