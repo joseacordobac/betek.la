@@ -47,7 +47,7 @@
                     </div>
                     <?php endwhile; ?>
                     <div class="product-info__btn">
-                        <h4 class="product-info__btn-title">Dejanos tus datos para continuar con la compra</h4>
+                        <h4 class="product-info__btn-title">Ingresa tus datos y continúa la compra</h4>
                         <?php echo do_shortcode('[forminator_form id="2200"]'); ?>
                         <!-- <?php 
                         get_template_part('/atoms/a-btn/a-btn', null, 
