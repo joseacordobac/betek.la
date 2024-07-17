@@ -3,9 +3,10 @@
   background: var(--clear-color-two);
 }
 
-.product {display: grid;
+.product {
+  display: grid;
   grid-template-columns: 50% 48%;
-  max-width: 68%;
+  max-width: 80%;
   margin: auto;
   gap: 19px;
   align-items: center;
