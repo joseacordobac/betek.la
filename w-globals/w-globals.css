@@ -402,6 +402,18 @@ a.wc-block-components-button.wp-element-button.wc-block-cart__submit-button {
     }
 }
 
+.woocommerce-message {
+    border-top: 3px solid var(--secondary-color) !important;
+    border-radius: 5px;
+    font-family: var(--font-text);
+    
+    .button.wc-forward {
+        border: solid 1px var(--secondary-color);
+        color: var(--secondary-color);
+        font-weight: 400;
+    }
+}
+
 
 @media(min-width: 1380px){
     .woocommerce-order-received{
