@@ -15,11 +15,11 @@
         <div class="product-head"></div>
         <div id="product-<?php the_ID(); ?>" <?php wc_product_class(); ?>>
             <div class="product-image">
-                <?php get_template_part('atoms/a-titles/a-titles', null, array(
+                <!-- <?php get_template_part('atoms/a-titles/a-titles', null, array(
                     'title' => get_the_title(),
                     'custom_class' => 'product-title',
                     'link' => get_the_permalink(),
-                )); ?>
+                )); ?> -->
                 <?php 
                     get_template_part('atoms/a-img/a-img', null, array(
                         'image_id' => $thumbnail_id,

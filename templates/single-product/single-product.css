@@ -28,11 +28,12 @@
   height: 100%;
 }
 
-.product-info__content {
+.product-info{
   border-radius: var(--border-radius--regular);
   background: white;
   box-shadow: var(--shadow-boxes);
   padding: 33px;
+
 }
 
 .product-info__el-title {
@@ -56,7 +57,7 @@
 }
 
 .product-info__el-desc {
-  text-align: right;
+  text-align: left;
 }
 
 .woocommerce-Price-amount.amount {
