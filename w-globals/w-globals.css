@@ -392,8 +392,8 @@ a.wc-block-components-button.wp-element-button.wc-block-cart__submit-button {
     display: flex;
     flex-wrap: wrap;
     max-width: 50%;
-    margin: auto !important;
     margin: 5px !important;
+    margin: auto !important;
     border-radius: 15px !important;
     padding: 12px !important;
 
